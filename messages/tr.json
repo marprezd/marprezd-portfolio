@@ -1,5 +1,26 @@
 {
   "site": {
-    "under-construction": "Bu web sitesi yapım aşamasındadır"
+    "under-construction": "Bu web sitesi yapım aşamasındadır",
+    "header": {
+      "search": {
+        "placeholder": "Aramak için yazın..."
+      },
+      "navigation": {
+        "labels": {
+          "main-menu": "Ana menü",
+          "communities": "Topluluklar",
+          "feedbacks": "Geri bildirimler",
+          "challenges": "Programlama zorlukları"
+        },
+        "home": "Ana sayfa",
+        "blog": "Blog",
+        "projects": "Projeler",
+        "courses": "Dersler",
+        "about-me": "Benim Hakkında",
+        "guest-book": "Ziyaretçi defteri"
+      },
+      "more-details": "Daha fazla ayrıntı",
+      "challenges": "Zorlu programlama alıştırmaları koleksiyonumuzla kodlama potansiyelinizi açığa çıkarın. Becerilerinizi geliştirin, bilginizi test edin ve öğreniminizi ilerletin."
+    }
   }
 }

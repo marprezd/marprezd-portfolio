@@ -1,5 +1,26 @@
 {
   "site": {
-    "under-construction": "Este sitio web está en construcción"
+    "under-construction": "Este sitio web está en construcción",
+    "header": {
+      "search": {
+        "placeholder": "Escribe para buscar..."
+      },
+      "navigation": {
+        "labels": {
+          "main-menu": "Menú principal",
+          "communities": "Comunidades",
+          "feedbacks": "Comentarios",
+          "challenges": "Desafíos de programación"
+        },
+        "home": "Home",
+        "blog": "Blog",
+        "projects": "Proyectos",
+        "courses": "Cursos",
+        "about-me": "Acerca de mi",
+        "guest-book": "Libro de visitas"
+      },
+      "more-details": "Más detalles",
+      "challenges": "Desbloquea tu potencial de programación con nuestra colección de ejercicios de programación desafiantes. Perfecciona tus habilidades, prueba tus conocimientos y avanza en tu aprendizaje."
+    }
   }
 }

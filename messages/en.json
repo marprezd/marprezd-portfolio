@@ -1,5 +1,26 @@
 {
   "site": {
-    "under-construction": "This website is under construction"
+    "under-construction": "This website is under construction",
+    "header": {
+      "search": {
+        "placeholder": "Type to search..."
+      },
+      "navigation": {
+        "labels": {
+          "main-menu": "Main menu",
+          "communities": "Communities",
+          "feedbacks": "Feedbacks",
+          "challenges": "Programming challenges"
+        },
+        "home": "Home",
+        "blog": "Blog",
+        "projects": "Projects",
+        "courses": "Courses",
+        "about-me": "About me",
+        "guest-book": "Guest book"
+      },
+      "more-details": "More details",
+      "challenges": "Unlock your coding potential with our collection of challenging programming exercises. Sharpen your skills, test your knowledge, and advance your learning."
+    }
   }
 }
