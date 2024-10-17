@@ -1,4 +1,7 @@
 import type { Metadata } from 'next'
+import Navbar from '@/components/navbar'
+import BottomWaveSvg from '@/components/waves/bottom-wave-svg'
+import TopWaveSvg from '@/components/waves/top-wave-svg'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import clsx from 'clsx'
@@ -50,14 +53,20 @@ export default async function LocaleLayout({
     >
       <body
         className={clsx(
-          'flex min-h-screen flex-col text-pretty font-sans font-normal antialiased',
+          'flex flex-col text-pretty bg-background font-sans font-normal text-foreground antialiased',
+          'selection:bg-palettes-primary-90 selection:text-palettes-primary-50 dark:selection:bg-palettes-primary-50 dark:selection:text-palettes-primary-90',
           geistSans.variable,
           geistMono.variable,
         )}
       >
         <Providers themeProps={{ attribute: 'class', defaultTheme: 'system', enableColorScheme: true, enableSystem: true, children }}>
           <NextIntlClientProvider messages={messages}>
-            {children}
+            <Navbar />
+            <div className="grow">
+              <TopWaveSvg />
+              {children}
+              <BottomWaveSvg />
+            </div>
           </NextIntlClientProvider>
         </Providers>
         <Analytics />

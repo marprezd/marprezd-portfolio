@@ -1,8 +1,9 @@
 import type { Config } from 'tailwindcss'
-import { divider, nextui } from '@nextui-org/theme'
+import { nextui } from '@nextui-org/theme'
 import typography from '@tailwindcss/typography'
 import colors from 'tailwindcss/colors'
 import defaultTheme from 'tailwindcss/defaultTheme'
+import tailwindAnimated from 'tailwindcss-animated'
 
 const config: Config = {
   darkMode: 'class',
@@ -87,6 +88,7 @@ const config: Config = {
   },
   plugins: [
     typography,
+    tailwindAnimated,
     nextui({
       prefix: 'nextui',
       defaultExtendTheme: 'light',
