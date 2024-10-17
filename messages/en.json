@@ -1,5 +1,12 @@
 {
   "site": {
+    "metadata": {
+      "homepage": {
+        "title": "Mario Perez | Python, Next.js & API Design",
+        "description": "Explore my website! Delve into my projects and articles on Python, Next.js, and other technologies to learn how to build stunning web apps.",
+        "generator": "Mario Pérez | Personal Website"
+      }
+    },
     "under-construction": "This website is under construction",
     "header": {
       "search": {

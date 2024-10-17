@@ -1,5 +1,12 @@
 {
   "site": {
+    "metadata": {
+      "homepage": {
+        "title": "Mario Perez | Python, Next.js & API Design",
+        "description": "Web sitemi keşfedin! Python, Next.js ve diğer teknolojiler hakkındaki projelerimi ve makalelerimi inceleyerek çarpıcı web uygulamaları oluşturmayı öğrenin.",
+        "generator": "Mario Pérez | Personal Website"
+      }
+    },
     "under-construction": "Bu web sitesi yapım aşamasındadır",
     "header": {
       "search": {
