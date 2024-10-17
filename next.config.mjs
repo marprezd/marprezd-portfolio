@@ -1,4 +1,13 @@
+/* eslint-disable node/prefer-global/process */
 import createNextIntlPlugin from 'next-intl/plugin'
+
+const isDev = process.argv.includes('dev')
+const isBuild = process.argv.includes('build')
+if (!process.env.VELITE_STARTED && (isDev || isBuild)) {
+  process.env.VELITE_STARTED = '1'
+  const { build } = await import('velite')
+  await build({ watch: isDev, clean: !isDev })
+}
 
 const withNextIntl = createNextIntlPlugin()
 
