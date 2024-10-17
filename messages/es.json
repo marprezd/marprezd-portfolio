@@ -9,18 +9,27 @@
         "labels": {
           "main-menu": "Menú principal",
           "communities": "Comunidades",
-          "feedbacks": "Comentarios",
-          "challenges": "Desafíos de programación"
+          "feedbacks": "Comentarios"
         },
         "home": "Home",
         "blog": "Blog",
         "projects": "Proyectos",
         "courses": "Cursos",
         "about-me": "Acerca de mi",
-        "guest-book": "Libro de visitas"
+        "guest-book": "Libro de visitas",
+        "hire-me": {
+          "label": "Hablemos de tu próximo proyecto",
+          "description": "¿Está buscando contratar a un desarrollador de software talentoso con experiencia en Python, API y ciencia de datos para su próximo proyecto? Hablemos sobre cómo podemos colaborar y lograr sus objetivos juntos."
+        },
+        "challenges": {
+          "label": "Desafíos de programación",
+          "description": "Desbloquea tu potencial de programación con nuestra colección de ejercicios de programación desafiantes. Perfecciona tus habilidades, prueba tus conocimientos y avanza en tu aprendizaje."
+        },
+        "more-details": "Más detalles"
       },
-      "more-details": "Más detalles",
-      "challenges": "Desbloquea tu potencial de programación con nuestra colección de ejercicios de programación desafiantes. Perfecciona tus habilidades, prueba tus conocimientos y avanza en tu aprendizaje."
+      "sponsor": {
+        "tooltip": "Patrociname"
+      }
     }
   }
 }

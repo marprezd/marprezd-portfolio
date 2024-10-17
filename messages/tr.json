@@ -9,18 +9,27 @@
         "labels": {
           "main-menu": "Ana menü",
           "communities": "Topluluklar",
-          "feedbacks": "Geri bildirimler",
-          "challenges": "Programlama zorlukları"
+          "feedbacks": "Geri bildirimler"
         },
         "home": "Ana sayfa",
         "blog": "Blog",
         "projects": "Projeler",
         "courses": "Dersler",
         "about-me": "Benim Hakkında",
-        "guest-book": "Ziyaretçi defteri"
+        "guest-book": "Ziyaretçi defteri",
+        "hire-me": {
+          "label": "Bir sonraki projeniz hakkında konuşalım",
+          "description": "Bir sonraki projeniz için Python, API ve veri bilimi uzmanlığına sahip yetenekli bir yazılım geliştiricisi mi işe almak istiyorsunuz? Birlikte nasıl iş birliği yapabileceğimizi ve hedeflerinize nasıl birlikte ulaşabileceğimizi tartışalım."
+        },
+        "challenges": {
+          "label": "Programlama zorlukları",
+          "description": "Zorlu programlama alıştırmaları koleksiyonumuzla kodlama potansiyelinizi açığa çıkarın. Becerilerinizi geliştirin, bilginizi test edin ve öğreniminizi ilerletin."
+        },
+        "more-details": "Daha fazla ayrıntı"
       },
-      "more-details": "Daha fazla ayrıntı",
-      "challenges": "Zorlu programlama alıştırmaları koleksiyonumuzla kodlama potansiyelinizi açığa çıkarın. Becerilerinizi geliştirin, bilginizi test edin ve öğreniminizi ilerletin."
+      "sponsor": {
+        "tooltip": "Bana sponsor ol"
+      }
     }
   }
 }

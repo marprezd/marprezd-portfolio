@@ -9,18 +9,27 @@
         "labels": {
           "main-menu": "Main menu",
           "communities": "Communities",
-          "feedbacks": "Feedbacks",
-          "challenges": "Programming challenges"
+          "feedbacks": "Feedbacks"
         },
         "home": "Home",
         "blog": "Blog",
         "projects": "Projects",
         "courses": "Courses",
         "about-me": "About me",
-        "guest-book": "Guest book"
+        "guest-book": "Guest book",
+        "hire-me": {
+          "label": "Let's talk about your next project",
+          "description": "Are you looking to hire a talented software developer with Python, API and data science expertise for your next project? Let's discuss how we can collaborate and achieve your goals together."
+        },
+        "challenges": {
+          "label": "Programming challenges",
+          "description": "Unlock your coding potential with our collection of challenging programming exercises. Sharpen your skills, test your knowledge, and advance your learning."
+        },
+        "more-details": "More details"
       },
-      "more-details": "More details",
-      "challenges": "Unlock your coding potential with our collection of challenging programming exercises. Sharpen your skills, test your knowledge, and advance your learning."
+      "sponsor": {
+        "tooltip": "Sponsor me"
+      }
     }
   }
 }
