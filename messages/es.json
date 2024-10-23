@@ -37,6 +37,42 @@
       "sponsor": {
         "tooltip": "Patrociname"
       }
+    },
+    "posts": {
+      "callouts": {
+        "info": "Información",
+        "warning": "Advertencia",
+        "success": "Felicidades",
+        "danger": "Peligro"
+      }
+    },
+    "footer": {
+      "about-me": {
+        "summary": "Soy un desarrollador de software que crea aplicaciones web modernas e interfaces de usuario sofisticadas utilizando Python, Next.js y otras tecnologías web."
+      },
+      "useful-links": {
+        "label": "Enlaces útiles",
+        "links": {
+          "courses": "Cursos",
+          "guest-book": "Libro de visitas"
+        }
+      },
+      "settings": {
+        "label": "Ajustes",
+        "locale-switcher": {
+          "label": "Cambiar idioma",
+          "locale": "{locale, select, es {Español} en {English} tr {Türkçe} other {Unknown}}"
+        },
+        "theme-switcher": {
+          "label": "Cambiar tema oscuro/claro",
+          "light-theme": "Tema Claro",
+          "dark-theme": "Tema Oscuro"
+        }
+      },
+      "contact-me": {
+        "label": "Contáctame"
+      },
+      "license": "<p>A menos que se indique lo contrario, el contenido de este sitio web está bajo las licencias <span>MIT</span> y <span>CC BY 4.0</span>.</p>"
     }
   }
 }

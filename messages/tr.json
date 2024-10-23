@@ -37,6 +37,42 @@
       "sponsor": {
         "tooltip": "Bana sponsor ol"
       }
+    },
+    "posts": {
+      "callouts": {
+        "info": "Bilgi",
+        "warning": "Uyarı",
+        "success": "Başarı",
+        "danger": "Tehlike"
+      }
+    },
+    "footer": {
+      "about-me": {
+        "summary": "Python, Next.js ve diğer web teknolojilerini kullanarak modern web uygulamaları ve zengin kullanıcı arayüzleri oluşturan bir yazılım geliştiricisiyim."
+      },
+      "useful-links": {
+        "label": "Yararlı bağlantılar",
+        "links": {
+          "courses": "Dersler",
+          "guest-book": "Ziyaretçi defteri"
+        }
+      },
+      "settings": {
+        "label": "Ayarlar",
+        "locale-switcher": {
+          "label": "Arayüz dilini değiştir",
+          "locale": "{locale, select, es {Español} en {English} tr {Türkçe} other {Unknown}}"
+        },
+        "theme-switcher": {
+          "label": "Koyu/açık tema değiştirme",
+          "light-theme": "Açık Tema",
+          "dark-theme": "Koyu Tema"
+        }
+      },
+      "contact-me": {
+        "label": "Bana ulaşın"
+      },
+      "license": "<p>Aksi belirtilmediği sürece, bu web sitesindeki içerik hem <span>MIT</span> hem de <span>CC BY 4.0</span> lisansları altında lisanslanmıştır.</p>"
     }
   }
 }

@@ -37,6 +37,42 @@
       "sponsor": {
         "tooltip": "Sponsor me"
       }
+    },
+    "posts": {
+      "callouts": {
+        "info": "Info",
+        "warning": "Warning",
+        "success": "Success",
+        "danger": "Danger"
+      }
+    },
+    "footer": {
+      "about-me": {
+        "summary": "I am a software developer building modern web applications and slick user interfaces using Python, Next.js, and other web technologies."
+      },
+      "useful-links": {
+        "label": "Useful links",
+        "links": {
+          "courses": "Courses",
+          "guest-book": "Guest book"
+        }
+      },
+      "settings": {
+        "label": "Settings",
+        "locale-switcher": {
+          "label": "Change language",
+          "locale": "{locale, select, es {Español} en {English} tr {Türkçe} other {Unknown}}"
+        },
+        "theme-switcher": {
+          "label": "Change dark/light theme",
+          "light-theme": "Light Theme",
+          "dark-theme": "Dark Theme"
+        }
+      },
+      "contact-me": {
+        "label": "Contact me"
+      },
+      "license": "<p>Unless stated otherwise, the content on this website is licensed under both the <span>MIT</span> and <span>CC BY 4.0</span> licenses.</p>"
     }
   }
 }
