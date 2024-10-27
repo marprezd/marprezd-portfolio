@@ -70,9 +70,53 @@
         }
       },
       "contact-me": {
-        "label": "Contact me"
+        "label": "Contact me",
+        "fields": {
+          "name": {
+            "label": "Name",
+            "placeholder": "Enter your name"
+          },
+          "email": {
+            "label": "Email",
+            "placeholder": "Enter your email"
+          },
+          "message": {
+            "label": "Message",
+            "placeholder": "How can I help you in the best way possible?"
+          },
+          "send-form": {
+            "submit": "Yes, send it now!",
+            "is-submiting": "Sending form..."
+          },
+          "validations": {
+            "name": {
+              "min": "Minimum 5 characters",
+              "max": "Maximum 25 characters",
+              "required": "Required! Please enter your name."
+            },
+            "email": {
+              "invalid": "Invalid email address",
+              "required": "Required! Please enter an email address valid."
+            },
+            "message": {
+              "min": "Minimum 160 characters",
+              "max": "Maximum 1000 characters",
+              "required": "Required! Please enter your message."
+            }
+          }
+        },
+        "alerts": {
+          "error": {
+            "title": "Error sending the form!",
+            "msg": "Error! {err}. Please try again later"
+          },
+          "sent": {
+            "title": "Form sent successfully!",
+            "msg": "The message has been sent! Thank you! I will be in touch with you soon."
+          }
+        }
       },
-      "license": "<p>Unless stated otherwise, the content on this website is licensed under both the <span>MIT</span> and <span>CC BY 4.0</span> licenses.</p>"
+      "license": "<p>All content is licensed under <span>MIT</span> and <span>CC BY 4.0</span> licenses.</p>"
     }
   }
 }

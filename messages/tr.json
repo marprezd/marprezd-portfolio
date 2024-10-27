@@ -70,9 +70,53 @@
         }
       },
       "contact-me": {
-        "label": "Bana ulaşın"
+        "label": "Bana ulaşın",
+        "fields": {
+          "name": {
+            "label": "Ad",
+            "placeholder": "Adınızı girin"
+          },
+          "email": {
+            "label": "E-posta",
+            "placeholder": "E-postanızı girin"
+          },
+          "message": {
+            "label": "Mesaj",
+            "placeholder": "Size mümkün olan en iyi şekilde nasıl yardımcı olabilirim?"
+          },
+          "send-form": {
+            "submit": "Evet, hemen gönder!",
+            "is-submiting": "Form gönderiliyor..."
+          },
+          "validations": {
+            "name": {
+              "min": "Minimum 5 karakter",
+              "max": "Maksimum 25 karakter",
+              "required": "Gerekli! Lütfen adınızı girin."
+            },
+            "email": {
+              "invalid": "Geçersiz e-posta adresi",
+              "required": "Gerekli! Lütfen geçerli bir e-posta adresi girin."
+            },
+            "message": {
+              "min": "Minimum 160 karakter",
+              "max": "Maksimum 1000 karakter",
+              "required": "Gerekli! Lütfen mesajınızı girin."
+            }
+          }
+        },
+        "alerts": {
+          "error": {
+            "title": "Form gönderilirken hata oluştu!",
+            "msg": "Hata! {err}. Lütfen daha sonra tekrar deneyin"
+          },
+          "sent": {
+            "title": "Form başarıyla gönderildi!",
+            "msg": "Mesaj gönderildi! Teşekkür ederim! Yakında sizinle iletişime geçeceğim."
+          }
+        }
       },
-      "license": "<p>Aksi belirtilmediği sürece, bu web sitesindeki içerik hem <span>MIT</span> hem de <span>CC BY 4.0</span> lisansları altında lisanslanmıştır.</p>"
+      "license": "<p>Tüm içerikler <span>MIT</span> ve <span>CC BY 4.0</span> isansları altında lisanslanmıştır.</p>"
     }
   }
 }

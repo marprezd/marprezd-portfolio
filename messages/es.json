@@ -70,9 +70,53 @@
         }
       },
       "contact-me": {
-        "label": "Contáctame"
+        "label": "Contáctame",
+        "fields": {
+          "name": {
+            "label": "Nombre",
+            "placeholder": "Introduce tu nombre"
+          },
+          "email": {
+            "label": "Correo electrónico",
+            "placeholder": "Introduce tu correo electrónico"
+          },
+          "message": {
+            "label": "Mensaje",
+            "placeholder": "¿Cómo puedo ayudarte de la mejor manera posible?"
+          },
+          "send-form": {
+            "submit": "¡Sí, envíalo ahora!",
+            "is-submiting": "Enviando formulario..."
+          },
+          "validations": {
+            "name": {
+              "min": "Mínimo 5 caracteres",
+              "max": "Máximo 25 caracteres",
+              "required": "¡Obligatorio! Por favor, introduzca su nombre."
+            },
+            "email": {
+              "invalid": "Dirección de correo electrónico no válida",
+              "required": "¡Obligatorio! Por favor, introduzca una dirección de correo electrónico válida."
+            },
+            "message": {
+              "min": "Mínimo 160 caracteres",
+              "max": "Máximo 1000 caracteres",
+              "required": "¡Obligatorio! Por favor, introduzca su mensaje."
+            }
+          }
+        },
+        "alerts": {
+          "error": {
+            "title": "¡Error al enviar el formulario!",
+            "msg": "¡Error! {err}. Inténtalo de nuevo más tarde."
+          },
+          "sent": {
+            "title": "¡Formulario enviado exitosamente!",
+            "msg": "¡El mensaje ha sido enviado! ¡Gracias! Me pondré en contacto contigo pronto."
+          }
+        }
       },
-      "license": "<p>A menos que se indique lo contrario, el contenido de este sitio web está bajo las licencias <span>MIT</span> y <span>CC BY 4.0</span>.</p>"
+      "license": "<p>Todo el contenido está bajo licencia <span>MIT</span> y <span>CC BY 4.0</span>.</p>"
     }
   }
 }
