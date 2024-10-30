@@ -60,10 +60,12 @@
       "settings": {
         "label": "Settings",
         "locale-switcher": {
+          "title": "Interface language",
           "label": "Change language",
           "locale": "{locale, select, es {Español} en {English} tr {Türkçe} other {Unknown}}"
         },
         "theme-switcher": {
+          "title": "Interface theme",
           "label": "Change dark/light theme",
           "light-theme": "Light Theme",
           "dark-theme": "Dark Theme"

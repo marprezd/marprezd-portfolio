@@ -60,10 +60,12 @@
       "settings": {
         "label": "Ayarlar",
         "locale-switcher": {
+          "title": "Arayüz dili",
           "label": "Arayüz dilini değiştir",
           "locale": "{locale, select, es {Español} en {English} tr {Türkçe} other {Unknown}}"
         },
         "theme-switcher": {
+          "title": "Arayüz teması",
           "label": "Koyu/açık tema değiştirme",
           "light-theme": "Açık Tema",
           "dark-theme": "Koyu Tema"

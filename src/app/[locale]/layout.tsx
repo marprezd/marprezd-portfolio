@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
+import Footer from '@/components/footer'
 import Navbar from '@/components/navbar'
-import BottomWaveSvg from '@/components/waves/bottom-wave-svg'
 import TopWaveSvg from '@/components/waves/top-wave-svg'
 import { server } from '@/lib/serverUrl'
 import { Analytics } from '@vercel/analytics/react'
@@ -195,8 +195,8 @@ export default async function LocaleLayout({
             <div className="grow">
               <TopWaveSvg />
               {children}
-              <BottomWaveSvg />
             </div>
+            <Footer />
           </NextIntlClientProvider>
         </Providers>
         <Analytics />
