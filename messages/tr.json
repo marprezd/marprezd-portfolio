@@ -38,6 +38,12 @@
         "tooltip": "Bana sponsor ol"
       }
     },
+    "hero": {
+      "substack-profile": "Substack profili",
+      "title": "<h1>Merhaba, <span>ben Mario</span>, kişisel web siteme hoş geldiniz.</h1>",
+      "description": "Python, ReactJS ve diğer modern programlama dilleriyle web uygulamaları ve kullanıcı arayüzleri oluşturmayı öğrenin.",
+      "started": "Başlayın"
+    },
     "posts": {
       "callouts": {
         "info": "Bilgi",
