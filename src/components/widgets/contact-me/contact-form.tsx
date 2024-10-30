@@ -2,7 +2,6 @@
 
 import type { FormikHelpers } from 'formik'
 import type { FC } from 'react'
-import process from 'node:process'
 import { Button } from '@nextui-org/button'
 import { Input, Textarea } from '@nextui-org/input'
 import axios from 'axios'
@@ -13,6 +12,7 @@ import * as Yup from 'yup'
 import AlertError from './alert-error'
 import AlertSuccess from './alert-success'
 
+// eslint-disable-next-line node/prefer-global/process
 const formspreedID: string | undefined = process.env.NEXT_PUBLIC_FORM
 
 interface Values {
