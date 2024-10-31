@@ -1,15 +1,14 @@
 'use client'
 
-import type { Pathnames } from '@/i18n/routing'
 import type { ComponentProps } from 'react'
 import { Link } from '@/i18n/routing'
 import clsx from 'clsx'
 import { useSelectedLayoutSegment } from 'next/navigation'
 
-export default function MegamenuLink<Pathname extends Pathnames>({
+export default function MegamenuLink({
   href,
   ...rest
-}: ComponentProps<typeof Link<Pathname>>) {
+}: ComponentProps<typeof Link>) {
   const selectedLayoutSegment = useSelectedLayoutSegment()
   const pathname = selectedLayoutSegment ? `/${selectedLayoutSegment}` : '/'
   const isActive = pathname === href
