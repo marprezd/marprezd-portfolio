@@ -50,7 +50,21 @@
         "warning": "Uyarı",
         "success": "Başarı",
         "danger": "Tehlike"
-      }
+      },
+      "featured": {
+        "title": "Öne çıkan gönderiler",
+        "description": "Son gönderi serisine göz atın.",
+        "cta": "Tüm gönderiler"
+      },
+      "reading-time": {
+        "label": "Tahmini okuma süresi",
+        "mins": "dakika okumak"
+      },
+      "series": {
+        "label": "Seri altında yayınlandı",
+        "cta-btn": "Seri"
+      },
+      "more-details": "Daha fazla ayrıntı"
     },
     "footer": {
       "about-me": {

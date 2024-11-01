@@ -50,7 +50,21 @@
         "warning": "Warning",
         "success": "Success",
         "danger": "Danger"
-      }
+      },
+      "featured": {
+        "title": "Featured posts",
+        "description": "Browse the latest series of posts.",
+        "cta": "All posts"
+      },
+      "reading-time": {
+        "label": "Estimated reading time",
+        "mins": "mins read"
+      },
+      "series": {
+        "label": "Posted under serie",
+        "cta-btn": "Serie"
+      },
+      "more-details": "More details"
     },
     "footer": {
       "about-me": {

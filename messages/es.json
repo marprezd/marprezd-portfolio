@@ -50,7 +50,21 @@
         "warning": "Advertencia",
         "success": "Felicidades",
         "danger": "Peligro"
-      }
+      },
+      "featured": {
+        "title": "Publicaciones destacadas",
+        "description": "Explora las últimas series de publicaciones.",
+        "cta": "Todas las publicaciones"
+      },
+      "reading-time": {
+        "label": "Tiempo estimado de lectura",
+        "mins": "minutos de lectura"
+      },
+      "series": {
+        "label": "Publicado en serie",
+        "cta-btn": "Serie"
+      },
+      "more-details": "Más detalles"
     },
     "footer": {
       "about-me": {
