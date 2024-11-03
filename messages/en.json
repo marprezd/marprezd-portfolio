@@ -66,6 +66,11 @@
       },
       "more-details": "More details"
     },
+    "newsletter": {
+      "title": "Joining our community",
+      "desc": "Stay informed with the latest news and updates. Gain valuable insights by joining our Substack community today!",
+      "cta-btn": "Subscribe"
+    },
     "footer": {
       "about-me": {
         "summary": "I am a software developer building modern web applications and slick user interfaces using Python, Next.js, and other web technologies."

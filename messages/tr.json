@@ -66,6 +66,11 @@
       },
       "more-details": "Daha fazla ayrıntı"
     },
+    "newsletter": {
+      "title": "Topluluğumuza katılın",
+      "desc": "En son haberler ve güncellemelerle bilgi sahibi olun. Bugün Substack topluluğumuza katılarak değerli içgörüler edinin!",
+      "cta-btn": "Abone Ol"
+    },
     "footer": {
       "about-me": {
         "summary": "Python, Next.js ve diğer web teknolojilerini kullanarak modern web uygulamaları ve zengin kullanıcı arayüzleri oluşturan bir yazılım geliştiricisiyim."

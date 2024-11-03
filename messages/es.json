@@ -66,6 +66,11 @@
       },
       "more-details": "Más detalles"
     },
+    "newsletter": {
+      "title": "Únase a nuestra comunidad",
+      "desc": "Manténgase informado con las últimas novedades y actualizaciones. ¡Obtenga información valiosa uniéndose hoy mismo a nuestra comunidad Substack!",
+      "cta-btn": "Subscribirme"
+    },
     "footer": {
       "about-me": {
         "summary": "Soy un desarrollador de software que crea aplicaciones web modernas e interfaces de usuario sofisticadas utilizando Python, Next.js y otras tecnologías web."
