@@ -142,7 +142,7 @@ const config: Config = {
             content3: '#f5f5f5',
             content4: '#e5e5e5',
             background: '#fafafa',
-            foreground: '#0a0a0a',
+            foreground: '#404040',
             primary: {
               50: '#ecfeff',
               100: '#cffafe',

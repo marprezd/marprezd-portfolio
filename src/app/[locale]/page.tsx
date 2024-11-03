@@ -28,7 +28,7 @@ const FeaturedPostsComponent = dynamic(
 
 export default function Home({ params: { locale } }: HomeProps) {
   return (
-    <main className="relative space-y-10 pb-20">
+    <main className="relative space-y-10">
       {/* Hero Section */}
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <HeroComponent />
