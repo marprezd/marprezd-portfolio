@@ -66,6 +66,12 @@
       },
       "more-details": "Más detalles"
     },
+    "website-stats": {
+      "title": "Estadísticas del sitio web",
+      "posts": "Publicaciones",
+      "courses": "Cursos",
+      "projects": "Proyectos"
+    },
     "newsletter": {
       "title": "Únase a nuestra comunidad",
       "desc": "Manténgase informado con las últimas novedades y actualizaciones. ¡Obtenga información valiosa uniéndose hoy mismo a nuestra comunidad Substack!",

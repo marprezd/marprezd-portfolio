@@ -66,6 +66,12 @@
       },
       "more-details": "Daha fazla ayrıntı"
     },
+    "website-stats": {
+      "title": "Web sitesi istatistikleri",
+      "posts": "Gönderiler",
+      "courses": "Kurslar",
+      "projects": "Projeler"
+    },
     "newsletter": {
       "title": "Topluluğumuza katılın",
       "desc": "En son haberler ve güncellemelerle bilgi sahibi olun. Bugün Substack topluluğumuza katılarak değerli içgörüler edinin!",

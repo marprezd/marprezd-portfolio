@@ -66,6 +66,12 @@
       },
       "more-details": "More details"
     },
+    "website-stats": {
+      "title": "Website stats",
+      "posts": "Posts",
+      "courses": "Courses",
+      "projects": "Projects"
+    },
     "newsletter": {
       "title": "Joining our community",
       "desc": "Stay informed with the latest news and updates. Gain valuable insights by joining our Substack community today!",
