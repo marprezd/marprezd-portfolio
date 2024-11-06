@@ -5,6 +5,10 @@
         "title": "Mario Perez | Python, Next.js & API Design",
         "description": "¡Explora mi sitio web! Adéntrate en mis proyectos y artículos sobre Python, Next.js y otras tecnologías para aprender a crear aplicaciones web increíbles.",
         "generator": "Mario Pérez | Personal Website"
+      },
+      "blog": {
+        "title": "Nuestra colección de artículos",
+        "description": "Explore varios temas de codificación como Java, Python, JavaScript, ML y API en nuestros diversos artículos."
       }
     },
     "under-construction": "Este sitio web está en construcción",
@@ -64,7 +68,8 @@
         "label": "Publicado en serie",
         "cta-btn": "Serie"
       },
-      "more-details": "Más detalles"
+      "more-details": "Más detalles",
+      "pagination": "Mostrando de {start, number} a {middle, number} de un total de {end, plural, =1 {1 resultado} other {# resultados}}"
     },
     "website-stats": {
       "title": "Estadísticas del sitio web",

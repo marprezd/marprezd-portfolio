@@ -5,6 +5,10 @@
         "title": "Mario Perez | Python, Next.js & API Design",
         "description": "Web sitemi keşfedin! Python, Next.js ve diğer teknolojiler hakkındaki projelerimi ve makalelerimi inceleyerek çarpıcı web uygulamaları oluşturmayı öğrenin.",
         "generator": "Mario Pérez | Personal Website"
+      },
+      "blog": {
+        "title": "Makale koleksiyonumuz",
+        "description": "Java, Python, JavaScript, ML ve API gibi çeşitli kodlama konularını çeşitli makalelerimizde keşfedin."
       }
     },
     "under-construction": "Bu web sitesi yapım aşamasındadır",
@@ -64,7 +68,8 @@
         "label": "Seri altında yayınlandı",
         "cta-btn": "Seri"
       },
-      "more-details": "Daha fazla ayrıntı"
+      "more-details": "Daha fazla ayrıntı",
+      "pagination": "Toplam {end, plural, =1 {1 sonuçtan} other {# sonuçtan}} {start, number} ila {middle, number} arası gösteriliyor"
     },
     "website-stats": {
       "title": "Web sitesi istatistikleri",
