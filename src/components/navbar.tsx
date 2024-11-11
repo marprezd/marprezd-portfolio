@@ -14,10 +14,10 @@ import { ScrollShadow } from '@nextui-org/scroll-shadow'
 import { IconApps, IconChalkboard, IconFile, IconHome, IconMenu, IconMessages, IconUser, IconUsers, IconX } from '@tabler/icons-react'
 import { useTranslations } from 'next-intl'
 import React from 'react'
-import Logo from './logo'
+import Avatar from './logo/avatar'
 import MegamenuLink from './megamenu-link'
-import Search from './search'
-import Sponsor from './sponsor'
+import SearchBox from './search/search-box'
+import SponsorButton from './sponsor/sponsor-button'
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false)
@@ -28,22 +28,24 @@ export default function Navbar() {
       isBlurred={false}
       position="sticky"
       maxWidth="xl"
-      className="bg-palettes-primary-95/70 backdrop-blur-lg dark:bg-palettes-primary-20/70"
+      className="bg-primary-100/70 backdrop-blur-lg"
       onMenuOpenChange={setIsMenuOpen}
       isMenuOpen={isMenuOpen}
+      isBordered
     >
       <NavbarContent>
-        <Logo />
+        <Avatar />
       </NavbarContent>
       <NavbarContent className="flex items-center justify-center" justify="center">
-        <Search />
+        <SearchBox />
       </NavbarContent>
       <NavbarContent justify="end" className="gap-4">
-        <Sponsor />
+        <SponsorButton />
         <NavbarItem>
           <NavbarMenuToggle
             aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
             icon={isMenuOpen ? <IconX /> : <IconMenu />}
+            className="animate-fade animate-delay-500 animate-duration-500 animate-once animate-ease-in"
           />
         </NavbarItem>
       </NavbarContent>

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
 import Footer from '@/components/footer'
-import Navbar from '@/components/navbar'
+import Header from '@/components/header'
 import Newsletter from '@/components/newsletter'
 import TopWaveSvg from '@/components/waves/top-wave-svg'
 import { server } from '@/lib/serverUrl'
@@ -192,7 +192,7 @@ export default async function LocaleLayout({
       >
         <Providers themeProps={{ attribute: 'class', defaultTheme: 'system', enableColorScheme: true, enableSystem: true, children }}>
           <NextIntlClientProvider messages={messages}>
-            <Navbar />
+            <Header />
             <div className="grow">
               <TopWaveSvg />
               {children}

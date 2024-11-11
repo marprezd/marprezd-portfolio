@@ -18,7 +18,7 @@ export default function MegamenuLink({
       aria-current={isActive ? 'page' : undefined}
       className={clsx(
         'flex gap-x-3 rounded-lg p-2 focus:bg-content2 focus:outline-none',
-        isActive ? 'bg-palettes-primary-90 text-palettes-primary-20' : 'text-default-700',
+        isActive ? 'bg-primary-100 text-primary-900' : 'text-default-700',
       )}
       href={href}
       {...rest}
