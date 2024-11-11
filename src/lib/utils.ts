@@ -109,3 +109,10 @@ export function humanize(content: string) {
       return m.toUpperCase()
     })
 }
+
+export function isArrayNotEmpty<T>(arr: T[] | undefined): arr is T[] {
+  if (Array.isArray(arr) && arr.length > 0)
+    return true
+
+  return false
+}
