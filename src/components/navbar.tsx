@@ -17,7 +17,6 @@ import React from 'react'
 import Avatar from './logo/avatar'
 import MegamenuLink from './megamenu-link'
 import SearchBox from './search/search-box'
-import SponsorButton from './sponsor/sponsor-button'
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false)
@@ -40,7 +39,6 @@ export default function Navbar() {
         <SearchBox />
       </NavbarContent>
       <NavbarContent justify="end" className="gap-4">
-        <SponsorButton />
         <NavbarItem>
           <NavbarMenuToggle
             aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
@@ -150,7 +148,7 @@ export default function Navbar() {
                         </span>
                         <Link
                           className="flex gap-x-3 rounded-lg p-2 text-default-700 focus:bg-content2 focus:outline-none"
-                          href="https://marprezd.substack.com/?r=3lz4aj&utm_campaign=pub-share-checklist"
+                          href="https://patreon.com/marprezd?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink"
                           isExternal
                           onClick={() => {
                             setIsMenuOpen(prev => !prev)
@@ -159,7 +157,7 @@ export default function Navbar() {
                           <IconUsers className="mt-0.5 size-4 shrink-0" />
                           <div className="grow">
                             <p className="text-sm">
-                              Substack
+                              Patreon
                             </p>
                           </div>
                         </Link>
