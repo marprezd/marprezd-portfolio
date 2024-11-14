@@ -85,7 +85,7 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ['var(--font-geist-sans)', ...defaultTheme.fontFamily.sans],
+        sans: ['var(--font-inter-variable)', ...defaultTheme.fontFamily.sans],
         mono: ['var(--font-geist-mono)', ...defaultTheme.fontFamily.mono],
       },
       typography: () => ({
@@ -174,7 +174,7 @@ const config: Config = {
               DEFAULT: '#b91c1c',
             },
             divider: 'rgba(17, 17, 17, 0.15)',
-            focus: '#006877',
+            focus: '#ef4444',
           },
         },
         dark: {
@@ -226,7 +226,7 @@ const config: Config = {
               DEFAULT: '#fecaca',
             },
             divider: 'rgba(255, 255, 255, 0.15)',
-            focus: '#00363E',
+            focus: '#f87171',
           },
         },
       },

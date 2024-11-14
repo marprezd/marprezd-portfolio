@@ -8,17 +8,18 @@ import { server } from '@/lib/serverUrl'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import clsx from 'clsx'
+import { Inter, Open_Sans } from 'next/font/google'
 import localFont from 'next/font/local'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, getTranslations, unstable_setRequestLocale } from 'next-intl/server'
 import { getLangDir } from 'rtl-detect'
 import { Providers } from './providers'
 
-const geistSans = localFont({
-  src: '../fonts/GeistVF.woff',
-  variable: '--font-geist-sans',
-  weight: '100 900',
+const inter = Inter({
+  display: 'swap',
+  variable: '--font-inter-variable',
 })
+
 const geistMono = localFont({
   src: '../fonts/GeistMonoVF.woff',
   variable: '--font-geist-mono',
@@ -186,7 +187,8 @@ export default async function LocaleLayout({
         className={clsx(
           'flex flex-col text-pretty bg-background font-sans font-normal text-foreground antialiased',
           'selection:bg-palettes-primary-90 selection:text-palettes-primary-50 dark:selection:bg-palettes-primary-50 dark:selection:text-palettes-primary-90',
-          geistSans.variable,
+          // openSans.variable,
+          inter.variable,
           geistMono.variable,
         )}
       >
