@@ -7,18 +7,17 @@ import React from 'react'
 export default function Hero() {
   const t = useTranslations('site')
   const githubUrl = 'https://www.github.com/marprezd'
-  const substackUrl = 'https://marprezd.substack.com/?r=3lz4aj&utm_campaign=pub-share-checklist'
 
   return (
     <div>
       <header className="flex justify-center">
-        {/* Link to my Substack profile */}
+        {/* Link to my Ebook resources page */}
         <Link
           isExternal
-          href={substackUrl}
+          href="/resources"
           className="inline-flex items-center gap-x-2 rounded-full border border-neutral-200 bg-white p-1 ps-3 text-sm text-neutral-800 transition hover:border-neutral-300 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-200 dark:hover:border-neutral-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-neutral-600"
         >
-          {t('hero.substack-profile')}
+          {t('hero.ebook-resources-badge')}
           <span className="inline-flex items-center justify-center gap-x-2 rounded-full bg-neutral-200 px-2.5 py-1.5 text-sm font-semibold text-neutral-600 dark:bg-neutral-700 dark:text-neutral-400">
             <svg
               className="size-4 shrink-0"
