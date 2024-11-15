@@ -129,7 +129,7 @@ export default async function TagPage({ searchParams, params: { locale, tag } }:
 
   return (
     <div>
-      <div className="container mx-auto max-w-6xl space-y-10 xl:space-y-12">
+      <div className="container mx-auto max-w-7xl space-y-10 px-2 py-10 md:py-20 xl:space-y-12">
         <section className="flex w-full">
           <PageHeroComponent
             title={t('posts.tags.seo.title', { tag: `'${title}'` })}
@@ -152,7 +152,7 @@ export default async function TagPage({ searchParams, params: { locale, tag } }:
             />
           </main>
           <aside className="basis-full lg:basis-3/12">
-            <Card className="border-1 border-default-300">
+            <Card className="border-1 border-gray-300 dark:border-gray-700">
               <CardHeader>
                 <h2 className="text-xl font-bold tracking-tight">
                   {t('posts.tags.label')}
