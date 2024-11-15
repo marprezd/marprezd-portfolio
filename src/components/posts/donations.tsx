@@ -2,7 +2,7 @@
 import { Avatar, AvatarGroup } from '@nextui-org/avatar'
 import { useTranslations } from 'next-intl'
 import React from 'react'
-import SponsorLargeButton from '../sponsor/sponsor-large-button'
+import PatreonButton from '../sponsor/patreon-button'
 
 export default function Donations() {
   const t = useTranslations('site')
@@ -39,7 +39,7 @@ export default function Donations() {
                   {t('posts.donations.desc')}
                 </p>
                 <div className="flex flex-wrap justify-center gap-6">
-                  <SponsorLargeButton
+                  <PatreonButton
                     clientID={PATREON_CLIENT_ID}
                     redirectUri="https://marprezd.vercel.app/thank-for-donating"
                     pledgeAmount={5}

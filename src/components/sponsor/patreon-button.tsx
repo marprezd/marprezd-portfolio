@@ -10,7 +10,7 @@ interface PatreonButtonProps {
   pledgeAmount: number
 }
 
-export default function SponsorLargeButton({
+export default function PatreonButton({
   clientID,
   redirectUri,
   pledgeAmount,
