@@ -14,7 +14,7 @@ export default function Tags() {
   const t = useTranslations('site')
 
   return (
-    <Card className="border-1 border-default-300 bg-white dark:bg-gray-900">
+    <Card className="border-1 border-gray-300 bg-white dark:border-gray-700 dark:bg-gray-900">
       <CardHeader>
         <h2 className="text-xl font-bold tracking-tight">
           {t('posts.tags.label')}

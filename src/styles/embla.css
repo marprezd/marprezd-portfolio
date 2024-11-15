@@ -1,0 +1,69 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+.embla {
+  @apply max-w-7xl m-auto;
+  --slide-height: 19rem;
+  --slide-spacing: 1rem;
+  --slide-size: 100%;
+  --slide-spacing-sm: 1.6rem;
+  --slide-size-sm: 50%;
+  --slide-spacing-lg: 1.5rem;
+  --slide-size-lg: calc(100% / 3);
+}
+.embla__viewport {
+  @apply overflow-hidden;
+}
+.embla__container {
+  @apply flex ml-[calc(var(--slide-spacing)_*_-1)];
+  backface-visibility: hidden;
+  touch-action: pan-y pinch-zoom;
+}
+@media (min-width: 750px) {
+  .embla__container {
+    @apply ml-[calc(var(--slide-spacing-sm)_*_-1)];
+  }
+}
+@media (min-width: 1200px) {
+  .embla__container {
+    @apply ml-[calc(var(--slide-spacing-lg)_*_-1)];
+  }
+}
+.embla__slide {
+  @apply min-w-0 flex-[0_0_var(--slide-size)] pl-[var(--slide-spacing)];
+}
+@media (min-width: 750px) {
+  .embla__slide {
+    @apply flex-[0_0_var(--slide-size-sm)] pl-[var(--slide-spacing-sm)];
+  }
+}
+@media (min-width: 1200px) {
+  .embla__slide {
+    @apply flex-[0_0_var(--slide-size-lg)] pl-[var(--slide-spacing-lg)];
+  }
+}
+.embla__controls {
+  @apply grid grid-cols-[auto_1fr] justify-between gap-[1.2rem] mt-[1.8rem];
+}
+.embla__buttons {
+  @apply grid grid-cols-[repeat(2,1fr)] gap-[0.6rem] items-center;
+}
+.embla__button {
+  @apply appearance-none bg-transparent touch-manipulation inline-flex no-underline cursor-pointer shadow-[inset_0_0_0_0.2rem_var(--detail-medium-contrast)] size-9 z-[1] text-[color:var(--nextui-foreground)] items-center justify-center m-0 p-0 rounded-[50%] border border-default-400 text-gray-600 disabled:text-gray-400;
+  -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
+}
+.embla__button__svg {
+  @apply w-[35%] h-[35%];
+}
+.embla__dots {
+  @apply flex flex-wrap justify-end space-x-2 items-center;
+}
+.embla__dot {
+  @apply appearance-none bg-transparent touch-manipulation inline-flex no-underline cursor-pointer size-4 items-center justify-center m-0 p-0 rounded-[50%] border border-default-400 after:shadow-[inset_0_0_0_0.2rem_var(--detail-medium-contrast)] after:w-[1.4rem] after:h-[1.4rem] after:flex after:items-center after:content-[''] after:rounded-[50%];
+  -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
+}
+.embla__dot--selected:after {
+  @apply shadow-[inset_0_0_0_0.2rem_var(--nextui-foreground)];
+}

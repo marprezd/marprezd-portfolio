@@ -43,7 +43,7 @@
       }
     },
     "hero": {
-      "substack-profile": "Perfil en Substack",
+      "ebook-resources-badge": "Recursos Ebook",
       "title": "<h1>Hola, <span>soy Mario</span>, bienvenido a mi sitio web personal.</h1>",
       "description": "Aprenda a crear aplicaciones web e interfaces de usuario con Python, ReactJS y otros lenguajes de programación modernos.",
       "started": "Empezar"
@@ -65,11 +65,75 @@
         "mins": "minutos de lectura"
       },
       "series": {
-        "label": "Publicado en serie",
+        "label": "Series",
+        "episodes": "Episodios",
+        "read-articles": "Leer otros artículos",
         "cta-btn": "Serie"
       },
       "more-details": "Más detalles",
-      "pagination": "Mostrando de {start, number} a {middle, number} de un total de {end, plural, =1 {1 resultado} other {# resultados}}"
+      "pagination": "Mostrando de {start, number} a {middle, number} de un total de {end, plural, =1 {1 resultado} other {# resultados}}",
+      "tags": {
+        "seo": {
+          "title": "Lista de artículos con la etiqueta {tag}",
+          "description": "Explore nuestras publicaciones de blog etiquetadas con {tag} para descubrir el contenido más nuevo que le interesa."
+        },
+        "label": "Nube de etiquetas"
+      },
+      "categories": {
+        "seo": {
+          "title": "Lista de artículos con la categoría {category}",
+          "description": "Explore nuestras publicaciones de blog en la categoría {category} para descubrir el contenido más reciente que le interesa."
+        },
+        "label": "Nube de categorías"
+      },
+      "available_in": "Leer en otros idiomas",
+      "save-to-read-later": "Guardar para leer más tarde",
+      "pocket": "Guardar en Pocket",
+      "next": "Publicación más reciente",
+      "prev": "Publicación más antigua",
+      "index": "Volver al índice",
+      "allPosts": "Todos los artículos",
+      "image": {
+        "credit": "Foto de {photographer} en {host}"
+      },
+      "readingTime": {
+        "label": "Tiempo estimado de lectura",
+        "mins": "minutos de lectura"
+      },
+      "toc": {
+        "label": "En esta página"
+      },
+      "words": "palabras",
+      "author": {
+        "label": "Acerca del autor",
+        "writer-by": "Por Mario P., ",
+        "role": "Desarrollador de software",
+        "summary": "<p>Mario Pérez es un <span>Desarrollador de Software</span> radicado en Colombia. A menudo escribe sobre la creación de aplicaciones web modernas con <span>Python</span>, <span>Next.js</span> y otras <span>tecnologías web</span>.</p>",
+        "cta": "Más detalles"
+      },
+      "added": "Añadido",
+      "updated": "Última actualización",
+      "comments": {
+        "title": "¡Apreciamos sus comentarios!",
+        "sub-title": "Por favor comparte tus comentarios con nosotros."
+      },
+      "load-comments": "Cargar comentarios",
+      "donations": {
+        "label": "Patrociname",
+        "title": "¿Te gustó el contenido de esta publicación?",
+        "desc": "Si es así, ¡agradecería enormemente tu apoyo! ¡Considera comprarme un café por solo $5 al mes para ayudar a que la creatividad siga fluyendo!",
+        "cta": "Conviértete en patrocinador"
+      },
+      "share": {
+        "label": "Compartir",
+        "description": "Compártelo en tus redes sociales y ayuda a que muchas personas se beneficien de él."
+      },
+      "related-posts": {
+        "title": "Publicaciones relacionadas",
+        "sub-title": "No olvides leer..."
+      },
+      "view": "vez leído",
+      "views": "veces leído"
     },
     "website-stats": {
       "title": "Estadísticas del sitio web",
@@ -79,8 +143,8 @@
     },
     "newsletter": {
       "title": "Únase a nuestra comunidad",
-      "desc": "Manténgase informado con las últimas novedades y actualizaciones. ¡Obtenga información valiosa uniéndose hoy mismo a nuestra comunidad Substack!",
-      "cta-btn": "Subscribirme"
+      "desc": "Manténgase informado con las últimas novedades y actualizaciones. ¡Obtenga información valiosa uniéndose hoy mismo a nuestra comunidad en Patreon!",
+      "cta-btn": "Comunidad en Patreon"
     },
     "footer": {
       "about-me": {

@@ -28,7 +28,7 @@ export default function PostCard({
   const updateDateTime = new Date(post.lastModified)
 
   return (
-    <Card shadow={shadow}>
+    <Card shadow={shadow} className="border-1 border-gray-300 dark:border-gray-700">
       <CardHeader className="flex items-center gap-x-4">
         {post.cover && (
           <div className="w-20 flex-none">
@@ -49,7 +49,7 @@ export default function PostCard({
           </div>
         )}
         <div className="grow">
-          <h3 className="line-clamp-2 text-xl font-semibold tracking-tighter text-default-800">
+          <h3 className="line-clamp-2 text-xl font-bold tracking-tighter text-default-800">
             {post.title}
           </h3>
           <p className="text-xs uppercase text-default-700">

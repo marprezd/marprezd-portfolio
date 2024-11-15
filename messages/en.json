@@ -43,7 +43,7 @@
       }
     },
     "hero": {
-      "substack-profile": "Substack profile",
+      "ebook-resources-badge": "E-book resourses",
       "title": "<h1>Hi, <span>I am Mario</span>, welcome to my personal website.</h1>",
       "description": "Learn to build web applications and user interfaces with Python, ReactJS, and other modern programming languages.",
       "started": "Get started"
@@ -65,7 +65,9 @@
         "mins": "mins read"
       },
       "series": {
-        "label": "Posted under serie",
+        "label": "Series",
+        "episodes": "Episodes",
+        "read-articles": "Read other articles",
         "cta-btn": "Serie"
       },
       "more-details": "More details",
@@ -85,7 +87,55 @@
           "description": "Browse our blog posts in the category {category} to discover the latest content that interests you."
         },
         "label": "Category cloud"
-      }
+      },
+      "available_in": "Read in other languages",
+      "save-to-read-later": "Save to read later",
+      "pocket": "Saved to Pocket",
+      "next": "Most recent post",
+      "prev": "Oldest post",
+      "index": "Back to the index",
+      "allPosts": "All posts",
+      "image": {
+        "credit": "Photo by {photographer} on {host}"
+      },
+      "readingTime": {
+        "label": "Estimated reading time",
+        "mins": "mins read"
+      },
+      "toc": {
+        "label": "On this page"
+      },
+      "words": "words",
+      "author": {
+        "label": "About the author",
+        "writer-by": "By Mario P., ",
+        "role": "Software Developer",
+        "summary": "<p>Mario Pérez is a <span>Software Developer</span> based in Colombia. He often writes about creating modern web apps with <span>Python</span>, <span>Next.js</span>, and other <span>web tech</span>.</p>",
+        "cta": "More details"
+      },
+      "added": "Added",
+      "updated": "Last updated",
+      "comments": {
+        "title": "We appreciate your feedback!",
+        "sub-title": "Please share your comments with us."
+      },
+      "load-comments": "Load comments",
+      "donations": {
+        "label": "Sponsor Me",
+        "title": "Did you enjoy the content of this post?",
+        "desc": "If so, I'd greatly appreciate your support! Consider buying me a coffee for just $5 a month to help keep the creativity flowing!",
+        "cta": "Become a patron"
+      },
+      "share": {
+        "label": "Share",
+        "description": "Help spread the word by sharing this post on your social networks and enabling more people to benefit!"
+      },
+      "related-posts": {
+        "title": "Related post",
+        "sub-title": "Don't forget to read..."
+      },
+      "view": "time read",
+      "views": "times read"
     },
     "website-stats": {
       "title": "Website stats",
@@ -95,8 +145,8 @@
     },
     "newsletter": {
       "title": "Joining our community",
-      "desc": "Stay informed with the latest news and updates. Gain valuable insights by joining our Substack community today!",
-      "cta-btn": "Subscribe"
+      "desc": "Stay informed with the latest news and updates. Gain valuable insights by joining our Patreon community today!",
+      "cta-btn": "Patreon community"
     },
     "footer": {
       "about-me": {

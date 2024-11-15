@@ -43,7 +43,7 @@
       }
     },
     "hero": {
-      "substack-profile": "Substack profili",
+      "ebook-resources-badge": "E-kitap kaynakları",
       "title": "<h1>Merhaba, <span>ben Mario</span>, kişisel web siteme hoş geldiniz.</h1>",
       "description": "Python, ReactJS ve diğer modern programlama dilleriyle web uygulamaları ve kullanıcı arayüzleri oluşturmayı öğrenin.",
       "started": "Başlayın"
@@ -65,11 +65,75 @@
         "mins": "dakika okumak"
       },
       "series": {
-        "label": "Seri altında yayınlandı",
+        "label": "Seri",
+        "episodes": "Bölümler",
+        "read-articles": "Diğer makaleleri okuyun",
         "cta-btn": "Seri"
       },
       "more-details": "Daha fazla ayrıntı",
-      "pagination": "Toplam {end, plural, =1 {1 sonuçtan} other {# sonuçtan}} {start, number} ila {middle, number} arası gösteriliyor"
+      "pagination": "Toplam {end, plural, =1 {1 sonuçtan} other {# sonuçtan}} {start, number} ila {middle, number} arası gösteriliyor",
+      "tags": {
+        "seo": {
+          "title": "{tag} etiketine sahip makalelerin listesi",
+          "description": "İlginizi çeken en yeni içerikleri keşfetmek için {tag} etiketiyle etiketlenen blog yazılarımıza göz atın."
+        },
+        "label": "Etiket bulutu"
+      },
+      "categories": {
+        "seo": {
+          "title": "{category} kategorisine ait makalelerin listesi",
+          "description": "İlginizi çeken en son içerikleri keşfetmek için {category} kategorisindeki blog yazılarımıza göz atın."
+        },
+        "label": "Kategori bulutu"
+      },
+      "available_in": "Diğer dillerde oku",
+      "save-to-read-later": "Daha sonra okumak için kaydet",
+      "pocket": "Pocket'a kaydedin",
+      "next": "En son gönderi",
+      "prev": "Daha eski gönderi",
+      "index": "Dizine geri dön",
+      "allPosts": "Tüm gönderiler",
+      "image": {
+        "credit": "Fotoğraf: {photographer}, {host}"
+      },
+      "readingTime": {
+        "label": "Tahmini okuma süresi",
+        "mins": "dakika okumak"
+      },
+      "toc": {
+        "label": "Bu sayfada"
+      },
+      "words": "kelimeler",
+      "author": {
+        "label": "Yazar hakkında",
+        "writer-by": "Mario P. tarafından, ",
+        "role": "Yazılım Geliştirici",
+        "summary": "<p>Mario Perez, Kolombiya merkezli bir <span>Yazılım Geliştiricisidir.</span> <span>Python</span>, <span>Next.js</span> ve diğer <span>web teknolojileriyle</span> modern web uygulamaları oluşturma hakkında sık sık yazıyor.</p>",
+        "cta": "Daha fazla ayrıntı"
+      },
+      "added": "Eklendi",
+      "updated": "Son güncelleme",
+      "comments": {
+        "title": "Geri bildiriminizi takdir ediyoruz!",
+        "sub-title": "Lütfen yorumlarınızı bizimle paylaşın."
+      },
+      "load-comments": "Yorumları yükle",
+      "donations": {
+        "label": "Bana Sponsor Ol",
+        "title": "Bu yazının içeriğini beğendiniz mi?",
+        "desc": "Eğer öyleyse, desteğinizi çok takdir ediyorum! Yaratıcılığımın devam etmesine yardımcı olmak için bana ayda sadece 5 dolara bir kahve almayı düşünün!",
+        "cta": "Sponsor ol"
+      },
+      "share": {
+        "label": "Paylaşmak",
+        "description": "Sosyal ağlarınızda paylaşın ve birçok kişinin bundan faydalanmasına yardımcı olun."
+      },
+      "related-posts": {
+        "title": "İlgili gönderiler",
+        "sub-title": "Okumayı unutmayın..."
+      },
+      "view": "kez okundu",
+      "views": "kez okundu"
     },
     "website-stats": {
       "title": "Web sitesi istatistikleri",
@@ -79,8 +143,8 @@
     },
     "newsletter": {
       "title": "Topluluğumuza katılın",
-      "desc": "En son haberler ve güncellemelerle bilgi sahibi olun. Bugün Substack topluluğumuza katılarak değerli içgörüler edinin!",
-      "cta-btn": "Abone Ol"
+      "desc": "En son haberler ve güncellemelerle bilgi sahibi olun. Bugün Patreon topluluğumuza katılarak değerli içgörüler edinin!",
+      "cta-btn": "Patreon topluluğumuza"
     },
     "footer": {
       "about-me": {
