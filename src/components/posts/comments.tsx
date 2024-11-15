@@ -28,12 +28,12 @@ export default function Comments({ eager = false }: GiscusProps) {
 
   return (
     <div>
-      <div className="flex flex-col items-center justify-center">
+      <div className="mx-auto flex max-w-4xl flex-col items-center justify-center">
         <h2 className="text-3xl font-light">
           {t('posts.comments.title')}
         </h2>
-        <p className="text-lg font-medium text-gray-600 dark:text-gray-300">{t('posts.comments.sub-title')}</p>
-        <div className="mt-6 grow" id="comment">
+        <p className="text-lg text-gray-600 dark:text-gray-300">{t('posts.comments.sub-title')}</p>
+        <div className="mt-6 w-full text-center" id="comment">
           <Head>
             {Object.values(themeMapping).map(theme => (
               <link
