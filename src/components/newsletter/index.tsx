@@ -14,7 +14,7 @@ const SubscriptionFormComponent = dynamic(
 
 export default function Index() {
   return (
-    <section className="mx-auto max-w-3xl px-2 pb-10 sm:px-0 md:pb-20">
+    <section className="mx-auto max-w-3xl px-2 py-10 sm:px-0 md:py-20">
       <SubscriptionFormComponent />
     </section>
   )
