@@ -18,6 +18,7 @@ import { Providers } from './providers'
 const inter = Inter({
   display: 'swap',
   variable: '--font-inter-variable',
+  subsets: ['latin'],
 })
 
 const geistMono = localFont({
