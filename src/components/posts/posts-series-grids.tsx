@@ -18,7 +18,7 @@ export default function PostSeriesGrids({
     },
   )
   return (
-    <div ref={ref} className={`my-10 grid grid-cols-1 gap-6 sm:grid-cols-2 ${inView ? 'animate-fade animate-delay-1000 animate-duration-1000 animate-once animate-ease-in' : 'opacity-0'}`}>
+    <div ref={ref} className={`grid grid-cols-1 gap-6 py-10 sm:grid-cols-2 ${inView ? 'animate-fade animate-delay-1000 animate-duration-1000 animate-once animate-ease-in' : 'opacity-0'}`}>
       {posts.slice(0, 4).map(post => (
         <article key={post.slugAsParams}>
           <PostCard post={post} shadow="md" />

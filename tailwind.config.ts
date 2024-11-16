@@ -116,6 +116,10 @@ const config: Config = {
           },
         },
       }),
+      backgroundImage: {
+        heroLight: 'url(\'https://res.cloudinary.com/dieoeaoiy/image/upload/v1731709287/marprez-dev/hero/squared-bg-element_liiclv.svg\')',
+        heroDark: 'url(\'https://res.cloudinary.com/dieoeaoiy/image/upload/v1731709273/marprez-dev/hero/squared-bg-element-dark_zglgmu.svg\')',
+      },
     },
   },
   plugins: [

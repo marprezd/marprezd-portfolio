@@ -128,14 +128,12 @@ export default async function categoryPage({ searchParams, params: { locale, cat
   )
 
   return (
-    <div>
+    <div className="before:z-1 relative overflow-hidden before:absolute before:start-1/2 before:top-0 before:size-full before:-translate-x-1/2 before:bg-heroLight before:bg-top before:bg-no-repeat dark:before:bg-heroDark">
+      <PageHeroComponent
+        title={t('posts.categories.seo.title', { category: `'${title}'` })}
+        description={t('posts.categories.seo.description', { category: `'${title}'` })}
+      />
       <div className="container mx-auto max-w-7xl space-y-10 px-2 py-10 md:py-20 xl:space-y-12">
-        <section className="flex w-full">
-          <PageHeroComponent
-            title={t('posts.categories.seo.title', { category: `'${title}'` })}
-            description={t('posts.categories.seo.description', { category: `'${title}'` })}
-          />
-        </section>
         <div className="flex flex-col gap-4 lg:flex-row">
           <main className="basis-full lg:basis-9/12">
             {displayPosts.length > 0
@@ -151,7 +149,7 @@ export default async function categoryPage({ searchParams, params: { locale, cat
               totalItems={totalPosts}
             />
           </main>
-          <aside className="basis-full lg:basis-3/12">
+          <aside className="basis-full py-10 lg:basis-3/12">
             <Card className="border-1 border-gray-300 dark:border-gray-700">
               <CardHeader>
                 <h2 className="text-xl font-bold tracking-tight">

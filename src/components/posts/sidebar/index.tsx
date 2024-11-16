@@ -4,7 +4,7 @@ import Tags from './tags'
 
 export default function Sidebar() {
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 py-10">
       <Categories />
       <Tags />
     </div>
