@@ -43,7 +43,7 @@
       }
     },
     "hero": {
-      "ebook-resources-badge": "E-kitap kaynakları",
+      "featured-books-badge": "Öne çıkan kitaplar",
       "title": "<h1>Merhaba, <span>ben Mario</span>, kişisel web siteme hoş geldiniz.</h1>",
       "description": "Python, ReactJS ve diğer modern programlama dilleriyle web uygulamaları ve kullanıcı arayüzleri oluşturmayı öğrenin.",
       "started": "Başlayın"
@@ -140,6 +140,12 @@
       "posts": "Gönderiler",
       "courses": "Kurslar",
       "projects": "Projeler"
+    },
+    "books": {
+      "title": "Öne çıkan kitaplar",
+      "description": "Bu kitaplar öğrenmeme büyük ölçüde yardımcı oldu. Umarım siz de bunları faydalı bulursunuz!",
+      "show-less": "Daha az göster",
+      "show-more": "Daha fazlasını göster"
     },
     "newsletter": {
       "title": "Topluluğumuza katılın",

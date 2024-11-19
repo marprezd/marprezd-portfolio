@@ -18,6 +18,7 @@ const config: Config = {
     './node_modules/@nextui-org/theme/dist/components/input.js',
     './node_modules/@nextui-org/theme/dist/components/kbd.js',
     './node_modules/@nextui-org/theme/dist/components/link.js',
+    './node_modules/@nextui-org/theme/dist/components/modal.js',
     './node_modules/@nextui-org/theme/dist/components/navbar.js',
     './node_modules/@nextui-org/theme/dist/components/pagination.js',
     './node_modules/@nextui-org/theme/dist/components/popover.js',

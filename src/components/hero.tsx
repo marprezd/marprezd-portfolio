@@ -1,8 +1,11 @@
+'use client'
+
 import { Link } from '@nextui-org/link'
 import { button as buttonStyles } from '@nextui-org/theme'
 import { IconArrowNarrowRight, IconBrandGithub } from '@tabler/icons-react'
 import { useTranslations } from 'next-intl'
 import React from 'react'
+import { animateScroll as scroll, Link as ScrollLink } from 'react-scroll'
 
 export default function Hero() {
   const t = useTranslations('site')
@@ -11,13 +14,14 @@ export default function Hero() {
   return (
     <div>
       <header className="flex justify-center">
-        {/* Link to my Ebook resources page */}
-        <Link
-          isExternal
-          href="/resources"
-          className="inline-flex items-center gap-x-2 rounded-full border border-neutral-200 bg-white p-1 ps-3 text-sm text-neutral-800 transition hover:border-neutral-300 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-200 dark:hover:border-neutral-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-neutral-600"
+        {/* Link to my featured books section */}
+        <ScrollLink
+          to="featured-books"
+          smooth
+          duration={500}
+          className="inline-flex cursor-pointer items-center gap-x-2 rounded-full border border-neutral-200 bg-white p-1 ps-3 text-sm text-neutral-800 transition hover:border-neutral-300 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-200 dark:hover:border-neutral-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-neutral-600"
         >
-          {t('hero.ebook-resources-badge')}
+          {t('hero.featured-books-badge')}
           <span className="inline-flex items-center justify-center gap-x-2 rounded-full bg-neutral-200 px-2.5 py-1.5 text-sm font-semibold text-neutral-600 dark:bg-neutral-700 dark:text-neutral-400">
             <svg
               className="size-4 shrink-0"
@@ -34,7 +38,7 @@ export default function Hero() {
               <path d="m9 18 6-6-6-6" />
             </svg>
           </span>
-        </Link>
+        </ScrollLink>
       </header>
       <div className="mx-auto mt-5 max-w-4xl space-y-4 text-center">
         {/* Title and description */}

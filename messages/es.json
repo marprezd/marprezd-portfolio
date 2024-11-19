@@ -43,7 +43,7 @@
       }
     },
     "hero": {
-      "ebook-resources-badge": "Recursos Ebook",
+      "featured-books-badge": "Libros destacados",
       "title": "<h1>Hola, <span>soy Mario</span>, bienvenido a mi sitio web personal.</h1>",
       "description": "Aprenda a crear aplicaciones web e interfaces de usuario con Python, ReactJS y otros lenguajes de programación modernos.",
       "started": "Empezar"
@@ -140,6 +140,12 @@
       "posts": "Publicaciones",
       "courses": "Cursos",
       "projects": "Proyectos"
+    },
+    "books": {
+      "title": "Libros destacados",
+      "description": "Estos libros me han ayudado mucho en mi aprendizaje. ¡Espero que a ti también te resulten útiles!",
+      "show-less": "Mostrar menos",
+      "show-more": "Mostrar más"
     },
     "newsletter": {
       "title": "Únase a nuestra comunidad",
