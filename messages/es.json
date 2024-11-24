@@ -147,6 +147,22 @@
       "show-less": "Mostrar menos",
       "show-more": "Mostrar más"
     },
+    "guest-book": {
+      "title": "¡Bienvenido a nuestro libro de visitas!",
+      "description": "Agrega tus reflexiones a nuestro libro de visitas: ¡tus aportes crean un espacio cálido y acogedor para todos!",
+      "user": {
+        "greeting": "¡Bienvenido {user}!",
+        "sign-in": "Inicia sesión con GitHub",
+        "sign-out": "Cerrar sesión",
+        "submit-msg": "¡Tu mensaje ha sido enviado! Gracias por firmar mi libro de visitas."
+      },
+      "not-msg-error": "El mensaje es obligatorio.",
+      "not-user-error": "Debes iniciar sesión para enviar un mensaje.",
+      "submit-msg-btn": {
+        "pending": "Recargar",
+        "send": "Enviar"
+      }
+    },
     "newsletter": {
       "title": "Únase a nuestra comunidad",
       "desc": "Manténgase informado con las últimas novedades y actualizaciones. ¡Obtenga información valiosa uniéndose hoy mismo a nuestra comunidad en Patreon!",

@@ -1,4 +1,6 @@
+import PageHero from '@/components/page-hero'
 import dynamic from 'next/dynamic'
+import { useTranslations } from 'next-intl'
 import React from 'react'
 
 function Loading() {
@@ -13,8 +15,14 @@ const GuestBookComponent = dynamic(
 )
 
 export default function GuestBook() {
+  const t = useTranslations('site')
+
   return (
-    <div className="flex items-center justify-center px-2 py-10">
+    <div className="before:z-1 relative overflow-hidden before:absolute before:start-1/2 before:top-0 before:size-full before:-translate-x-1/2 before:bg-heroLight before:bg-top before:bg-no-repeat dark:before:bg-heroDark">
+      <PageHero
+        title={t('guest-book.title')}
+        description={t('guest-book.description')}
+      />
       <GuestBookComponent />
     </div>
   )

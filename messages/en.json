@@ -149,6 +149,23 @@
       "show-less": "Show less",
       "show-more": "Show more"
     },
+    "guest-book": {
+      "title": "Welcome to our Guest Book!",
+      "description": "Add your reflections to our guest book—your input creates a warm, welcoming space for everyone!",
+      "user": {
+        "greeting": "Welcome {user}!",
+        "sign-in": "Sign in with GitHub",
+        "sign-out": "Sign Out",
+        "submit-msg": "Your message has been submitted! Thanks for signing my guestbook."
+      },
+      "textarea-placeholder": "Add your messages",
+      "not-msg-error": "Message is required.",
+      "not-user-error": "You must be signed in to submit a message.",
+      "submit-msg-btn": {
+        "pending": "Reload",
+        "send": "Send"
+      }
+    },
     "newsletter": {
       "title": "Joining our community",
       "desc": "Stay informed with the latest news and updates. Gain valuable insights by joining our Patreon community today!",

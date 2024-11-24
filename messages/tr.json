@@ -147,6 +147,22 @@
       "show-less": "Daha az göster",
       "show-more": "Daha fazlasını göster"
     },
+    "guest-book": {
+      "title": "Ziyaretçi Defterimize Hoş Geldiniz!",
+      "description": "Düşüncelerinizi misafir defterimize ekleyin - girdileriniz herkes için sıcak ve samimi bir alan yaratır!",
+      "user": {
+        "greeting": "Hoş geldin {user}!",
+        "sign-in": "GitHub ile oturum açın",
+        "sign-out": "Çıkış Yapın",
+        "submit-msg": "Mesajınız gönderildi! Ziyaretçi defterimi imzaladığınız için teşekkürler."
+      },
+      "not-msg-error": "Mesaj gereklidir.",
+      "not-user-error": "Bir mesaj göndermek için oturum açmış olmanız gerekir.",
+      "submit-msg-btn": {
+        "pending": "Yeniden yükle",
+        "send": "Göndermek"
+      }
+    },
     "newsletter": {
       "title": "Topluluğumuza katılın",
       "desc": "En son haberler ve güncellemelerle bilgi sahibi olun. Bugün Patreon topluluğumuza katılarak değerli içgörüler edinin!",
