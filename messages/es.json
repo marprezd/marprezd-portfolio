@@ -151,7 +151,7 @@
       "title": "¡Bienvenido a nuestro libro de visitas!",
       "description": "Agrega tus reflexiones a nuestro libro de visitas: ¡tus aportes crean un espacio cálido y acogedor para todos!",
       "user": {
-        "greeting": "¡Bienvenido {user}!",
+        "greeting": "¡Hola {user}!",
         "sign-in": "Inicia sesión con GitHub",
         "sign-out": "Cerrar sesión",
         "submit-msg": "¡Tu mensaje ha sido enviado! Gracias por firmar mi libro de visitas."

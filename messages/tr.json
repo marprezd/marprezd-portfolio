@@ -151,7 +151,7 @@
       "title": "Ziyaretçi Defterimize Hoş Geldiniz!",
       "description": "Düşüncelerinizi misafir defterimize ekleyin - girdileriniz herkes için sıcak ve samimi bir alan yaratır!",
       "user": {
-        "greeting": "Hoş geldin {user}!",
+        "greeting": "Merhaba {user}!",
         "sign-in": "GitHub ile oturum açın",
         "sign-out": "Çıkış Yapın",
         "submit-msg": "Mesajınız gönderildi! Ziyaretçi defterimi imzaladığınız için teşekkürler."

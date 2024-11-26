@@ -18,9 +18,8 @@ export default function SignOut() {
 
   return (
     <Button
-      color="primary"
+      color="secondary"
       onClick={signOut}
-      size="sm"
       variant="light"
     >
       {t('guest-book.user.sign-out')}
