@@ -9,12 +9,12 @@ export default function GuestbookForm() {
     <div>
       <form action={submitGuestbookMessage} className="mx-auto flex max-w-xl flex-col items-center justify-center">
         <Textarea
-          id="Message"
+          id="message"
           radius="lg"
           placeholder={t('guest-book.textarea-placeholder')}
           disableAnimation
           disableAutosize
-          aria-label="message"
+          name="message"
           variant="faded"
           classNames={{
             base: 'w-full',
