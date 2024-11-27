@@ -150,7 +150,7 @@
       "show-more": "Show more"
     },
     "guest-book": {
-      "title": "Welcome to our Guest Book!",
+      "title": "Our Guest Book!",
       "description": "Add your reflections to our guest book—your input creates a warm, welcoming space for everyone!",
       "user": {
         "greeting": "Hello {user}!",
@@ -158,11 +158,11 @@
         "sign-out": "Sign Out",
         "submit-msg": "Your message has been submitted! Thanks for signing my guestbook."
       },
-      "textarea-placeholder": "Add your messages",
+      "textarea-placeholder": "Add your message",
       "not-msg-error": "Message is required.",
       "not-user-error": "You must be signed in to submit a message.",
       "submit-msg-btn": {
-        "pending": "Reload",
+        "pending": "Wait a few seconds...",
         "send": "Send"
       }
     },

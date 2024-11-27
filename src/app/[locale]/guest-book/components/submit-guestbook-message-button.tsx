@@ -15,6 +15,7 @@ function SubmitGuestbookMessageButton() {
       variant="flat"
       disabled={pending}
       className="my-4"
+      type="submit"
     >
       {!pending
         ? (

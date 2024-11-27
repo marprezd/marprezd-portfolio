@@ -25,13 +25,13 @@ export default async function Main({
   if (!user) {
     return (
       <div>
-        <section className="container mx-auto max-w-5xl space-y-10 px-2 xl:space-y-12">
+        <section className="container mx-auto max-w-2xl space-y-10 px-2 xl:space-y-12">
           <div className="flex flex-col gap-2 animate-delay-500">
             <div className="flex flex-col items-center justify-center">
               <SignInWithGitHub />
             </div>
           </div>
-          <div className="animation-delay-600 animate-fade py-10 animate-duration-1000 animate-fill-both">
+          <div className="py-10">
             <Suspense fallback={<ParagraphSkeleton />}>
               <GuestbookList />
             </Suspense>
@@ -43,7 +43,7 @@ export default async function Main({
 
   return (
     <div>
-      <section className="container mx-auto max-w-2xl space-y-10 px-2 py-10 xl:space-y-12">
+      <section className="container mx-auto max-w-2xl space-y-10 px-2 xl:space-y-12">
         <Card className="grow">
           <CardHeader className="flex flex-col items-center justify-between lg:flex-row">
             <h2 className="text-xl font-light">
@@ -66,12 +66,10 @@ export default async function Main({
               : <GuestbookForm />}
           </CardBody>
         </Card>
-        <div className="flex items-center justify-center">
-          <div className="animation-delay-600 animate-fade animate-duration-1000 animate-fill-both">
-            <Suspense fallback={<ParagraphSkeleton />}>
-              <GuestbookList />
-            </Suspense>
-          </div>
+        <div className="py-10">
+          <Suspense fallback={<ParagraphSkeleton />}>
+            <GuestbookList />
+          </Suspense>
         </div>
       </section>
     </div>

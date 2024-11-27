@@ -12,25 +12,10 @@ export default function GuestbookForm() {
           id="message"
           radius="lg"
           placeholder={t('guest-book.textarea-placeholder')}
-          disableAnimation
           disableAutosize
           name="message"
           variant="faded"
-          classNames={{
-            base: 'w-full',
-          /*           input: [
-            'resize-y min-h-[40px]',
-            'bg-transparent',
-            'text-black dark:text-white',
-            'placeholder:text-default-800/50 dark:placeholder:text-cyan-50/50',
-          ],
-          innerWrapper: 'bg-transparent',
-          inputWrapper: [
-            'bg-white dark:bg-cyan-900',
-            'data-[hover=true]:bg-white/70 dark:data-[hover=true]:bg-cyan-900/70',
-            'group-data-[focus=true]:bg-default-100',
-          ], */
-          }}
+          minRows={4}
         />
         <SubmitGuestbookMessageButton />
       </form>

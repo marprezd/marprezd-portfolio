@@ -148,7 +148,7 @@
       "show-more": "Mostrar más"
     },
     "guest-book": {
-      "title": "¡Bienvenido a nuestro libro de visitas!",
+      "title": "¡Nuestro libro de visitas!",
       "description": "Agrega tus reflexiones a nuestro libro de visitas: ¡tus aportes crean un espacio cálido y acogedor para todos!",
       "user": {
         "greeting": "¡Hola {user}!",
@@ -156,10 +156,11 @@
         "sign-out": "Cerrar sesión",
         "submit-msg": "¡Tu mensaje ha sido enviado! Gracias por firmar mi libro de visitas."
       },
+      "textarea-placeholder": "Añade tu mensaje",
       "not-msg-error": "El mensaje es obligatorio.",
       "not-user-error": "Debes iniciar sesión para enviar un mensaje.",
       "submit-msg-btn": {
-        "pending": "Recargar",
+        "pending": "Espera unos segundos...",
         "send": "Enviar"
       }
     },

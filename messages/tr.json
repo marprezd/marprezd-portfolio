@@ -148,7 +148,7 @@
       "show-more": "Daha fazlasını göster"
     },
     "guest-book": {
-      "title": "Ziyaretçi Defterimize Hoş Geldiniz!",
+      "title": "Ziyaretçi Defterimize!",
       "description": "Düşüncelerinizi misafir defterimize ekleyin - girdileriniz herkes için sıcak ve samimi bir alan yaratır!",
       "user": {
         "greeting": "Merhaba {user}!",
@@ -156,10 +156,11 @@
         "sign-out": "Çıkış Yapın",
         "submit-msg": "Mesajınız gönderildi! Ziyaretçi defterimi imzaladığınız için teşekkürler."
       },
+      "textarea-placeholder": "Mesajınızı ekleyin",
       "not-msg-error": "Mesaj gereklidir.",
       "not-user-error": "Bir mesaj göndermek için oturum açmış olmanız gerekir.",
       "submit-msg-btn": {
-        "pending": "Yeniden yükle",
+        "pending": "Birkaç saniye bekleyin...",
         "send": "Göndermek"
       }
     },
