@@ -9,6 +9,11 @@
       "blog": {
         "title": "Makale koleksiyonumuz",
         "description": "Java, Python, JavaScript, ML ve API gibi çeşitli kodlama konularını çeşitli makalelerimizde keşfedin."
+      },
+      "about": {
+        "title": "Benim hakkımda",
+        "og-title": "Mario Pérez :: Benim hakkımda",
+        "description": "Python, Next.js ve diğer web teknolojilerini kullanarak modern web uygulamaları ve şık kullanıcı arayüzleri oluşturan bir yazılım geliştiricisiyim."
       }
     },
     "under-construction": "Bu web sitesi yapım aşamasındadır",
@@ -242,6 +247,79 @@
         }
       },
       "license": "<p>Tüm içerikler <span>MIT</span> ve <span>CC BY 4.0</span> isansları altında lisanslanmıştır.</p>"
+    },
+    "about-me": {
+      "experience": "yılların deneyimi",
+      "bio": "<p><span>Python</span>, <span>ReactJS</span> ve diğer <span>yazılım teknolojilerini</span> kullanarak uygulamalar ve kullanıcı arayüzleri oluşturma konusunda yetkin, kendi kendini yetiştirmiş bir yazılım geliştiricisiyim.</p>",
+      "technologies": {
+        "title": "Kullandığım teknolojiler"
+      },
+      "metrics": {
+        "title": "İş akışı ve ölçümler",
+        "description": "Programlama faaliyetlerimin ölçümlerine göz atın."
+      },
+      "charts": {
+        "global-code-average": {
+          "hr": "saat",
+          "min": "dakika"
+        },
+        "githubContributions": {
+          "title": "GitHub katkıları",
+          "subtitle": "Geçen yılki katkılar.",
+          "total-count": "{date}: {total, plural, =0 {0 katkı} =1 {1 katkı} other {# katkı}}"
+        },
+        "githubStats": {
+          "title": "GitHub etkinlikleri",
+          "subtitle": "Segmentlere göre faaliyetlere genel bakış.",
+          "stars": "Yıldızlar",
+          "commitments": "Taahhütler",
+          "prs": "Dilekçeler",
+          "issues": "Sorunlar",
+          "contributions": "katkılar",
+          "total-repos": "Projeler",
+          "total-followers": "Takipçiler"
+        },
+        "programming-languages": {
+          "title": "Programlama dilleri",
+          "subtitle": "En çok kullanılan programlama dilleri | dakikalar içinde.",
+          "hr": "sa",
+          "min": "dk"
+        },
+        "categories-tracking": {
+          "title": "Kategorilere göre metrikler",
+          "subtitle": "Her kategori için takip kaydı.",
+          "hr": "sa",
+          "min": "dk"
+        },
+        "best-days": {
+          "title": "En iyi kodlama günleri",
+          "subtitle": "Geçen haftanın en iyi kodlama günleri.",
+          "label": "Toplam"
+        },
+        "best-days-avgs": {
+          "cumulative-total": {
+            "title": "Birikimli toplam",
+            "desc": "Kodlama için harcanan toplam saatlerin özeti."
+          },
+          "difference-48hrs": {
+            "title": "Son 48 saat",
+            "desc": "Dakika farkları ve yüzde farkları.",
+            "min": "dk"
+          },
+          "daily-average": {
+            "title": "Günlük kodlama",
+            "desc": "Son 12 ayda kodlamaya harcanan ortalama saat."
+          }
+        }
+      },
+      "experiences": {
+        "title": "İş deneyimi",
+        "desc": "İş geçmişimi keşfedin."
+      },
+      "podcast": {
+        "title": "Son Podcast'ler",
+        "desc": "Son bölümleri dinleyin."
+      }
     }
   }
 }

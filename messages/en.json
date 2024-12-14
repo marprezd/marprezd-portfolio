@@ -9,6 +9,11 @@
       "blog": {
         "title": "Our collection of articles",
         "description": "Explore various coding topics such as Java, Python, JavaScript, ML, and API in our diverse articles."
+      },
+      "about": {
+        "title": "About me",
+        "og-title": "Mario Pérez | About me",
+        "description": "I am a software developer building modern web applications and slick user interfaces using Python, Next.js, and other web technologies."
       }
     },
     "under-construction": "This website is under construction",
@@ -244,6 +249,79 @@
         }
       },
       "license": "<p>All content is licensed under <span>MIT</span> and <span>CC BY 4.0</span> licenses.</p>"
+    },
+    "about-me": {
+      "experience": "years of experience",
+      "bio": "I am a self-taught software developer proficient in building applications and user interfaces.",
+      "technologies": {
+        "title": "Technologies I use"
+      },
+      "metrics": {
+        "title": "Workflow and metrics",
+        "description": "Check out the metrics of my programming activities."
+      },
+      "charts": {
+        "global-code-average": {
+          "hr": "hours",
+          "min": "minutes"
+        },
+        "githubContributions": {
+          "title": "GitHub contributions",
+          "subtitle": "Contributions in the last year.",
+          "total-count": "{date}: {total, plural, =0 {0 contribution} =1 {1 contribution} other {# contributions}}"
+        },
+        "githubStats": {
+          "title": "GitHub activities",
+          "subtitle": "Overview of activities by segment.",
+          "stars": "Stars",
+          "commitments": "Commitments",
+          "prs": "Requests",
+          "issues": "Issues",
+          "contributions": "Contributions",
+          "total-repos": "Repositories",
+          "total-followers": "Followers"
+        },
+        "programming-languages": {
+          "title": "Programming languages",
+          "subtitle": "Most used programming languages.",
+          "hr": "hr",
+          "min": "mins"
+        },
+        "categories-tracking": {
+          "title": "Metrics by categories",
+          "subtitle": "Tracking log for each category.",
+          "hr": "hr",
+          "min": "mins"
+        },
+        "best-days": {
+          "title": "Best coding days",
+          "subtitle": "Best coding days in the last week.",
+          "label": "Total"
+        },
+        "best-days-avgs": {
+          "cumulative-total": {
+            "title": "Cumulative total",
+            "desc": "Summary of total hours spent coding."
+          },
+          "difference-48hrs": {
+            "title": "Last 48 hours",
+            "desc": "Differences in minutes and percentage difference.",
+            "min": "mins"
+          },
+          "daily-average": {
+            "title": "Coding per day",
+            "desc": "Average hours spent coding in the last 12 months."
+          }
+        }
+      },
+      "experiences": {
+        "title": "Work experience",
+        "desc": "Explore my work history."
+      },
+      "podcast": {
+        "title": "Latest Podcasts",
+        "desc": "Listen to the recent episodes."
+      }
     }
   }
 }
