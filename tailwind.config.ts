@@ -1,9 +1,9 @@
 import type { Config } from 'tailwindcss'
 import { nextui } from '@nextui-org/theme'
 import typography from '@tailwindcss/typography'
+import tailwindAnimated from 'tailwindcss-animated'
 import colors from 'tailwindcss/colors'
 import defaultTheme from 'tailwindcss/defaultTheme'
-import tailwindAnimated from 'tailwindcss-animated'
 
 const config: Config = {
   darkMode: 'class',
@@ -11,9 +11,11 @@ const config: Config = {
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './node_modules/@nextui-org/theme/dist/components/accordion.js',
     './node_modules/@nextui-org/theme/dist/components/avatar.js',
     './node_modules/@nextui-org/theme/dist/components/card.js',
     './node_modules/@nextui-org/theme/dist/components/chip.js',
+    './node_modules/@nextui-org/theme/dist/components/divider.js',
     './node_modules/@nextui-org/theme/dist/components/dropdown.js',
     './node_modules/@nextui-org/theme/dist/components/input.js',
     './node_modules/@nextui-org/theme/dist/components/kbd.js',
@@ -22,6 +24,7 @@ const config: Config = {
     './node_modules/@nextui-org/theme/dist/components/navbar.js',
     './node_modules/@nextui-org/theme/dist/components/pagination.js',
     './node_modules/@nextui-org/theme/dist/components/popover.js',
+    './node_modules/@nextui-org/theme/dist/components/progress.js',
     './node_modules/@nextui-org/theme/dist/components/radio.js',
     './node_modules/@nextui-org/theme/dist/components/select.js',
     './node_modules/@nextui-org/theme/dist/components/scroll-shadow.js',
