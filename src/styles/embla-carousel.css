@@ -1,0 +1,84 @@
+.embla {
+    @apply max-w-[30rem] mx-auto;
+    --slide-height: 19rem;
+    --slide-spacing: 1rem;
+    --slide-size: 100%;
+    --slide-spacing-sm: 1.6rem;
+    --slide-size-sm: 50%;
+    --slide-spacing-lg: 1rem;
+    --slide-size-lg: calc(100% / 2);
+  }
+  .embla__viewport {
+    @apply overflow-hidden;
+  }
+  .embla__container {
+    @apply flex ml-[calc(var(--slide-spacing)_*_-1)];
+    touch-action: pan-y pinch-zoom;
+  }
+  @media (min-width: 750px) {
+    .embla__container {
+      @apply ml-[calc(var(--slide-spacing-sm)_*_-1)];
+    }
+  }
+  @media (min-width: 1200px) {
+    .embla__container {
+      @apply ml-[calc(var(--slide-spacing-lg)_*_-1)];
+    }
+  }
+  .embla__slide {
+    @apply flex-[0_0_var(--slide-size)] min-w-0 pl-[var(--slide-spacing)] py-2;
+    /* transform: translate3d(0, 0, 0); */
+  }
+  @media (min-width: 750px) {
+    .embla__slide {
+      @apply flex-[0_0_var(--slide-size-sm)] pl-[var(--slide-spacing-sm)];
+    }
+  }
+  @media (min-width: 1200px) {
+    .embla__slide {
+      @apply flex-[0_0_var(--slide-size-lg)] pl-[var(--slide-spacing-lg)];
+    }
+  }
+  .embla__controls {
+    @apply flex max-w-md mx-auto flex-row items-center justify-between gap-4 mt-2;
+  }
+  .embla__buttons {
+    @apply grid grid-cols-[repeat(2,1fr)] gap-[0.6rem] items-center;
+  }
+  .embla__button {
+    @apply appearance-none bg-transparent touch-manipulation inline-flex no-underline cursor-pointer shadow-[inset_0_0_0_0.2rem_var(--detail-medium-contrast)] w-9 h-9 z-[1] text-[color:var(--text-body)] items-center justify-center m-0 p-0 rounded-[50%] border-0 disabled:text-[color:var(--detail-high-contrast)];
+    -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
+  }
+  .embla__button__svg {
+    @apply w-[35%] h-[35%];
+  }
+  .embla__play {
+    @apply appearance-none bg-transparent touch-manipulation inline-flex no-underline cursor-pointer shadow-[inset_0_0_0_0.2rem_var(--detail-medium-contrast)] items-center justify-center justify-self-end text-[color:var(--text-body)] font-bold text-[1.4rem] min-w-[8.4rem] m-0 px-[2.4rem] p-0 rounded-[1.8rem] border-0;
+    -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
+  }
+  .embla__progress {
+    @apply shadow-[inset_0_0_0_0.2rem_var(--detail-medium-contrast)] bg-[color:var(--background-site)] relative h-[0.6rem] justify-self-end self-center w-52 max-w-[90%] overflow-hidden rounded-[1.8rem] transition-opacity duration-[0.3s] ease-[ease-in-out];
+  }
+  .embla__progress__bar {
+    @apply bg-gray-400 dark:bg-gray-300 absolute w-full -left-full inset-y-0;
+  }
+  .embla__progress--hidden {
+    @apply opacity-0;
+  }
+  .embla__progress__bar {
+    animation-name: autoplay-progress;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+  }
+  .embla__progress--hidden .embla__progress__bar {
+    animation-play-state: paused;
+  }
+  @keyframes autoplay-progress {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(100%, 0, 0);
+    }
+  }
+  
