@@ -1,10 +1,12 @@
+'use client'
+
 import dynamic from 'next/dynamic'
+import Image from 'next/image'
 import * as runtime from 'react/jsx-runtime'
 import Blockquote from './blockquote'
 import DangerCallout from './danger-callout'
 import InfoCallout from './info-callout'
 import MarkdownCodeTitles from './mdx-code-titles'
-import MarkdownImage from './mdx-image'
 import MarkdownLink from './mdx-link'
 import MarkdownPreCode from './mdx-pre-code'
 import MarkdownTable from './mdx-table'
@@ -16,7 +18,7 @@ const Mermaid = dynamic(() => import('./mermaid'), {
 })
 
 const sharedComponents = {
-  img: MarkdownImage,
+  img: Image,
   a: MarkdownLink,
   div: MarkdownCodeTitles as any,
   pre: MarkdownPreCode,
