@@ -1,0 +1,325 @@
+{
+  "site": {
+    "metadata": {
+      "homepage": {
+        "title": "Mario Perez | Python, Next.js & API Design",
+        "description": "¡Explora mi sitio web! Adéntrate en mis proyectos y artículos sobre Python, Next.js y otras tecnologías para aprender a crear aplicaciones web increíbles.",
+        "generator": "Mario Pérez | Personal Website"
+      },
+      "blog": {
+        "title": "Nuestra colección de artículos",
+        "description": "Explore varios temas de codificación como Java, Python, JavaScript, ML y API en nuestros diversos artículos."
+      },
+      "about": {
+        "title": "Acerca de mí",
+        "og-title": "Mario Pérez :: Acerca de mí",
+        "description": "Soy desarrollador de software y creo aplicaciones web modernas e interfaces de usuario ingeniosas con Python, Next.js y otras tecnologías web."
+      }
+    },
+    "under-construction": "Este sitio web está en construcción",
+    "header": {
+      "search": {
+        "placeholder": "Escribe para buscar..."
+      },
+      "navigation": {
+        "labels": {
+          "main-menu": "Menú principal",
+          "communities": "Comunidades",
+          "feedbacks": "Comentarios"
+        },
+        "home": "Home",
+        "blog": "Blog",
+        "projects": "Proyectos",
+        "courses": "Cursos",
+        "about-me": "Acerca de mi",
+        "guest-book": "Libro de visitas",
+        "hire-me": {
+          "label": "Hablemos de tu próximo proyecto",
+          "description": "¿Está buscando contratar a un desarrollador de software talentoso con experiencia en Python, API y ciencia de datos para su próximo proyecto? Hablemos sobre cómo podemos colaborar y lograr sus objetivos juntos."
+        },
+        "challenges": {
+          "label": "Desafíos de programación",
+          "description": "Desbloquea tu potencial de programación con nuestra colección de ejercicios de programación desafiantes. Perfecciona tus habilidades, prueba tus conocimientos y avanza en tu aprendizaje."
+        },
+        "more-details": "Más detalles"
+      },
+      "sponsor": {
+        "tooltip": "Patrociname"
+      }
+    },
+    "hero": {
+      "featured-books-badge": "Libros destacados",
+      "title": "<h1>Hola, <span>soy Mario</span>, bienvenido a mi sitio web personal.</h1>",
+      "description": "Aprenda a crear aplicaciones web e interfaces de usuario con Python, ReactJS y otros lenguajes de programación modernos.",
+      "started": "Empezar"
+    },
+    "posts": {
+      "callouts": {
+        "info": "Información",
+        "warning": "Advertencia",
+        "success": "Felicidades",
+        "danger": "Peligro"
+      },
+      "featured": {
+        "title": "Publicaciones destacadas",
+        "description": "Explora las últimas series de publicaciones.",
+        "cta": "Todas las publicaciones"
+      },
+      "reading-time": {
+        "label": "Tiempo estimado de lectura",
+        "mins": "minutos de lectura"
+      },
+      "series": {
+        "label": "Series",
+        "episodes": "Episodios",
+        "read-articles": "Leer otros artículos",
+        "cta-btn": "Serie"
+      },
+      "more-details": "Más detalles",
+      "pagination": "Mostrando de {start, number} a {middle, number} de un total de {end, plural, =1 {1 resultado} other {# resultados}}",
+      "tags": {
+        "seo": {
+          "title": "Lista de artículos con la etiqueta {tag}",
+          "description": "Explore nuestras publicaciones de blog etiquetadas con {tag} para descubrir el contenido más nuevo que le interesa."
+        },
+        "label": "Nube de etiquetas"
+      },
+      "categories": {
+        "seo": {
+          "title": "Lista de artículos con la categoría {category}",
+          "description": "Explore nuestras publicaciones de blog en la categoría {category} para descubrir el contenido más reciente que le interesa."
+        },
+        "label": "Nube de categorías"
+      },
+      "available_in": "Leer en otros idiomas",
+      "save-to-read-later": "Guardar para leer más tarde",
+      "pocket": "Guardar en Pocket",
+      "next": "Publicación más reciente",
+      "prev": "Publicación más antigua",
+      "index": "Volver al índice",
+      "allPosts": "Todos los artículos",
+      "image": {
+        "credit": "Foto de {photographer} en {host}"
+      },
+      "readingTime": {
+        "label": "Tiempo estimado de lectura",
+        "mins": "minutos de lectura"
+      },
+      "toc": {
+        "label": "En esta página"
+      },
+      "words": "palabras",
+      "author": {
+        "label": "Acerca del autor",
+        "writer-by": "Por Mario P., ",
+        "role": "Desarrollador de software",
+        "summary": "<p>Mario Pérez es un <span>Desarrollador de Software</span> radicado en Colombia. A menudo escribe sobre la creación de aplicaciones web modernas con <span>Python</span>, <span>Next.js</span> y otras <span>tecnologías web</span>.</p>",
+        "cta": "Más detalles"
+      },
+      "added": "Añadido",
+      "updated": "Última actualización",
+      "comments": {
+        "title": "¡Apreciamos sus comentarios!",
+        "sub-title": "Por favor comparte tus comentarios con nosotros."
+      },
+      "load-comments": "Cargar comentarios",
+      "donations": {
+        "label": "Patrociname",
+        "title": "¿Te gustó el contenido de esta publicación?",
+        "desc": "Si es así, ¡agradecería enormemente tu apoyo! ¡Considera comprarme un café por solo $5 al mes para ayudar a que la creatividad siga fluyendo!",
+        "cta": "Conviértete en patrocinador"
+      },
+      "share": {
+        "label": "Compartir",
+        "description": "Compártelo en tus redes sociales y ayuda a que muchas personas se beneficien de él."
+      },
+      "related-posts": {
+        "title": "Publicaciones relacionadas",
+        "sub-title": "No olvides leer..."
+      },
+      "view": "vez leído",
+      "views": "veces leído"
+    },
+    "website-stats": {
+      "title": "Estadísticas del sitio web",
+      "posts": "Publicaciones",
+      "courses": "Cursos",
+      "projects": "Proyectos"
+    },
+    "books": {
+      "title": "Libros destacados",
+      "description": "Estos libros me han ayudado mucho en mi aprendizaje. ¡Espero que a ti también te resulten útiles!",
+      "show-less": "Mostrar menos",
+      "show-more": "Mostrar más"
+    },
+    "guest-book": {
+      "title": "¡Nuestro libro de visitas!",
+      "description": "Agrega tus reflexiones a nuestro libro de visitas: ¡tus aportes crean un espacio cálido y acogedor para todos!",
+      "user": {
+        "greeting": "¡Hola {user}!",
+        "sign-in": "Inicia sesión con GitHub",
+        "sign-out": "Cerrar sesión",
+        "submit-msg": "¡Tu mensaje ha sido enviado! Gracias por firmar mi libro de visitas."
+      },
+      "textarea-placeholder": "Añade tu mensaje",
+      "not-msg-error": "El mensaje es obligatorio.",
+      "not-user-error": "Debes iniciar sesión para enviar un mensaje.",
+      "submit-msg-btn": {
+        "pending": "Espera unos segundos...",
+        "send": "Enviar"
+      }
+    },
+    "newsletter": {
+      "title": "Boletín de noticias",
+      "desc": "Suscríbete a nuestro newsletter para mantenerte informado sobre las últimas novedades. ¡Obtenga información valiosa y forme parte de nuestra comunidad!",
+      "cta-btn": "Subscribir"
+    },
+    "footer": {
+      "about-me": {
+        "summary": "Soy un desarrollador de software que crea aplicaciones web modernas e interfaces de usuario sofisticadas utilizando Python, Next.js y otras tecnologías web."
+      },
+      "useful-links": {
+        "label": "Enlaces útiles",
+        "links": {
+          "courses": "Cursos",
+          "guest-book": "Libro de visitas"
+        }
+      },
+      "settings": {
+        "label": "Ajustes",
+        "locale-switcher": {
+          "title": "Idioma de la interfaz",
+          "label": "Cambiar idioma",
+          "locale": "{locale, select, es {Español} en {English} tr {Türkçe} other {Unknown}}"
+        },
+        "theme-switcher": {
+          "title": "Tema de la interfaz",
+          "label": "Cambiar tema oscuro/claro",
+          "light-theme": "Tema Claro",
+          "dark-theme": "Tema Oscuro"
+        }
+      },
+      "contact-me": {
+        "label": "Contáctame",
+        "fields": {
+          "name": {
+            "label": "Nombre",
+            "placeholder": "Introduce tu nombre"
+          },
+          "email": {
+            "label": "Correo electrónico",
+            "placeholder": "Introduce tu correo electrónico"
+          },
+          "message": {
+            "label": "Mensaje",
+            "placeholder": "¿Cómo puedo ayudarte de la mejor manera posible?"
+          },
+          "send-form": {
+            "submit": "¡Sí, envíalo ahora!",
+            "is-submiting": "Enviando formulario..."
+          },
+          "validations": {
+            "name": {
+              "min": "Mínimo 5 caracteres",
+              "max": "Máximo 25 caracteres",
+              "required": "¡Obligatorio! Por favor, introduzca su nombre."
+            },
+            "email": {
+              "invalid": "Dirección de correo electrónico no válida",
+              "required": "¡Obligatorio! Por favor, introduzca una dirección de correo electrónico válida."
+            },
+            "message": {
+              "min": "Mínimo 160 caracteres",
+              "max": "Máximo 1000 caracteres",
+              "required": "¡Obligatorio! Por favor, introduzca su mensaje."
+            }
+          }
+        },
+        "alerts": {
+          "error": {
+            "title": "¡Error al enviar el formulario!",
+            "msg": "¡Error! {err}. Inténtalo de nuevo más tarde."
+          },
+          "sent": {
+            "title": "¡Formulario enviado exitosamente!",
+            "msg": "¡El mensaje ha sido enviado! ¡Gracias! Me pondré en contacto contigo pronto."
+          }
+        }
+      },
+      "license": "<p>Todo el contenido está bajo licencia <span>MIT</span> y <span>CC BY 4.0</span>.</p>"
+    },
+    "about-me": {
+      "experience": "años de experiencia",
+      "bio": "<p>Soy un desarrollador de software autodidacta competente en la creación de aplicaciones e interfaces de usuario.</p>",
+      "technologies": {
+        "title": "Tecnologías que uso"
+      },
+      "metrics": {
+        "title": "Flujo de trabajo y métricas",
+        "description": "Consulte las métricas de mis actividades de programación."
+      },
+      "charts": {
+        "global-code-average": {
+          "hr": "horas",
+          "min": "minutos"
+        },
+        "githubContributions": {
+          "title": "Contribuciones en GitHub",
+          "subtitle": "Contribuciones en el último año.",
+          "total-count": "{date}: {total, plural, =0 {0 contribucion} =1 {1 contribucion} other {# contribuciones}}"
+        },
+        "githubStats": {
+          "title": "Actividades de GitHub",
+          "subtitle": "Resumen de actividades por segmentos.",
+          "stars": "Estrellas",
+          "commitments": "Compromisos",
+          "prs": "Peticiones",
+          "issues": "Problemas",
+          "contributions": "Contribuciones",
+          "total-repos": "Repositorios",
+          "total-followers": "Seguidores"
+        },
+        "programming-languages": {
+          "title": "Lenguajes de programación",
+          "subtitle": "Lenguajes de programación más utilizados.",
+          "hr": "hr",
+          "min": "mins"
+        },
+        "categories-tracking": {
+          "title": "Métricas por categorías",
+          "subtitle": "Registro de seguimiento para cada categoría.",
+          "hr": "hr",
+          "min": "mins"
+        },
+        "best-days": {
+          "title": "Mejores días de codificación",
+          "subtitle": "Mejores días de codificación de la última semana.",
+          "label": "Total"
+        },
+        "best-days-avgs": {
+          "cumulative-total": {
+            "title": "Total acumulado",
+            "desc": "Resumen del total de horas dedicadas a la codificación."
+          },
+          "difference-48hrs": {
+            "title": "Últimas 48 horas",
+            "desc": "Diferencias en minutos y diferencia porcentual.",
+            "min": "mins"
+          },
+          "daily-average": {
+            "title": "Codificación por día",
+            "desc": "Promedio de horas dedicadas a la codificación en los últimos 12 meses."
+          }
+        }
+      },
+      "experiences": {
+        "title": "Experiencia laboral",
+        "desc": "Explora mi historial laboral."
+      },
+      "podcast": {
+        "title": "Últimos podcasts",
+        "desc": "Escuche los episodios recientes."
+      }
+    }
+  }
+}

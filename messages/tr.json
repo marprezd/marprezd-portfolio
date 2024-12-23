@@ -1,0 +1,325 @@
+{
+  "site": {
+    "metadata": {
+      "homepage": {
+        "title": "Mario Perez | Python, Next.js & API Design",
+        "description": "Web sitemi keşfedin! Python, Next.js ve diğer teknolojiler hakkındaki projelerimi ve makalelerimi inceleyerek çarpıcı web uygulamaları oluşturmayı öğrenin.",
+        "generator": "Mario Pérez | Personal Website"
+      },
+      "blog": {
+        "title": "Makale koleksiyonumuz",
+        "description": "Java, Python, JavaScript, ML ve API gibi çeşitli kodlama konularını çeşitli makalelerimizde keşfedin."
+      },
+      "about": {
+        "title": "Benim hakkımda",
+        "og-title": "Mario Pérez :: Benim hakkımda",
+        "description": "Python, Next.js ve diğer web teknolojilerini kullanarak modern web uygulamaları ve şık kullanıcı arayüzleri oluşturan bir yazılım geliştiricisiyim."
+      }
+    },
+    "under-construction": "Bu web sitesi yapım aşamasındadır",
+    "header": {
+      "search": {
+        "placeholder": "Aramak için yazın..."
+      },
+      "navigation": {
+        "labels": {
+          "main-menu": "Ana menü",
+          "communities": "Topluluklar",
+          "feedbacks": "Geri bildirimler"
+        },
+        "home": "Ana sayfa",
+        "blog": "Blog",
+        "projects": "Projeler",
+        "courses": "Dersler",
+        "about-me": "Benim Hakkında",
+        "guest-book": "Ziyaretçi defteri",
+        "hire-me": {
+          "label": "Bir sonraki projeniz hakkında konuşalım",
+          "description": "Bir sonraki projeniz için Python, API ve veri bilimi uzmanlığına sahip yetenekli bir yazılım geliştiricisi mi işe almak istiyorsunuz? Birlikte nasıl iş birliği yapabileceğimizi ve hedeflerinize nasıl birlikte ulaşabileceğimizi tartışalım."
+        },
+        "challenges": {
+          "label": "Programlama zorlukları",
+          "description": "Zorlu programlama alıştırmaları koleksiyonumuzla kodlama potansiyelinizi açığa çıkarın. Becerilerinizi geliştirin, bilginizi test edin ve öğreniminizi ilerletin."
+        },
+        "more-details": "Daha fazla ayrıntı"
+      },
+      "sponsor": {
+        "tooltip": "Bana sponsor ol"
+      }
+    },
+    "hero": {
+      "featured-books-badge": "Öne çıkan kitaplar",
+      "title": "<h1>Merhaba, <span>ben Mario</span>, kişisel web siteme hoş geldiniz.</h1>",
+      "description": "Python, ReactJS ve diğer modern programlama dilleriyle web uygulamaları ve kullanıcı arayüzleri oluşturmayı öğrenin.",
+      "started": "Başlayın"
+    },
+    "posts": {
+      "callouts": {
+        "info": "Bilgi",
+        "warning": "Uyarı",
+        "success": "Başarı",
+        "danger": "Tehlike"
+      },
+      "featured": {
+        "title": "Öne çıkan gönderiler",
+        "description": "Son gönderi serisine göz atın.",
+        "cta": "Tüm gönderiler"
+      },
+      "reading-time": {
+        "label": "Tahmini okuma süresi",
+        "mins": "dakika okumak"
+      },
+      "series": {
+        "label": "Seri",
+        "episodes": "Bölümler",
+        "read-articles": "Diğer makaleleri okuyun",
+        "cta-btn": "Seri"
+      },
+      "more-details": "Daha fazla ayrıntı",
+      "pagination": "Toplam {end, plural, =1 {1 sonuçtan} other {# sonuçtan}} {start, number} ila {middle, number} arası gösteriliyor",
+      "tags": {
+        "seo": {
+          "title": "{tag} etiketine sahip makalelerin listesi",
+          "description": "İlginizi çeken en yeni içerikleri keşfetmek için {tag} etiketiyle etiketlenen blog yazılarımıza göz atın."
+        },
+        "label": "Etiket bulutu"
+      },
+      "categories": {
+        "seo": {
+          "title": "{category} kategorisine ait makalelerin listesi",
+          "description": "İlginizi çeken en son içerikleri keşfetmek için {category} kategorisindeki blog yazılarımıza göz atın."
+        },
+        "label": "Kategori bulutu"
+      },
+      "available_in": "Diğer dillerde oku",
+      "save-to-read-later": "Daha sonra okumak için kaydet",
+      "pocket": "Pocket'a kaydedin",
+      "next": "En son gönderi",
+      "prev": "Daha eski gönderi",
+      "index": "Dizine geri dön",
+      "allPosts": "Tüm gönderiler",
+      "image": {
+        "credit": "Fotoğraf: {photographer}, {host}"
+      },
+      "readingTime": {
+        "label": "Tahmini okuma süresi",
+        "mins": "dakika okumak"
+      },
+      "toc": {
+        "label": "Bu sayfada"
+      },
+      "words": "kelimeler",
+      "author": {
+        "label": "Yazar hakkında",
+        "writer-by": "Mario P. tarafından, ",
+        "role": "Yazılım Geliştirici",
+        "summary": "<p>Mario Perez, Kolombiya merkezli bir <span>Yazılım Geliştiricisidir.</span> <span>Python</span>, <span>Next.js</span> ve diğer <span>web teknolojileriyle</span> modern web uygulamaları oluşturma hakkında sık sık yazıyor.</p>",
+        "cta": "Daha fazla ayrıntı"
+      },
+      "added": "Eklendi",
+      "updated": "Son güncelleme",
+      "comments": {
+        "title": "Geri bildiriminizi takdir ediyoruz!",
+        "sub-title": "Lütfen yorumlarınızı bizimle paylaşın."
+      },
+      "load-comments": "Yorumları yükle",
+      "donations": {
+        "label": "Bana Sponsor Ol",
+        "title": "Bu yazının içeriğini beğendiniz mi?",
+        "desc": "Eğer öyleyse, desteğinizi çok takdir ediyorum! Yaratıcılığımın devam etmesine yardımcı olmak için bana ayda sadece 5 dolara bir kahve almayı düşünün!",
+        "cta": "Sponsor ol"
+      },
+      "share": {
+        "label": "Paylaşmak",
+        "description": "Sosyal ağlarınızda paylaşın ve birçok kişinin bundan faydalanmasına yardımcı olun."
+      },
+      "related-posts": {
+        "title": "İlgili gönderiler",
+        "sub-title": "Okumayı unutmayın..."
+      },
+      "view": "kez okundu",
+      "views": "kez okundu"
+    },
+    "website-stats": {
+      "title": "Web sitesi istatistikleri",
+      "posts": "Gönderiler",
+      "courses": "Kurslar",
+      "projects": "Projeler"
+    },
+    "books": {
+      "title": "Öne çıkan kitaplar",
+      "description": "Bu kitaplar öğrenmeme büyük ölçüde yardımcı oldu. Umarım siz de bunları faydalı bulursunuz!",
+      "show-less": "Daha az göster",
+      "show-more": "Daha fazlasını göster"
+    },
+    "guest-book": {
+      "title": "Ziyaretçi Defterimize!",
+      "description": "Düşüncelerinizi misafir defterimize ekleyin - girdileriniz herkes için sıcak ve samimi bir alan yaratır!",
+      "user": {
+        "greeting": "Merhaba {user}!",
+        "sign-in": "GitHub ile oturum açın",
+        "sign-out": "Çıkış Yapın",
+        "submit-msg": "Mesajınız gönderildi! Ziyaretçi defterimi imzaladığınız için teşekkürler."
+      },
+      "textarea-placeholder": "Mesajınızı ekleyin",
+      "not-msg-error": "Mesaj gereklidir.",
+      "not-user-error": "Bir mesaj göndermek için oturum açmış olmanız gerekir.",
+      "submit-msg-btn": {
+        "pending": "Birkaç saniye bekleyin...",
+        "send": "Göndermek"
+      }
+    },
+    "newsletter": {
+      "title": "Haber Bültenleri",
+      "desc": "En son haberlerden haberdar olmak için bültenimize kaydolun. Değerli bilgiler edinin ve topluluğumuzun bir parçası olun!",
+      "cta-btn": "Abone"
+    },
+    "footer": {
+      "about-me": {
+        "summary": "Python, Next.js ve diğer web teknolojilerini kullanarak modern web uygulamaları ve zengin kullanıcı arayüzleri oluşturan bir yazılım geliştiricisiyim."
+      },
+      "useful-links": {
+        "label": "Yararlı bağlantılar",
+        "links": {
+          "courses": "Dersler",
+          "guest-book": "Ziyaretçi defteri"
+        }
+      },
+      "settings": {
+        "label": "Ayarlar",
+        "locale-switcher": {
+          "title": "Arayüz dili",
+          "label": "Arayüz dilini değiştir",
+          "locale": "{locale, select, es {Español} en {English} tr {Türkçe} other {Unknown}}"
+        },
+        "theme-switcher": {
+          "title": "Arayüz teması",
+          "label": "Koyu/açık tema değiştirme",
+          "light-theme": "Açık Tema",
+          "dark-theme": "Koyu Tema"
+        }
+      },
+      "contact-me": {
+        "label": "Bana ulaşın",
+        "fields": {
+          "name": {
+            "label": "Ad",
+            "placeholder": "Adınızı girin"
+          },
+          "email": {
+            "label": "E-posta",
+            "placeholder": "E-postanızı girin"
+          },
+          "message": {
+            "label": "Mesaj",
+            "placeholder": "Size mümkün olan en iyi şekilde nasıl yardımcı olabilirim?"
+          },
+          "send-form": {
+            "submit": "Evet, hemen gönder!",
+            "is-submiting": "Form gönderiliyor..."
+          },
+          "validations": {
+            "name": {
+              "min": "Minimum 5 karakter",
+              "max": "Maksimum 25 karakter",
+              "required": "Gerekli! Lütfen adınızı girin."
+            },
+            "email": {
+              "invalid": "Geçersiz e-posta adresi",
+              "required": "Gerekli! Lütfen geçerli bir e-posta adresi girin."
+            },
+            "message": {
+              "min": "Minimum 160 karakter",
+              "max": "Maksimum 1000 karakter",
+              "required": "Gerekli! Lütfen mesajınızı girin."
+            }
+          }
+        },
+        "alerts": {
+          "error": {
+            "title": "Form gönderilirken hata oluştu!",
+            "msg": "Hata! {err}. Lütfen daha sonra tekrar deneyin"
+          },
+          "sent": {
+            "title": "Form başarıyla gönderildi!",
+            "msg": "Mesaj gönderildi! Teşekkür ederim! Yakında sizinle iletişime geçeceğim."
+          }
+        }
+      },
+      "license": "<p>Tüm içerikler <span>MIT</span> ve <span>CC BY 4.0</span> isansları altında lisanslanmıştır.</p>"
+    },
+    "about-me": {
+      "experience": "yılların deneyimi",
+      "bio": "<p><span>Python</span>, <span>ReactJS</span> ve diğer <span>yazılım teknolojilerini</span> kullanarak uygulamalar ve kullanıcı arayüzleri oluşturma konusunda yetkin, kendi kendini yetiştirmiş bir yazılım geliştiricisiyim.</p>",
+      "technologies": {
+        "title": "Kullandığım teknolojiler"
+      },
+      "metrics": {
+        "title": "İş akışı ve ölçümler",
+        "description": "Programlama faaliyetlerimin ölçümlerine göz atın."
+      },
+      "charts": {
+        "global-code-average": {
+          "hr": "saat",
+          "min": "dakika"
+        },
+        "githubContributions": {
+          "title": "GitHub katkıları",
+          "subtitle": "Geçen yılki katkılar.",
+          "total-count": "{date}: {total, plural, =0 {0 katkı} =1 {1 katkı} other {# katkı}}"
+        },
+        "githubStats": {
+          "title": "GitHub etkinlikleri",
+          "subtitle": "Segmentlere göre faaliyetlere genel bakış.",
+          "stars": "Yıldızlar",
+          "commitments": "Taahhütler",
+          "prs": "Dilekçeler",
+          "issues": "Sorunlar",
+          "contributions": "katkılar",
+          "total-repos": "Projeler",
+          "total-followers": "Takipçiler"
+        },
+        "programming-languages": {
+          "title": "Programlama dilleri",
+          "subtitle": "En çok kullanılan programlama dilleri | dakikalar içinde.",
+          "hr": "sa",
+          "min": "dk"
+        },
+        "categories-tracking": {
+          "title": "Kategorilere göre metrikler",
+          "subtitle": "Her kategori için takip kaydı.",
+          "hr": "sa",
+          "min": "dk"
+        },
+        "best-days": {
+          "title": "En iyi kodlama günleri",
+          "subtitle": "Geçen haftanın en iyi kodlama günleri.",
+          "label": "Toplam"
+        },
+        "best-days-avgs": {
+          "cumulative-total": {
+            "title": "Birikimli toplam",
+            "desc": "Kodlama için harcanan toplam saatlerin özeti."
+          },
+          "difference-48hrs": {
+            "title": "Son 48 saat",
+            "desc": "Dakika farkları ve yüzde farkları.",
+            "min": "dk"
+          },
+          "daily-average": {
+            "title": "Günlük kodlama",
+            "desc": "Son 12 ayda kodlamaya harcanan ortalama saat."
+          }
+        }
+      },
+      "experiences": {
+        "title": "İş deneyimi",
+        "desc": "İş geçmişimi keşfedin."
+      },
+      "podcast": {
+        "title": "Son Podcast'ler",
+        "desc": "Son bölümleri dinleyin."
+      }
+    }
+  }
+}

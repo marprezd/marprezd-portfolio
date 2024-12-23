@@ -1,0 +1,93 @@
+---
+title: Formatear la salida en Java Parte 1
+language: es
+otherLanguages:
+  - locale:
+    code: en
+    name: English
+    path: tutorials
+    slug: formatting-output-in-java-part-1
+  - locale:
+    code: tr
+    name: Türkçe
+    path: ogreticiler
+    slug: java-bolum-1de-ciktiyi-bicimlendirme
+hasSeries: true
+series:
+  order: 1
+  title: "Formatear la salida en Java"
+cover:
+  image: marprez-dev/tutorials/java_g2wccv.jpg
+  author: Freepik
+  creditLink: https://www.freepik.com/free-vector/flat-cms-concept-illustrated_13560983.htm
+  hostName: Freepik
+date: 2024-07-09 09:24:24
+tags: ["format", "printf", "printstream"]
+categories: ["java", "series"]
+published: true
+---
+
+## Introducción
+
+Java proporciona algunos métodos incorporados en su librería estándar que son útiles para especificar cómo queremos mostrar la información en la consola o en la Interfaz Gráfica de Usuario.  Puede utilizar los métodos estándar `System.out.println()` y `System.out.print()` descritos en el siguiente fragmento de código para mostrar información al usuario final.
+
+
+```java
+public class PrintSomething {
+    public static void main(String[] args) {
+        short num1 = 65, num2 = 5, age = 34;
+        String name = "Tom";
+        System.out.println(num1 + " per " + num2 + " is " + num1 * num2);
+        System.out.println(num1 + " per " + num2 + " is " + num1 * num2);
+    }
+}
+```
+
+```plain
+Salida del programa:
+65 per 5 is 325
+Tom is 34 years!
+```
+
+¡Este enfoque funciona bien!
+
+
+```java
+public class FloatPointNumber {
+    public static void main(String[] args) {
+        double num1 = 14.5, num2 = 2.6;
+        // This line is a bad idea!
+        System.out.println(num1 + " / " + num2 + " = " + num1 / num2);
+    }
+}
+```
+
+```plain
+Salida del programa:
+14.5 / 2.6 = 5.576923076923077
+```
+
+Observa que la salida muestra un número sin redondear con muchos decimales. Es incómodo de leer. Afortunadamente, hay una forma elegante de resolver el problema.
+
+## Clase PrintStream
+
+Has estado utilizando los métodos `println()` e `print()` para mostrar la salida de un programa. Ambos son métodos de la clase **PrintStream**, que pertenece a un paquete llamado Java.io[^1] que contiene algunas clases relacionadas con la entrada y la salida. PrintStream[^2] también proporciona métodos, como `format()` y `printf()`, que son útiles para especificar cómo debe formatearse un valor. El método `format()` devuelve una referencia a la cadena formateada, por lo que debes definir una variable y almacenar el valor referenciado en ella. Entonces puede utilizar la variable dentro del programa. En cambio, `printf()` imprime la cadena formateada directamente en la consola. Dicho esto, aquí está la sintaxis que ambos comparten.
+
+```java
+System.out.printf(FormatString, ArgumentList);
+String.format(FormatString, ArgumentList);
+```
+<Blockquote>
+  Los métodos printf() y format() de la clase Java Printstream proporcionan control sobre cómo deben formatearse los valores.
+</Blockquote>
+
+Ambos métodos admiten dos argumentos. `FormatString` representa una cadena que incluye uno o más especificadores de formato con algún texto opcional. Es un marcador de posición para el segundo argumento y contiene instrucciones sobre cómo debe formatearse. `ArgumentList` se refiere a cualquiera de los tipos de datos soportados por Java. Puede incluir uno o varios de ellos.
+
+## Conclusión
+
+Hasta ahora, hemos revisado brevemente la clase PrintStream del lenguaje de programación Java. La clase PrintStream tiene dos métodos adicionales, `printf()` y `format()`. Ambos comparten argumentos similares con los que podemos especificar cómo dar formato a un valor. En el próximo post, aprenderemos sobre los *elementos del especificador de formato*, junto con sus significados.
+
+## Recursos
+
+[^1]: [Java.io class](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/package-summary.html).
+[^2]: [PrintStream class](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html)

@@ -1,0 +1,327 @@
+{
+  "site": {
+    "metadata": {
+      "homepage": {
+        "title": "Mario Perez | Python, Next.js & API Design",
+        "description": "Explore my website! Delve into my projects and articles on Python, Next.js, and other technologies to learn how to build stunning web apps.",
+        "generator": "Mario Pérez | Personal Website"
+      },
+      "blog": {
+        "title": "Our collection of articles",
+        "description": "Explore various coding topics such as Java, Python, JavaScript, ML, and API in our diverse articles."
+      },
+      "about": {
+        "title": "About me",
+        "og-title": "Mario Pérez | About me",
+        "description": "I am a software developer building modern web applications and slick user interfaces using Python, Next.js, and other web technologies."
+      }
+    },
+    "under-construction": "This website is under construction",
+    "header": {
+      "search": {
+        "placeholder": "Type to search..."
+      },
+      "navigation": {
+        "labels": {
+          "main-menu": "Main menu",
+          "communities": "Communities",
+          "feedbacks": "Feedbacks"
+        },
+        "home": "Home",
+        "blog": "Blog",
+        "projects": "Projects",
+        "courses": "Courses",
+        "about-me": "About me",
+        "guest-book": "Guest book",
+        "hire-me": {
+          "label": "Let's talk about your next project",
+          "description": "Are you looking to hire a talented software developer with Python, API and data science expertise for your next project? Let's discuss how we can collaborate and achieve your goals together."
+        },
+        "challenges": {
+          "label": "Programming challenges",
+          "description": "Unlock your coding potential with our collection of challenging programming exercises. Sharpen your skills, test your knowledge, and advance your learning."
+        },
+        "more-details": "More details"
+      },
+      "sponsor": {
+        "tooltip": "Sponsor me"
+      }
+    },
+    "hero": {
+      "featured-books-badge": "Featured books",
+      "title": "<h1>Hi, <span>I am Mario</span>, welcome to my personal website.</h1>",
+      "description": "Learn to build web applications and user interfaces with Python, ReactJS, and other modern programming languages.",
+      "started": "Get started"
+    },
+    "posts": {
+      "callouts": {
+        "info": "Info",
+        "warning": "Warning",
+        "success": "Success",
+        "danger": "Danger"
+      },
+      "featured": {
+        "title": "Featured posts",
+        "description": "Browse the latest series of posts.",
+        "cta": "All posts"
+      },
+      "reading-time": {
+        "label": "Estimated reading time",
+        "mins": "mins read"
+      },
+      "series": {
+        "label": "Series",
+        "episodes": "Episodes",
+        "read-articles": "Read other articles",
+        "cta-btn": "Serie"
+      },
+      "more-details": "More details",
+      "pagination": "Showing {start, number} to {middle, number} out of a total of {end, plural, =1 {1 result} other {# results}}",
+      "tags": {
+        "seo": {
+          "title": "List of articles tagged with {tag}",
+          "description": "Browse our blog posts tagged with {tag} to discover the newest content that interests you."
+        },
+        "hero-title": "<p>List of articles tagged with <span>{tag}</span></p>",
+        "hero-summary": "<p>Browse our blog posts tagged with <span>tag</span> to discover the newest content that interests you.</p>",
+        "label": "Tag cloud"
+      },
+      "categories": {
+        "seo": {
+          "title": "List of articles with the category {category}",
+          "description": "Browse our blog posts in the category {category} to discover the latest content that interests you."
+        },
+        "label": "Category cloud"
+      },
+      "available_in": "Read in other languages",
+      "save-to-read-later": "Save to read later",
+      "pocket": "Saved to Pocket",
+      "next": "Most recent post",
+      "prev": "Oldest post",
+      "index": "Back to the index",
+      "allPosts": "All posts",
+      "image": {
+        "credit": "Photo by {photographer} on {host}"
+      },
+      "readingTime": {
+        "label": "Estimated reading time",
+        "mins": "mins read"
+      },
+      "toc": {
+        "label": "On this page"
+      },
+      "words": "words",
+      "author": {
+        "label": "About the author",
+        "writer-by": "By Mario P., ",
+        "role": "Software Developer",
+        "summary": "<p>Mario Pérez is a <span>Software Developer</span> based in Colombia. He often writes about creating modern web apps with <span>Python</span>, <span>Next.js</span>, and other <span>web tech</span>.</p>",
+        "cta": "More details"
+      },
+      "added": "Added",
+      "updated": "Last updated",
+      "comments": {
+        "title": "We appreciate your feedback!",
+        "sub-title": "Please share your comments with us."
+      },
+      "load-comments": "Load comments",
+      "donations": {
+        "label": "Sponsor Me",
+        "title": "Did you enjoy the content of this post?",
+        "desc": "If so, I'd greatly appreciate your support! Consider buying me a coffee for just $5 a month to help keep the creativity flowing!",
+        "cta": "Become a patron"
+      },
+      "share": {
+        "label": "Share",
+        "description": "Help spread the word by sharing this post on your social networks and enabling more people to benefit!"
+      },
+      "related-posts": {
+        "title": "Related post",
+        "sub-title": "Don't forget to read..."
+      },
+      "view": "time read",
+      "views": "times read"
+    },
+    "website-stats": {
+      "title": "Website stats",
+      "posts": "Posts",
+      "courses": "Courses",
+      "projects": "Projects"
+    },
+    "books": {
+      "title": "Featured books",
+      "description": "These books have greatly aided my learning. I hope you find them useful too!",
+      "show-less": "Show less",
+      "show-more": "Show more"
+    },
+    "guest-book": {
+      "title": "Our Guest Book!",
+      "description": "Add your reflections to our guest book—your input creates a warm, welcoming space for everyone!",
+      "user": {
+        "greeting": "Hello {user}!",
+        "sign-in": "Sign in with GitHub",
+        "sign-out": "Sign Out",
+        "submit-msg": "Your message has been submitted! Thanks for signing my guestbook."
+      },
+      "textarea-placeholder": "Add your message",
+      "not-msg-error": "Message is required.",
+      "not-user-error": "You must be signed in to submit a message.",
+      "submit-msg-btn": {
+        "pending": "Wait a few seconds...",
+        "send": "Send"
+      }
+    },
+    "newsletter": {
+      "title": "Newsletters",
+      "desc": "Sign up for our newsletter to stay informed about the latest news. Gain valuable insights and become part of our community!",
+      "cta-btn": "Subscribe"
+    },
+    "footer": {
+      "about-me": {
+        "summary": "I am a software developer building modern web applications and slick user interfaces using Python, Next.js, and other web technologies."
+      },
+      "useful-links": {
+        "label": "Useful links",
+        "links": {
+          "courses": "Courses",
+          "guest-book": "Guest book"
+        }
+      },
+      "settings": {
+        "label": "Settings",
+        "locale-switcher": {
+          "title": "Interface language",
+          "label": "Change language",
+          "locale": "{locale, select, es {Español} en {English} tr {Türkçe} other {Unknown}}"
+        },
+        "theme-switcher": {
+          "title": "Interface theme",
+          "label": "Change dark/light theme",
+          "light-theme": "Light Theme",
+          "dark-theme": "Dark Theme"
+        }
+      },
+      "contact-me": {
+        "label": "Contact me",
+        "fields": {
+          "name": {
+            "label": "Name",
+            "placeholder": "Enter your name"
+          },
+          "email": {
+            "label": "Email",
+            "placeholder": "Enter your email"
+          },
+          "message": {
+            "label": "Message",
+            "placeholder": "How can I help you in the best way possible?"
+          },
+          "send-form": {
+            "submit": "Yes, send it now!",
+            "is-submiting": "Sending form..."
+          },
+          "validations": {
+            "name": {
+              "min": "Minimum 5 characters",
+              "max": "Maximum 25 characters",
+              "required": "Required! Please enter your name."
+            },
+            "email": {
+              "invalid": "Invalid email address",
+              "required": "Required! Please enter an email address valid."
+            },
+            "message": {
+              "min": "Minimum 160 characters",
+              "max": "Maximum 1000 characters",
+              "required": "Required! Please enter your message."
+            }
+          }
+        },
+        "alerts": {
+          "error": {
+            "title": "Error sending the form!",
+            "msg": "Error! {err}. Please try again later"
+          },
+          "sent": {
+            "title": "Form sent successfully!",
+            "msg": "The message has been sent! Thank you! I will be in touch with you soon."
+          }
+        }
+      },
+      "license": "<p>All content is licensed under <span>MIT</span> and <span>CC BY 4.0</span> licenses.</p>"
+    },
+    "about-me": {
+      "experience": "years of experience",
+      "bio": "I am a self-taught software developer proficient in building applications and user interfaces.",
+      "technologies": {
+        "title": "Technologies I use"
+      },
+      "metrics": {
+        "title": "Workflow and metrics",
+        "description": "Check out the metrics of my programming activities."
+      },
+      "charts": {
+        "global-code-average": {
+          "hr": "hours",
+          "min": "minutes"
+        },
+        "githubContributions": {
+          "title": "GitHub contributions",
+          "subtitle": "Contributions in the last year.",
+          "total-count": "{date}: {total, plural, =0 {0 contribution} =1 {1 contribution} other {# contributions}}"
+        },
+        "githubStats": {
+          "title": "GitHub activities",
+          "subtitle": "Overview of activities by segment.",
+          "stars": "Stars",
+          "commitments": "Commitments",
+          "prs": "Requests",
+          "issues": "Issues",
+          "contributions": "Contributions",
+          "total-repos": "Repositories",
+          "total-followers": "Followers"
+        },
+        "programming-languages": {
+          "title": "Programming languages",
+          "subtitle": "Most used programming languages.",
+          "hr": "hr",
+          "min": "mins"
+        },
+        "categories-tracking": {
+          "title": "Metrics by categories",
+          "subtitle": "Tracking log for each category.",
+          "hr": "hr",
+          "min": "mins"
+        },
+        "best-days": {
+          "title": "Best coding days",
+          "subtitle": "Best coding days in the last week.",
+          "label": "Total"
+        },
+        "best-days-avgs": {
+          "cumulative-total": {
+            "title": "Cumulative total",
+            "desc": "Summary of total hours spent coding."
+          },
+          "difference-48hrs": {
+            "title": "Last 48 hours",
+            "desc": "Differences in minutes and percentage difference.",
+            "min": "mins"
+          },
+          "daily-average": {
+            "title": "Coding per day",
+            "desc": "Average hours spent coding in the last 12 months."
+          }
+        }
+      },
+      "experiences": {
+        "title": "Work experience",
+        "desc": "Explore my work history."
+      },
+      "podcast": {
+        "title": "Latest Podcasts",
+        "desc": "Listen to the recent episodes."
+      }
+    }
+  }
+}

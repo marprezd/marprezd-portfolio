@@ -1,0 +1,91 @@
+---
+title: Java Bölüm 1'de Çıktıyı Biçimlendirme
+language: tr
+otherLanguages:
+  - locale:
+    code: es
+    name: Español
+    path: tutoriales
+    slug: formatear-la-salida-en-java-parte-1
+  - locale:
+    code: en
+    name: English
+    path: tutorials
+    slug: formatting-output-in-java-part-1
+hasSeries: true
+series:
+  order: 1
+  title: "Java'da Çıktıyı Biçimlendirme"
+cover:
+  image: marprez-dev/tutorials/java_g2wccv.jpg
+  author: Freepik
+  creditLink: https://www.freepik.com/free-vector/flat-cms-concept-illustrated_13560983.htm
+  hostName: Freepik
+date: 2024-07-09 09:24:24
+tags: ["format", "printf", "printstream"]
+categories: ["java", "series"]
+published: true
+---
+
+## Giriş
+
+Java, standart kütüphanesinde, bilgileri konsolda veya Kullanıcı Grafik Arayüzünde nasıl görüntülemek istediğimizi belirtmek için yararlı olan bazı yerleşik yöntemler sağlar.  Son kullanıcıya bilgi görüntülemek için aşağıdaki kod parçasında açıklanan `System.out.println()` ve `System.out.print()` standart yöntemlerini kullanabilirsiniz.
+
+
+```java
+public class PrintSomething {
+    public static void main(String[] args) {
+        short num1 = 65, num2 = 5, age = 34;
+        String name = "Tom";
+        System.out.println(num1 + " per " + num2 + " is " + num1 * num2);
+        System.out.println(num1 + " per " + num2 + " is " + num1 * num2);
+    }
+}
+```
+
+```plain
+Program Çıktısı:
+65 per 5 is 325
+Tom is 34 years!
+```
+
+Bu yaklaşım iyi çalışıyor!
+
+```java
+public class FloatPointNumber {
+    public static void main(String[] args) {
+        double num1 = 14.5, num2 = 2.6;
+        // This line is a bad idea!
+        System.out.println(num1 + " / " + num2 + " = " + num1 / num2);
+    }
+}
+```
+
+```plain
+Program Çıktısı:
+14.5 / 2.6 = 5.576923076923077
+```
+Çıktının birçok ondalık basamağı olan yuvarlanmamış bir sayı gösterdiğine dikkat edin. Okuması zor. Neyse ki, sorunu çözmenin zarif bir yolu var.
+
+## PrintStream sınıfı
+
+Bir programın çıktısını görüntülemek için `println()` ve `print()` yöntemlerini kullanıyorsunuz. Her ikisi de girdi ve çıktı ile ilgili bazı Sınıfları içeren Java.io[^1] adlı bir pakete ait olan **PrintStream** sınıfının yöntemleridir. PrintStream[^2] ayrıca, bir değerin nasıl biçimlendirileceğini belirtmek için yararlı olan `format()` ve `printf()` gibi yöntemler de sağlar. `format()` biçimlendirilmiş dizeye bir başvuru döndürür, bu nedenle bir değişken tanımlamalı ve başvurulan değeri içinde saklamalısınız. Daha sonra değişkeni program içinde kullanabilirsiniz. Bunun yerine, `printf()` biçimlendirilmiş dizeyi doğrudan konsola yazdırır. Bununla birlikte, burada her ikisinin de paylaştığı sözdizimi bulunmaktadır.
+
+```java
+System.out.printf(FormatString, ArgumentList);
+String.format(FormatString, ArgumentList);
+```
+<Blockquote>
+  Java Printstream sınıfının printf() ve format() yöntemleri, değerlerin nasıl biçimlendirileceği üzerinde kontrol sağlar.
+</Blockquote>
+
+Her iki yöntem de iki bağımsız değişken kabul eder. `FormatString`, isteğe bağlı bazı metinlerle birlikte bir veya daha fazla biçim belirticisi içeren bir dizeyi temsil eder. İkinci bağımsız değişken için bir yer tutucudur ve nasıl biçimlendirilmesi gerektiğine ilişkin talimatlar içerir. ArgumentList` Java tarafından desteklenen veri türlerinden herhangi birini ifade eder. Bunlardan birini veya daha fazlasını ekleyebilirsiniz.
+
+## Sonuç
+
+Şimdiye kadar Java programlama dilinin PrintStream sınıfını kısaca inceledik. PrintStream sınıfının iki ek yöntemi vardır: `printf()` ve `format()`. Her ikisi de bir değeri nasıl biçimlendireceğimizi belirtebileceğimiz benzer argümanları paylaşır. Bir sonraki yazıda, biçim belirleyicisinin *elemanları* ve bunların anlamları hakkında bilgi edineceğiz.
+
+## Kaynaklar
+
+[^1]: [Java.io class](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/package-summary.html)
+[^2]: [PrintStream class](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html)

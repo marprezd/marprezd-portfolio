@@ -1,0 +1,294 @@
+/*
+* Tailwind generates prose classes that has specificity of (0,1,0), element-only
+* selectors aren't enough to overwrite them, so we add `.prose` class
+*/
+:root {
+  --pre-code-line-highlight-border-width: 3px;
+}
+
+/* Colors */
+:root {
+  /* light mode colors */
+  --color-primitive-gray-100-rgb: theme(colors.gray.50);
+  /* markdown colors */
+  --color-body: theme(colors.gray.700);
+  --color-borders: theme(colors.gray.300);
+  --color-headings: theme(colors.gray.900);
+  --color-lead: theme(colors.gray.600);
+  --color-link-inactive: theme(colors.gray.500);
+  --color-links: theme(colors.cyan.700);
+  --color-bold: theme(colors.gray.900);
+  --color-counters: theme(colors.gray.500);
+  --color-bullets: theme(colors.gray.300);
+  --color-hr: theme(colors.gray.200);
+  --color-quotes: theme(colors.gray.600);
+  --color-quote-borders: theme(colors.gray.300);
+  --color-captions: var(--color-quotes);
+  --color-td-borders: var(--color-borders);
+  --color-th-bg: theme(colors.gray.200);
+  --color-th-borders: var(--color-borders);
+  --color-toc-button-bg: theme(colors.gray.100);
+
+  /* code blocks */
+  --color-code-bg: theme(colors.gray.200);
+  --color-code-fg: theme(colors.gray.950);
+  --color-pre-code-borders: var(--color-borders);
+  --color-pre-code-title-bg: var(--color-th-bg);
+  --color-pre-code-title-fg: theme(colors.gray.950);
+  --color-pre-code-highlighted-chars: theme(colors.gray.300/80%);
+  --color-pre-code-line-highlight: theme(colors.amber.100/50%);
+  --color-pre-code-line-highlight-border: theme(colors.amber.300);
+}
+
+.dark {
+  /* dark mode colors */
+  --color-primitive-gray-100-rgb: theme(colors.gray.900);
+  /* markdown colors */
+  --color-body: theme(colors.gray.300);
+  --color-borders: theme(colors.gray.700);
+  --color-headings: theme(colors.gray.50);
+  --color-lead: theme(colors.gray.400);
+  --color-link-inactive: theme(colors.gray.500);
+  --color-links: theme(colors.cyan.300);
+  --color-bold: theme(colors.gray.100);
+  --color-counters: theme(colors.gray.400);
+  --color-bullets: theme(colors.gray.600);
+  --color-hr: theme(colors.gray.700);
+  --color-quotes: var(--color-text-secondary);
+  --color-quote-borders: theme(colors.gray.700);
+  --color-captions: var(--color-quotes);
+  --color-th-bg: theme(colors.gray.900);
+  --color-th-borders: var(--color-borders);
+  --color-td-borders: var(--color-borders);
+  --color-toc-button-bg: theme(colors.gray.700);
+
+  /* code blocks */
+  --color-code-bg: theme(colors.gray.800);
+  --color-code-fg: theme(colors.gray.100);
+  --color-pre-code-borders: var(--color-borders);
+  --color-pre-code-title-bg: var(--color-th-bg);
+  --color-pre-code-title-fg: theme(colors.gray.200);
+  --color-pre-code-highlighted-chars: theme(colors.gray.500/50%);
+  --color-pre-code-line-highlight: theme(colors.amber.500/10%);
+  --color-pre-code-line-highlight-border: theme(colors.amber.600/50%);
+}
+
+.prose {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    &:target {
+      @apply scroll-mt-24;
+    }
+
+    &:hover .anchor-link {
+      @apply opacity-100;
+    }
+  }
+
+  a {
+    @apply no-underline;
+    &:hover {
+      @apply underline underline-offset-[0.5ex];
+    }
+  }
+
+  img {
+    @apply rounded-xl shadow-lg;
+  }
+
+  figure > figcaption {
+    @apply text-center italic font-medium text-[--color-quotes];
+  }
+
+  table {
+    @apply my-0;
+  }
+
+  thead {
+    @apply bg-[--color-th-bg];
+  }
+
+  thead th,
+  tbody td {
+    @apply p-4 md:px-6;
+  }
+
+  /* Anchor | rehypeAutolinkHeadings style */
+  .subheading-anchor {
+    @apply no-underline hover:underline;
+  }
+  .anchor-link {
+    @apply ml-2 text-[--color-link-inactive];
+    @apply transition-[opacity,color] duration-100;
+    @apply opacity-0 focus-visible:opacity-100;
+    &:hover {
+      @apply no-underline text-cyan-800;
+    }
+    .icon-link::before {
+      @apply content-['#'];
+    }
+  }
+
+  /* Custom style: code block */
+  .copy-btn {
+    @apply absolute top-2 right-2 p-1.5;
+    @apply flex-shrink-0 opacity-0 py-2 px-3 flex justify-center items-center gap-2 text-sm font-semibold rounded-xl border border-transparent text-cyan-700 hover:bg-gray-100 dark:hover:bg-gray-950 dark:text-cyan-600 dark:hover:text-cyan-700;
+    @apply transition-[opacity,transform];
+    @apply active:scale-90 focus-visible:opacity-100;
+  }
+
+  pre:hover .copy-btn {
+    @apply opacity-80;
+  }
+
+  pre:hover .copy-btn:hover {
+    @apply opacity-100;
+  }
+
+  :not(pre) > code {
+    @apply bg-[--color-code-bg] rounded-md;
+    @apply py-[0.25em] px-[0.45em];
+    @apply before:content-[''] after:content-[''];
+  }
+
+  :not(pre, a[href]) > code {
+    @apply text-[--color-code-fg];
+  }
+
+  pre {
+    @apply p-0;
+  }
+
+  pre > code:not([data-language]) {
+    @apply pl-4;
+  }
+
+  figure > pre > code {
+    @apply grid overflow-x-auto py-4 [&::-webkit-scrollbar]:h-2 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100
+    [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-gray-700 dark:[&::-webkit-scrollbar-thumb]:bg-gray-500;
+    @apply border border-[--color-pre-code-borders] rounded-md;
+    > [data-line] {
+      @apply px-4 border-l-[length:--pre-code-line-highlight-border-width] border-l-transparent;
+    }
+
+    > [data-highlighted-line] {
+      @apply border-l-[--color-pre-code-line-highlight-border];
+      @apply bg-[--color-pre-code-line-highlight] !important;
+    }
+  }
+
+  figure > pre > code[data-line-numbers] {
+    --_counter-width: 1ch;
+    counter-reset: line;
+
+    > [data-line]::before {
+      counter-increment: line;
+      content: counter(line);
+      @apply inline-block w-[--_counter-width] mr-4 text-right text-inherit;
+    }
+
+    &[data-line-numbers-max-digits='2'] {
+      --_counter-width: 2ch;
+    }
+
+    &[data-line-numbers-max-digits='3'] {
+      --_counter-width: 3ch;
+    }
+
+    &[data-line-numbers-max-digits='4'] {
+      --_counter-width: 4ch;
+    }
+  }
+
+  /* Rehype Pretty Code */
+  [data-rehype-pretty-code-title] {
+    @apply text-[--color-pre-code-title-fg] bg-[--color-pre-code-title-bg];
+    @apply border-t border-x border-[--color-pre-code-borders] rounded-t-md;
+    @apply px-4 py-2;
+
+    + pre {
+      @apply mt-0 rounded-t-none;
+    }
+  }
+
+  [data-rehype-pretty-code-caption] {
+    @apply text-center italic font-medium text-sm text-[--color-captions] mt-3;
+  }
+
+  [data-rehype-pretty-code-figure] pre {
+    @apply px-0;
+  }
+  [data-rehype-pretty-code-figure] code {
+    @apply text-sm md:text-base p-1;
+  }
+  [data-rehype-pretty-code-figure] code[data-line-numbers] {
+    counter-reset: line;
+  }
+  [data-rehype-pretty-code-figure] code[data-line-numbers] > [data-line]::before {
+    counter-increment: line;
+    content: counter(line);
+    @apply mr-4 inline-block w-4 text-right text-gray-500;
+  }
+  [data-rehype-pretty-code-figure] [data-line] {
+    @apply border-l-2 border-l-transparent px-3;
+  }
+  [data-rehype-pretty-code-figure] [data-highlighted-line] {
+    background: rgba(200, 200, 255, 0.1);
+    @apply border-l-blue-400;
+  }
+  [data-rehype-pretty-code-figure] [data-highlighted-chars] {
+    @apply rounded bg-zinc-600/50;
+    box-shadow: 0 0 0 4px rgb(82 82 91 / 0.5);
+  }
+  [data-rehype-pretty-code-figure] [data-chars-id] {
+    @apply border-b-2 p-1 shadow-none;
+  }
+  [data-highlighted-chars] {
+    @apply bg-[--color-pre-code-highlighted-chars] p-[0.2em] rounded-md;
+  }
+
+  /* Shiki dark/light theme */
+  code[data-theme*=' '],
+  code[data-theme*=' '] span {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    pre,
+    code span {
+      color: var(--shiki-dark) !important;
+      background-color: var(--shiki-dark-bg) !important;
+    }
+  }
+
+  /* pre --> code tag | @shikijs/transformers */
+  pre > code .diff.add span:first-child::before,
+  pre > code .diff.remove span:first-child::before {
+    @apply -ml-3 inline-flex w-4;
+  }
+
+  pre > code .diff.add {
+    @apply border-green-500 !bg-green-500/25 before:text-green-500;
+  }
+
+  pre > code .diff.add span:first-child::before {
+    @apply text-green-500 content-["+"];
+  }
+
+  pre > code .diff.remove {
+    @apply border-red-500 !bg-red-500/30 before:text-red-500;
+  }
+
+  pre > code .diff.remove span:first-child::before {
+    @apply text-red-500 content-["-"];
+  }
+
+  pre > code .focused {
+    @apply blur-[1.5px];
+  }
+}
