@@ -71,6 +71,7 @@
       },
       "series": {
         "label": "Series",
+        "description": "Esta publicación se publica como parte de la serie {serie}.",
         "episodes": "Episodios",
         "read-articles": "Leer otros artículos",
         "cta-btn": "Serie"
@@ -250,7 +251,7 @@
     },
     "about-me": {
       "experience": "años de experiencia",
-      "bio": "<p>Soy un desarrollador de software autodidacta competente en la creación de aplicaciones e interfaces de usuario.</p>",
+      "bio": "Soy un desarrollador de software autodidacta competente en la creación de aplicaciones e interfaces de usuario.",
       "technologies": {
         "title": "Tecnologías que uso"
       },

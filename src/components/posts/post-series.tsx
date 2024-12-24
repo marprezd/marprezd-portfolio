@@ -19,16 +19,16 @@ export function PostSeries({ data }: PostSeriesProps) {
     <Card className="mt-4 bg-content1">
       <CardHeader className="flex items-center space-x-2">
         <IconServer size={20} />
-        <span className="text-xl font-bold tracking-wide">
+        <span className="text-lg font-medium">
           {t('posts.series.label')}
-          :
-          {' '}
-          {data.title}
         </span>
       </CardHeader>
       <Divider />
-      <CardBody>
-        <div className="mb-3 flex flex-col gap-2 lg:flex-row lg:items-center">
+      <CardBody className='space-y-4'>
+        <p className='text-xs uppercase'>
+          {t('posts.series.description', {serie: data.title})}
+        </p>
+        <div className="flex flex-col gap-2 lg:flex-row lg:items-center">
           <Chip radius="md">
             {t('posts.series.episodes')}
             {' '}
@@ -51,7 +51,7 @@ export function PostSeries({ data }: PostSeriesProps) {
           {data.posts.map((p: any) => (
             <li
               key={p.title}
-              className={`relative my-2 block list-none pl-5 text-sm before:absolute before:left-1 before:top-1.5 before:size-2 before:rounded-full
+              className={`relative block list-none pl-5 text-sm before:absolute before:left-1 before:top-1.5 before:size-2 before:rounded-full
           ${p.isCurrent
               ? 'before:bg-primary before:ring-primary before:ring-offset-2 before:ring-offset-primary'
               : 'font-bold before:bg-gray-600 hover:before:bg-primary hover:before:ring-primary hover:before:ring-offset-2 hover:before:ring-offset-gray-800 dark:hover:before:ring-gray-400'

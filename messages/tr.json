@@ -71,6 +71,7 @@
       },
       "series": {
         "label": "Seri",
+        "description": "Bu yazı {serie} dizisinin bir parçası olarak yayınlanmıştır",
         "episodes": "Bölümler",
         "read-articles": "Diğer makaleleri okuyun",
         "cta-btn": "Seri"
@@ -250,7 +251,7 @@
     },
     "about-me": {
       "experience": "yılların deneyimi",
-      "bio": "<p><span>Python</span>, <span>ReactJS</span> ve diğer <span>yazılım teknolojilerini</span> kullanarak uygulamalar ve kullanıcı arayüzleri oluşturma konusunda yetkin, kendi kendini yetiştirmiş bir yazılım geliştiricisiyim.</p>",
+      "bio": "Python, ReactJS ve diğer yazılım teknolojilerini kullanarak uygulamalar ve kullanıcı arayüzleri oluşturma konusunda yetkin, kendi kendini yetiştirmiş bir yazılım geliştiricisiyim.",
       "technologies": {
         "title": "Kullandığım teknolojiler"
       },

@@ -71,6 +71,7 @@
       },
       "series": {
         "label": "Series",
+        "description": "This post is published as part of the series {serie}.",
         "episodes": "Episodes",
         "read-articles": "Read other articles",
         "cta-btn": "Serie"
