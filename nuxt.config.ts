@@ -15,6 +15,7 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     '@pinia/nuxt',
     '@nuxtjs/supabase',
+    'unplugin-icons/nuxt',
   ],
   // Defaults options
   tailwindcss: {
@@ -29,7 +30,9 @@ export default defineNuxtConfig({
   content: {
     defaultLocale: 'en',
     locales: ['en', 'es', 'tr'],
-    documentDriven: true,
+    documentDriven: {
+      injectPage: false, // turn off injectPage because we are using our own [...slug].vue
+    },
     markdown: {
       remarkPlugins: {},
       rehypePlugins: [
@@ -68,6 +71,7 @@ export default defineNuxtConfig({
   },
   i18n: {
     baseUrl: 'https://marprezd.vercel.app',
+    customRoutes: 'config',
     pages: {
       'blog': {
         es: '/blog',
@@ -76,6 +80,30 @@ export default defineNuxtConfig({
       'blog/[...slug]': {
         es: '/blog/[...slug]',
         tr: '/blog/[...slug]',
+      },
+      'projects': {
+        es: '/proyectos',
+        tr: '/projeler',
+      },
+      'courses': {
+        es: '/cursos',
+        tr: '/dersler',
+      },
+      'resources': {
+        es: '/recursos',
+        tr: '/kaynaklar',
+      },
+      'about': {
+        es: '/acerca-de-mi',
+        tr: '/benim-hakkimda',
+      },
+      'hire': {
+        es: '/contratame',
+        tr: '/beni-ise-al',
+      },
+      'guest-book': {
+        es: '/libro-de-visitas',
+        tr: '/misafir-defteri',
       },
     },
     strategy: 'prefix_except_default',
@@ -102,6 +130,12 @@ export default defineNuxtConfig({
     ],
     lazy: true,
     vueI18n: './i18n.config.ts',
+    skipSettingLocaleOnNavigate: true,
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root', // recommended
+    },
   },
   shadcn: {
     /**

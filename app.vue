@@ -1,15 +1,29 @@
-<script setup></script>
+<script setup lang="ts">
+import { Analytics } from '@vercel/analytics/nuxt'
+
+const { finalizePendingLocaleChange } = useI18n()
+async function onBeforeEnter() {
+  await finalizePendingLocaleChange()
+}
+</script>
 
 <template>
-  <div>
-    <NuxtPage />
-  </div>
+  <NuxtLayout>
+    <Analytics />
+    <NuxtPage
+      :transition="{
+        name: 'page',
+        mode: 'out-in',
+        onBeforeEnter,
+      }"
+    />
+  </NuxtLayout>
 </template>
 
 <style lang="css">
 .page-enter-active,
 .page-leave-active {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .page-enter-from,
