@@ -16,6 +16,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/supabase',
     'unplugin-icons/nuxt',
+    '@nuxtjs/cloudinary',
   ],
   // Defaults options
   tailwindcss: {
@@ -205,4 +206,7 @@ export default defineNuxtConfig({
       routes: ['/sitemap.xml'],
     },
   },
+  cloudinary: {
+    cloudName: process.env.CLOUDINARY_CLOUD_NAME
+  }
 })
