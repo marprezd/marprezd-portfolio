@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import type { Button } from '@/components/ui/button'
 import {
   Avatar,
   AvatarFallback,
@@ -212,63 +211,50 @@ function handleOpenChange() {
                   <CollapsibleContent>
                     <SidebarMenuSub>
                       <SidebarMenuSubItem>
-                        <SidebarMenuSubButton as-child>
-                          <NuxtLinkLocale
-                            to="/"
-                            :locale="locale"
-                            active-class="text-green-700 dark:text-green-400 font-medium"
-                            class="hover:text-green-500 dark:hover:text-green-400"
+                        <SidebarMenuSubButton
+                          as-child
+                        >
+                          <SidebarLinkLocale
+                            href="/"
                           >
                             <span>{{ t('site.layout.nav.main.items.home') }}</span>
-                          </NuxtLinkLocale>
+                          </SidebarLinkLocale>
                         </SidebarMenuSubButton>
                       </SidebarMenuSubItem>
                       <SidebarMenuSubItem>
                         <SidebarMenuSubButton as-child>
-                          <NuxtLinkLocale
-                            to="/projects"
-                            :locale="locale"
-                            active-class="text-green-700 dark:text-green-400 font-medium"
-                            class="hover:text-green-500 dark:hover:text-green-400"
+                          <SidebarLinkLocale
+                            href="/projects"
                           >
                             <span>{{ t('site.layout.nav.main.items.projects') }}</span>
-                          </NuxtLinkLocale>
+                          </SidebarLinkLocale>
                         </SidebarMenuSubButton>
                       </SidebarMenuSubItem>
                       <SidebarMenuSubItem>
                         <SidebarMenuSubButton as-child>
-                          <NuxtLinkLocale
-                            to="/resources"
-                            :locale="locale"
-                            active-class="text-green-700 dark:text-green-400 font-medium"
-                            class="hover:text-green-500 dark:hover:text-green-400"
+                          <SidebarLinkLocale
+                            href="/resources"
                           >
                             <span>{{ t('site.layout.nav.main.items.resources') }}</span>
-                          </NuxtLinkLocale>
+                          </SidebarLinkLocale>
                         </SidebarMenuSubButton>
                       </SidebarMenuSubItem>
                       <SidebarMenuSubItem>
                         <SidebarMenuSubButton as-child>
-                          <NuxtLinkLocale
-                            to="/about"
-                            :locale="locale"
-                            active-class="text-green-700 dark:text-green-400 font-medium"
-                            class="hover:text-green-500 dark:hover:text-green-400"
+                          <SidebarLinkLocale
+                            href="/about"
                           >
                             <span>{{ t('site.layout.nav.main.items.about') }}</span>
-                          </NuxtLinkLocale>
+                          </SidebarLinkLocale>
                         </SidebarMenuSubButton>
                       </SidebarMenuSubItem>
                       <SidebarMenuSubItem>
                         <SidebarMenuSubButton as-child>
-                          <NuxtLinkLocale
-                            to="/hire"
-                            :locale="locale"
-                            active-class="text-green-700 dark:text-green-400 font-medium"
-                            class="hover:text-green-500 dark:hover:text-green-400"
+                          <SidebarLinkLocale
+                            href="/hire"
                           >
                             <span>{{ t('site.layout.nav.main.items.hire') }}</span>
-                          </NuxtLinkLocale>
+                          </SidebarLinkLocale>
                         </SidebarMenuSubButton>
                       </SidebarMenuSubItem>
                     </SidebarMenuSub>
@@ -298,25 +284,20 @@ function handleOpenChange() {
                     <SidebarMenuSub>
                       <SidebarMenuSubItem>
                         <SidebarMenuSubButton as-child>
-                          <NuxtLinkLocale
-                            to="/courses"
-                            :locale="locale"
-                            active-class="text-green-700 dark:text-green-400 font-medium"
-                            class="hover:text-green-500 dark:hover:text-green-400"
+                          <SidebarLinkLocale
+                            href="/courses"
                           >
                             <span>{{ t('site.layout.nav.tutorials.items.courses') }}</span>
-                          </NuxtLinkLocale>
+                          </SidebarLinkLocale>
                         </SidebarMenuSubButton>
                       </SidebarMenuSubItem>
                       <SidebarMenuSubItem>
                         <SidebarMenuSubButton as-child>
-                          <NuxtLinkLocale
-                            to="/blog"
-                            :locale="locale"
-                            active-class="text-green-700 dark:text-green-400 font-medium" class="hover:text-green-500 dark:hover:text-green-400"
+                          <SidebarLinkLocale
+                            href="/blog"
                           >
                             <span>{{ t('site.layout.nav.tutorials.items.blog') }}</span>
-                          </NuxtLinkLocale>
+                          </SidebarLinkLocale>
                         </SidebarMenuSubButton>
                       </SidebarMenuSubItem>
                     </SidebarMenuSub>
@@ -346,14 +327,11 @@ function handleOpenChange() {
                     <SidebarMenuSub>
                       <SidebarMenuSubItem>
                         <SidebarMenuSubButton as-child>
-                          <NuxtLinkLocale
-                            to="/guest-book"
-                            :locale="locale"
-                            active-class="text-green-700 dark:text-green-400 font-medium"
-                            class="hover:text-green-500 dark:hover:text-green-400"
+                          <SidebarLinkLocale
+                            href="/guest-book"
                           >
                             <span>{{ t('site.layout.nav.communities.items.guest-book') }}</span>
-                          </NuxtLinkLocale>
+                          </SidebarLinkLocale>
                         </SidebarMenuSubButton>
                       </SidebarMenuSubItem>
                       <SidebarMenuSubItem>
@@ -384,7 +362,7 @@ function handleOpenChange() {
                     size="lg"
                     class="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
                   >
-                    <div class="bg-sidebar-primary text-sidebar-primary-foreground flex aspect-square size-6 items-center justify-center rounded-lg text-green-600 dark:text-green-400">
+                    <div class="flex aspect-square size-6 items-center justify-center rounded-lg text-green-600 dark:text-green-400">
                       <component :is="SocialNetwork" class="size-8" />
                     </div>
                     <div class="grid flex-1 text-left text-sm leading-tight">
@@ -397,7 +375,7 @@ function handleOpenChange() {
                 <DropdownMenuContent class="w-[--radix-dropdown-menu-trigger-width] min-w-56 rounded-lg" side="bottom" align="end" :side-offset="4">
                   <DropdownMenuLabel class="p-0 font-normal">
                     <div class="flex items-center gap-2 px-1 py-1.5 text-left text-sm">
-                      <div class="bg-sidebar-primary flex aspect-square size-6 items-center justify-center rounded-lg text-green-600 dark:text-green-400">
+                      <div class="flex aspect-square size-6 items-center justify-center rounded-lg text-green-600 dark:text-green-400">
                         <component :is="SocialNetwork" class="size-8" />
                       </div>
                       <div class="grid flex-1 text-left text-sm leading-tight">
@@ -435,7 +413,7 @@ function handleOpenChange() {
             <Separator orientation="vertical" class="mr-2 h-4" />
             <!-- Command component: search posts -->
             <div>
-              <Button variant="outline">
+              <Button variant="outline" @click="handleOpenChange">
                 {{ t('site.layout.search.label') }}
                 <kbd
                   class="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded-sm border bg-muted px-1.5 font-mono text-sm font-medium text-muted-foreground opacity-100"
