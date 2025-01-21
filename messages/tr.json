@@ -1,0 +1,67 @@
+{
+  "app": {
+    "metadata": {
+      "homepage": {
+        "title": "Mario Perez | Python, Next.js & API Design",
+        "description": "Web sitemi keşfedin! Python, Next.js ve diğer teknolojiler hakkındaki projelerimi ve makalelerimi inceleyerek çarpıcı web uygulamaları oluşturmayı öğrenin.",
+        "generator": "Mario Pérez | Personal Website"
+      }
+    },
+    "layouts": {
+      "app-sidebar": {
+        "user-title": "Yazılım geliştiricisi",
+        "nav": {
+          "main": {
+            "labels": {
+              "sidebar-group": "Ana Gezinme",
+              "sidebar-item": "Sayfalar"
+            },
+            "items": {
+              "home": "Anasayfa",
+              "projects": "Projeler",
+              "resources": "Kaynaklar",
+              "about": "Benim Hakkında",
+              "hire": "Beni işe al"
+            }
+          },
+          "tutorials": {
+            "labels": {
+              "sidebar-group": "Eğitimler"
+            },
+            "items": {
+              "courses": "Dersler",
+              "blog": "Blog"
+            }
+          },
+          "communities": {
+            "labels": {
+              "sidebar-group": "Topluluklar"
+            },
+            "items": {
+              "guest-book": "Misafir defteri"
+            }
+          }
+        },
+        "social-networks": "Sosyal ağlar",
+        "available-languages": "Mevcut diller",
+        "color-mode": {
+          "label": "Arayüz rengi",
+          "light": "Açık",
+          "dark": "Karanlık",
+          "system": "Sistem"
+        }
+      }
+    },
+    "manifest": {
+      "name": "Marprezd Portfolio"
+    },
+    "not-found-page": {
+      "description": "Please double-check the browser address bar or use the navigation to go to a known page.",
+      "title": "Page not found"
+    },
+    "error": {
+      "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>",
+      "title": "Something went wrong!"
+    }
+  }
+}

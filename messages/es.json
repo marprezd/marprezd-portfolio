@@ -1,0 +1,67 @@
+{
+  "app": {
+    "metadata": {
+      "homepage": {
+        "title": "Mario Perez | Python, Next.js & API Design",
+        "description": "¡Explora mi sitio web! Adéntrate en mis proyectos y artículos sobre Python, Next.js y otras tecnologías para aprender a crear aplicaciones web increíbles.",
+        "generator": "Mario Pérez | Personal Website"
+      }
+    },
+    "layouts": {
+      "app-sidebar": {
+        "user-title": "Desarrollador de software",
+        "nav": {
+          "main": {
+            "labels": {
+              "sidebar-group": "Navegación principal",
+              "sidebar-item": "Paginas"
+            },
+            "items": {
+              "home": "Inicio",
+              "projects": "Proyectos",
+              "resources": "Recursos",
+              "about": "Acerca de mi",
+              "hire": "Contratame"
+            }
+          },
+          "tutorials": {
+            "labels": {
+              "sidebar-group": "Tutoriales"
+            },
+            "items": {
+              "courses": "Cursos",
+              "blog": "Blog"
+            }
+          },
+          "communities": {
+            "labels": {
+              "sidebar-group": "Comunidades"
+            },
+            "items": {
+              "guest-book": "Libro de visitas"
+            }
+          }
+        },
+        "social-networks": "Redes sociales",
+        "available-languages": "Idiomas disponibles",
+        "color-mode": {
+          "label": "Color de la interfaz",
+          "light": "Claro",
+          "dark": "Oscuro",
+          "system": "Sistema"
+        }
+      }
+    },
+    "manifest": {
+      "name": "Marprezd Portfolio"
+    },
+    "not-found-page": {
+      "description": "Please double-check the browser address bar or use the navigation to go to a known page.",
+      "title": "Page not found"
+    },
+    "error": {
+      "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>",
+      "title": "Something went wrong!"
+    }
+  }
+}
