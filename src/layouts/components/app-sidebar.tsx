@@ -21,7 +21,6 @@ import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 import * as React from 'react'
 import { NavCommunities } from './nav-communities'
-import { SidebarNewsletter } from './sidebar-newsletter'
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const t = useTranslations('app')
@@ -56,9 +55,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <NavMain />
         <NavTutorials />
         <NavCommunities />
-        <div className="m-1.5">
-          <SidebarNewsletter />
-        </div>
       </SidebarContent>
       <SidebarFooter>
         <NavUser />
