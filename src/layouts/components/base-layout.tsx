@@ -7,6 +7,8 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from '@/layouts/components/ui/sidebar'
+import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import { clsx } from 'clsx'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
@@ -88,6 +90,8 @@ export default async function BaseLayout({
             </SidebarProvider>
           </ThemeProvider>
         </NextIntlClientProvider>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )
