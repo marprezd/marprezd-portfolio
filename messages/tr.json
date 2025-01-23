@@ -7,6 +7,12 @@
         "generator": "Mario Pérez | Personal Website"
       }
     },
+    "globals": {
+      "read-more": "Daha fazla oku",
+      "loading": "Sadece bir saniye, lütfen!",
+      "back-to-home": "Anasayfaya dön",
+      "back-to-top": "Başa dön"
+    },
     "layouts": {
       "app-sidebar": {
         "user-title": "Yazılım geliştiricisi",
@@ -51,6 +57,12 @@
           "system": "Sistem"
         }
       }
+    },
+    "home-page": {
+      "badge-title": "Hızlı Özet",
+      "title": "<h1>Merhaba, <span>ben Mario</span>, kişisel web siteme hoş geldiniz.</h1>",
+      "description": "Projelerimi sergilediğim ve başkalarına Python, Next.js ve diğer teknolojileri kullanarak yazılım ürünleri oluşturmayı öğrettiğim bir web sitesi.",
+      "started": "Başlayın"
     },
     "manifest": {
       "name": "Marprezd Portfolio"

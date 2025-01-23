@@ -7,6 +7,12 @@
         "generator": "Mario Pérez | Personal Website"
       }
     },
+    "globals": {
+      "read-more": "Leer más",
+      "loading": "¡Solo un segundo, por favor!",
+      "back-to-home": "Volver a inicio",
+      "back-to-top": "Volver arriba"
+    },
     "layouts": {
       "app-sidebar": {
         "user-title": "Desarrollador de software",
@@ -51,6 +57,12 @@
           "system": "Sistema"
         }
       }
+    },
+    "home-page": {
+      "badge-title": "Resumen rápido",
+      "title": "<h1>Hola, <span>soy Mario</span>, bienvenido a mi sitio web personal.</h1>",
+      "description": "Un sitio web donde muestro mis proyectos y enseño a otros a crear productos de software utilizando Python, Next.js y otras tecnologías.",
+      "started": "Empezar"
     },
     "manifest": {
       "name": "Marprezd Portfolio"

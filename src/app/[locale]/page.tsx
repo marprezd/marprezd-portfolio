@@ -1,6 +1,7 @@
 import type { Locale } from '@/i18n/routing'
-// import { useTranslations } from 'next-intl'
+import HeroContainer from '@/layouts/components/home/hero-container'
 import { setRequestLocale } from 'next-intl/server'
+import React from 'react'
 
 export default async function IndexPage({
   params,
@@ -14,13 +15,9 @@ export default async function IndexPage({
   setRequestLocale(locale)
 
   return (
-    <div>
-      <p className="max-w-[590px]">
-        home page test
-      </p>
-      <code>
-        print('doc')
-      </code>
+    <div className="space-y-10">
+      {/* Hero Section */}
+      <HeroContainer />
     </div>
   )
 }
