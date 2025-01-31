@@ -5,6 +5,11 @@
         "title": "Mario Perez | Python, Next.js & API Design",
         "description": "Explore my website! Delve into my projects and articles on Python, Next.js, and other technologies to learn how to build stunning web apps.",
         "generator": "Mario Pérez | Personal Website"
+      },
+      "guest-book": {
+        "title": "Guest Book",
+        "og-title": "Mario Pérez | Guest Book",
+        "description": "Add your reflections to our guest book—your input creates a warm, welcoming space for everyone!"
       }
     },
     "globals": {
@@ -63,6 +68,45 @@
       "title": "<h1>Hi, <span>I am Mario</span>, welcome to my personal website.</h1>",
       "description": "A website where I showcase my projects and teach others how to build software products using Python, Next.js, and other technologies.",
       "started": "Get started"
+    },
+    "guest-book": {
+      "title": "Guestbook",
+      "description": "Add your reflections to our guest book—your input creates a warm, welcoming space for everyone!",
+      "empty": "The guestbook is empty! Be the first to make a difference!",
+      "user": {
+        "greeting": "Hello {user}!",
+        "sign-in": "Sign in",
+        "sign-out": "Sign Out",
+        "submit-msg": "Your message has been submitted! Thanks for signing my guestbook."
+      },
+      "not-user": {
+        "label": "Hi guest!",
+        "description": "You are currently browsing as a guest user. Please log in to share your comments in the guestbook.",
+        "card": {
+          "title": "Log in to your account",
+          "description": "It seems you have not accessed your user section yet.",
+          "content": "Only registered users on the website are allowed to add comments.",
+          "create-account": {
+            "info": "Do not have an account?",
+            "sign-up": "Sign Up"
+          }
+        }
+      },
+      "form": {
+        "description": "What topic would you like to provide feedback on?",
+        "placeholder": "Type here...",
+        "validations": {
+          "short-message": "The message must contain at least 20 characters.",
+          "long-message": "The message must not exceed 260 characters."
+        },
+        "submit-msg-btn": {
+          "pending": "Sending...",
+          "submit": "Send"
+        },
+        "toast": {
+          "message": "You submitted the following message:"
+        }
+      }
     },
     "manifest": {
       "name": "Marprezd Portfolio"

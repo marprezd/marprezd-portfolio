@@ -41,7 +41,7 @@ export const routing = defineRouting({
     },
     '/guest-book': {
       en: '/guest-book',
-      es: '/libro-de-visita',
+      es: '/libro-de-visitas',
       tr: '/ziyaretci-defteri',
     },
     '/resources': {

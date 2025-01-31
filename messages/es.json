@@ -5,6 +5,11 @@
         "title": "Mario Perez | Python, Next.js & API Design",
         "description": "¡Explora mi sitio web! Adéntrate en mis proyectos y artículos sobre Python, Next.js y otras tecnologías para aprender a crear aplicaciones web increíbles.",
         "generator": "Mario Pérez | Personal Website"
+      },
+      "guest-book": {
+        "title": "Libro de visitas",
+        "og-title": "Mario Pérez | Libro de visitas",
+        "description": "Agrega tus reflexiones a nuestro libro de visitas: ¡tus aportes crean un espacio cálido y acogedor para todos!"
       }
     },
     "globals": {
@@ -63,6 +68,45 @@
       "title": "<h1>Hola, <span>soy Mario</span>, bienvenido a mi sitio web personal.</h1>",
       "description": "Un sitio web donde muestro mis proyectos y enseño a otros a crear productos de software utilizando Python, Next.js y otras tecnologías.",
       "started": "Empezar"
+    },
+    "guest-book": {
+      "title": "Libro de visitas",
+      "description": "Agrega tus reflexiones a nuestro libro de visitas: ¡tus aportes crean un espacio cálido y acogedor para todos!",
+      "empty": "El libro de visitas está vacío: ¡firma con tu nombre y sé el primero en marcar la diferencia!",
+      "user": {
+        "greeting": "¡Hola {user}!",
+        "sign-in": "Iniciar sesión",
+        "sign-out": "Cerrar sesión",
+        "submit-msg": "¡Tu mensaje ha sido enviado! Gracias por firmar mi libro de visitas."
+      },
+      "not-user": {
+        "label": "¡Hola, invitado!",
+        "description": "Actualmente estás navegando como usuario invitado. Inicia sesión para compartir tus comentarios en el libro de visitas.",
+        "card": {
+          "title": "Inicia sesión en tu cuenta",
+          "description": "Parece que aún no has accedido a tu sección de usuario.",
+          "content": "Sólo los usuarios registrados en el sitio web pueden agregar comentarios.",
+          "create-account": {
+            "info": "¿No tienes una cuenta?",
+            "sign-up": "Crear cuenta"
+          }
+        }
+      },
+      "form": {
+        "description": "¿Sobre qué tema te gustaría dar tu opinión?",
+        "placeholder": "Escribe aquí...",
+        "validations": {
+          "short-message": "El mensaje debe contener al menos 20 caracteres.",
+          "long-message": "El mensaje no debe exceder los 260 caracteres."
+        },
+        "submit-msg-btn": {
+          "pending": "Enviando...",
+          "submit": "Enviar"
+        },
+        "toast": {
+          "message": "Enviaste el siguiente mensaje:"
+        }
+      }
     },
     "manifest": {
       "name": "Marprezd Portfolio"

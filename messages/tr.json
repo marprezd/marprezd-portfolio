@@ -5,6 +5,11 @@
         "title": "Mario Perez | Python, Next.js & API Design",
         "description": "Web sitemi keşfedin! Python, Next.js ve diğer teknolojiler hakkındaki projelerimi ve makalelerimi inceleyerek çarpıcı web uygulamaları oluşturmayı öğrenin.",
         "generator": "Mario Pérez | Personal Website"
+      },
+      "guest-book": {
+        "title": "Ziyaretçi defteri",
+        "og-title": "Mario Pérez | Ziyaretçi defteri",
+        "description": "Düşüncelerinizi misafir defterimize ekleyin - girdileriniz herkes için sıcak ve samimi bir alan yaratır!"
       }
     },
     "globals": {
@@ -63,6 +68,45 @@
       "title": "<h1>Merhaba, <span>ben Mario</span>, kişisel web siteme hoş geldiniz.</h1>",
       "description": "Projelerimi sergilediğim ve başkalarına Python, Next.js ve diğer teknolojileri kullanarak yazılım ürünleri oluşturmayı öğrettiğim bir web sitesi.",
       "started": "Başlayın"
+    },
+    "guest-book": {
+      "title": "Misafir Defteri",
+      "description": "Düşüncelerinizi misafir defterimize ekleyin - girdileriniz herkes için sıcak ve samimi bir alan yaratır!",
+      "empty": "Ziyaretçi defteri boş, adınızı yazın ve fark yaratan ilk kişi olun!",
+      "user": {
+        "greeting": "Merhaba {user}!",
+        "sign-in": "Giriş yap",
+        "sign-out": "Çıkış Yapın",
+        "submit-msg": "Mesajınız gönderildi! Ziyaretçi defterimi imzaladığınız için teşekkürler."
+      },
+      "not-user": {
+        "label": "Merhaba misafir!",
+        "description": "Şu anda misafir kullanıcı olarak geziniyorsunuz. Lütfen yorumlarınızı misafir defterinde paylaşmak için giriş yapın.",
+        "card": {
+          "title": "Hesabınıza giriş yapın",
+          "description": "Görünüşe göre henüz kullanıcı bölümünüze erişemediniz.",
+          "content": "Sadece web sitemizde kayıtlı kullanıcılar yorum ekleyebilir.",
+          "create-account": {
+            "info": "Hesabınız yok mu?",
+            "sign-up": "Üye olmak"
+          }
+        }
+      },
+      "form": {
+        "description": "Hangi konu hakkında geri bildirimde bulunmak istersiniz?",
+        "placeholder": "Buraya yazın...",
+        "validations": {
+          "short-message": "Mesajınız en az 20 karakterden oluşmalıdır.",
+          "long-message": "Mesajınız 260 karakteri geçmemelidir."
+        },
+        "submit-msg-btn": {
+          "pending": "Gönderiliyor...",
+          "submit": "Göndermek"
+        },
+        "toast": {
+          "message": "Aşağıdaki mesajı gönderdiniz:"
+        }
+      }
     },
     "manifest": {
       "name": "Marprezd Portfolio"
