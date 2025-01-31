@@ -20,6 +20,8 @@ import {
 import { IconFolder } from '@tabler/icons-react'
 import { ChevronRight } from 'lucide-react'
 import { useTranslations } from 'next-intl'
+import { Suspense } from 'react'
+import DefaultLoadingSkeleton from './default-loading-skeleton'
 import NavigationLink from './navigation-link'
 
 export function NavMain() {
@@ -44,43 +46,45 @@ export function NavMain() {
               </SidebarMenuAction>
             </CollapsibleTrigger>
             <CollapsibleContent>
-              <SidebarMenuSub>
-                <SidebarMenuSubItem>
-                  <SidebarMenuSubButton asChild>
-                    <NavigationLink href="/">
-                      <span>{t('layouts.app-sidebar.nav.main.items.home')}</span>
-                    </NavigationLink>
-                  </SidebarMenuSubButton>
-                </SidebarMenuSubItem>
-                <SidebarMenuSubItem>
-                  <SidebarMenuSubButton asChild>
-                    <NavigationLink href="/projects">
-                      <span>{t('layouts.app-sidebar.nav.main.items.projects')}</span>
-                    </NavigationLink>
-                  </SidebarMenuSubButton>
-                </SidebarMenuSubItem>
-                <SidebarMenuSubItem>
-                  <SidebarMenuSubButton asChild>
-                    <NavigationLink href="/resources">
-                      <span>{t('layouts.app-sidebar.nav.main.items.resources')}</span>
-                    </NavigationLink>
-                  </SidebarMenuSubButton>
-                </SidebarMenuSubItem>
-                <SidebarMenuSubItem>
-                  <SidebarMenuSubButton asChild>
-                    <NavigationLink href="/hire-me">
-                      <span>{t('layouts.app-sidebar.nav.main.items.hire')}</span>
-                    </NavigationLink>
-                  </SidebarMenuSubButton>
-                </SidebarMenuSubItem>
-                <SidebarMenuSubItem>
-                  <SidebarMenuSubButton asChild>
-                    <NavigationLink href="/about-me">
-                      <span>{t('layouts.app-sidebar.nav.main.items.about')}</span>
-                    </NavigationLink>
-                  </SidebarMenuSubButton>
-                </SidebarMenuSubItem>
-              </SidebarMenuSub>
+              <Suspense fallback={<DefaultLoadingSkeleton />}>
+                <SidebarMenuSub>
+                  <SidebarMenuSubItem>
+                    <SidebarMenuSubButton asChild>
+                      <NavigationLink href="/">
+                        <span>{t('layouts.app-sidebar.nav.main.items.home')}</span>
+                      </NavigationLink>
+                    </SidebarMenuSubButton>
+                  </SidebarMenuSubItem>
+                  <SidebarMenuSubItem>
+                    <SidebarMenuSubButton asChild>
+                      <NavigationLink href="/projects">
+                        <span>{t('layouts.app-sidebar.nav.main.items.projects')}</span>
+                      </NavigationLink>
+                    </SidebarMenuSubButton>
+                  </SidebarMenuSubItem>
+                  <SidebarMenuSubItem>
+                    <SidebarMenuSubButton asChild>
+                      <NavigationLink href="/resources">
+                        <span>{t('layouts.app-sidebar.nav.main.items.resources')}</span>
+                      </NavigationLink>
+                    </SidebarMenuSubButton>
+                  </SidebarMenuSubItem>
+                  <SidebarMenuSubItem>
+                    <SidebarMenuSubButton asChild>
+                      <NavigationLink href="/hire-me">
+                        <span>{t('layouts.app-sidebar.nav.main.items.hire')}</span>
+                      </NavigationLink>
+                    </SidebarMenuSubButton>
+                  </SidebarMenuSubItem>
+                  <SidebarMenuSubItem>
+                    <SidebarMenuSubButton asChild>
+                      <NavigationLink href="/about-me">
+                        <span>{t('layouts.app-sidebar.nav.main.items.about')}</span>
+                      </NavigationLink>
+                    </SidebarMenuSubButton>
+                  </SidebarMenuSubItem>
+                </SidebarMenuSub>
+              </Suspense>
             </CollapsibleContent>
           </SidebarMenuItem>
         </Collapsible>
