@@ -1,19 +1,18 @@
 import { exec } from 'node:child_process'
 import { promisify } from 'node:util'
+import rehypeShiki from '@shikijs/rehype'
 import {
   transformerNotationDiff,
   transformerNotationFocus,
 } from '@shikijs/transformers'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeMathjax from 'rehype-mathjax'
-import rehypePrettyCode, { type Options } from 'rehype-pretty-code'
 import rehypeSlug from 'rehype-slug'
 import rehypeStringify from 'rehype-stringify'
 import rehypeUnwrapImages from 'rehype-unwrap-images'
 import emoji from 'remark-emoji'
 import remarkGfm from 'remark-gfm'
 import remarkMath from 'remark-math'
-import { visit } from 'unist-util-visit'
 import { defineCollection, defineConfig, defineSchema, s } from 'velite'
 
 // Add last modified based on git timestamp
@@ -30,49 +29,6 @@ const timestamp = defineSchema(() =>
       return new Date(stdout || Date.now()).toISOString()
     }),
 )
-
-const options: Partial<Options> = {
-  theme: {
-    dark: 'dark-plus',
-    light: 'light-plus',
-  },
-  transformers: [
-    transformerNotationDiff(),
-    transformerNotationFocus(),
-  ],
-  keepBackground: false,
-  onVisitLine(node: any) {
-    // Prevent lines from collapsing in `display: grid` mode, and
-    // allow empty lines to be copy/pasted
-    if (node.children.length === 0)
-      node.children = [{ type: 'text', value: ' ' }]
-  },
-  onVisitHighlightedLine(node: any) {
-    const nodeClass = node.properties.className
-
-    if (nodeClass && nodeClass.length > 0)
-      node.properties.className.push('line--highlighted')
-    else node.properties.className = ['line--highlighted']
-  },
-
-  onVisitHighlightedChars(node: any, id) {
-    node.properties.className = ['word--highlighted']
-    if (id) {
-      // If the word spans across syntax boundaries (e.g. punctuation), remove
-      // colors from the child nodes.
-      if (node.properties['data-rehype-pretty-code-wrapper']) {
-        node.children.forEach(
-          (childNode: { properties: { style: string } }) => {
-            childNode.properties.style = ''
-          },
-        )
-      }
-
-      node.properties.style = ''
-      node.properties['data-word-id'] = id
-    }
-  },
-}
 
 const meta = s
   .object({
@@ -171,48 +127,25 @@ export default defineConfig({
   collections: { posts, projects },
   mdx: {
     rehypePlugins: [
+      [
+        rehypeShiki,
+        {
+          themes: {
+            dark: 'dark-plus',
+            light: 'light-plus',
+          },
+          skipInline: true,
+          transformers: [
+            transformerNotationDiff({
+              matchAlgorithm: 'v3',
+            }),
+            transformerNotationFocus({
+              matchAlgorithm: 'v3',
+            }),
+          ],
+        },
+      ],
       rehypeStringify,
-      () => (tree) => {
-        visit(tree, (node) => {
-          if (node?.type === 'element' && node?.tagName === 'pre') {
-            const [codeEl] = node.children
-
-            if (codeEl.tagName !== 'code')
-              return
-
-            if (codeEl.data?.meta) {
-              // Extract event from meta and pass it down the tree.
-              const regex = /event="([^"]*)"/
-              const match = codeEl.data?.meta.match(regex)
-
-              if (match) {
-                node.__event__ = match ? match[1] : null
-                codeEl.data.meta = codeEl.data.meta.replace(regex, '')
-              }
-            }
-
-            node.__rawString__ = codeEl.children?.[0].value
-            node.__src__ = node.properties?.__src__
-            node.__style__ = node.properties?.__style__
-          }
-        })
-      },
-      [rehypePrettyCode, options],
-      () => (tree) => {
-        visit(tree, (node) => {
-          if (node?.type === 'element' && node?.tagName === 'div') {
-            if (!('data-rehype-pretty-code-fragment' in node.properties))
-              return
-
-            const preElement = node.children.at(-1)
-
-            if (preElement.tagName !== 'pre')
-              return
-
-            preElement.properties.__rawString__ = node.__rawString__
-          }
-        })
-      },
       rehypeSlug,
       rehypeMathjax,
       [
