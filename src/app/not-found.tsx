@@ -1,6 +1,6 @@
+import BaseLayout from '@/components/base-layout'
+import NotFoundPage from '@/components/not-found-page'
 import { routing } from '@/i18n/routing'
-import BaseLayout from '@/layouts/components/base-layout'
-import NotFoundPage from '@/layouts/components/not-found-page'
 
 // This page renders when a route like `/unknown.txt` is requested.
 // In this case, the layout at `app/[locale]/layout.tsx` receives

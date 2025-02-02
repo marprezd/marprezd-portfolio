@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react'
+import BaseLayout from '@/components/base-layout'
 import { host } from '@/config'
 import { routing } from '@/i18n/routing'
-import BaseLayout from '@/layouts/components/base-layout'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 

@@ -1,10 +1,9 @@
 import type { Locale } from '@/i18n/routing'
-import { host } from '@/config'
-import { SignIn, SignUp } from '@/layouts/components/account-login-buttons'
-import DefaultHero from '@/layouts/components/default-hero'
-import DefaultLoadingSkeleton from '@/layouts/components/default-loading-skeleton'
-import GbForm from '@/layouts/components/guest-book/guestbook-form'
-import GuestbookUserList from '@/layouts/components/guest-book/guestbook-user-list'
+import { SignIn, SignUp } from '@/components/account-login-buttons'
+import DefaultHero from '@/components/default-hero'
+import DefaultLoadingSkeleton from '@/components/default-loading-skeleton'
+import GbForm from '@/components/guest-book/guestbook-form'
+import GuestbookUserList from '@/components/guest-book/guestbook-user-list'
 import {
   Card,
   CardContent,
@@ -12,7 +11,8 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from '@/layouts/components/ui/card'
+} from '@/components/ui/card'
+import { host } from '@/config'
 import { auth } from 'auth'
 import { getTranslations } from 'next-intl/server'
 import React, { Suspense } from 'react'

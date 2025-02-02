@@ -1,6 +1,6 @@
 import type { Locale } from '@/i18n/routing'
-import HeroContainer from '@/layouts/components/home/hero-container'
-import QuickSummaryContainer from '@/layouts/components/home/quick-summary-container'
+import HeroContainer from '@/components/home/hero-container'
+import QuickSummaryContainer from '@/components/home/quick-summary-container'
 import { setRequestLocale } from 'next-intl/server'
 import React from 'react'
 
