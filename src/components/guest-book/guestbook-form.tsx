@@ -72,7 +72,11 @@ export default function GbForm() {
                 <FormItem>
                   <FormLabel htmlFor={field.name} className="sr-only">Message</FormLabel>
                   <FormControl>
-                    <Textarea placeholder={t('guest-book.form.placeholder')} {...field} className="border-0 bg-white dark:bg-gray-900" />
+                    <Textarea
+                      placeholder={t('guest-book.form.placeholder')}
+                      {...field}
+                      className="border-0 bg-white dark:bg-gray-900"
+                    />
                   </FormControl>
                   <FormDescription>
                     {t('guest-book.form.description')}
