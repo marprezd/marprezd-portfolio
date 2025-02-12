@@ -7,7 +7,7 @@ function Card({ ref, className, ...props }: React.HTMLAttributes<HTMLDivElement>
     <div
       ref={ref}
       className={cn(
-        'rounded-xl border bg-card text-card-foreground shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px]',
+        'rounded-xl border bg-card text-card-foreground shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]',
         className,
       )}
       {...props}
@@ -20,7 +20,7 @@ function CardHeader({ ref, className, ...props }: React.HTMLAttributes<HTMLDivEl
   return (
     <div
       ref={ref}
-      className={cn('flex flex-col space-y-1.5 p-6', className)}
+      className={cn('flex flex-col space-y-1.5 p-4', className)}
       {...props}
     />
   )
@@ -50,7 +50,7 @@ function CardDescription({ ref, className, ...props }: React.HTMLAttributes<HTML
 CardDescription.displayName = 'CardDescription'
 
 function CardContent({ ref, className, ...props }: React.HTMLAttributes<HTMLDivElement> & { ref?: React.RefObject<HTMLDivElement | null> }) {
-  return <div ref={ref} className={cn('p-6 pt-0', className)} {...props} />
+  return <div ref={ref} className={cn('p-4 pt-0', className)} {...props} />
 }
 CardContent.displayName = 'CardContent'
 
@@ -58,7 +58,7 @@ function CardFooter({ ref, className, ...props }: React.HTMLAttributes<HTMLDivEl
   return (
     <div
       ref={ref}
-      className={cn('flex items-center p-6 pt-0', className)}
+      className={cn('flex items-center p-4 pt-0', className)}
       {...props}
     />
   )
