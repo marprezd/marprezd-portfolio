@@ -10,6 +10,11 @@
         "title": "Guest Book",
         "og-title": "Mario Pérez | Guest Book",
         "description": "Add your reflections to our guest book—your input creates a warm, welcoming space for everyone!"
+      },
+      "about": {
+        "title": "About me",
+        "og-title": "Mario Pérez | About me",
+        "description": "I am a software developer building modern web applications and slick user interfaces using Python, Next.js, and other web technologies."
       }
     },
     "globals": {
@@ -106,6 +111,110 @@
         "toast": {
           "message": "You submitted the following message:"
         }
+      }
+    },
+    "about-me": {
+      "experience": "years of experience",
+      "bio": "I am a self-taught software developer proficient in building applications and user interfaces.",
+      "hire-me": "Hire me",
+      "job-networks": "Job Networks",
+      "download": "Download resume",
+      "skills": {
+        "title": "Soft and hard skills",
+        "description": "Here are some key soft and hard skills that highlight my professional capabilities.",
+        "average": "Average"
+      },
+      "soft-skills": {
+        "problem-solving": {
+          "title": "Problem-Solving"
+        },
+        "time-management": {
+          "title": "Time Management"
+        },
+        "organization": {
+          "title": "Organization"
+        },
+        "adaptability": {
+          "title": "Adaptability"
+        },
+        "self-motivation": {
+          "title": "Self-Motivation"
+        },
+        "team-collaboration": {
+          "title": "Team Collaboration"
+        },
+        "critical-thinking": {
+          "title": "Critical Thinking"
+        },
+        "persistence": {
+          "title": "Persistence"
+        }
+      },
+      "metrics": {
+        "title": "Workflow and metrics",
+        "description": "Check out the metrics of my programming activities."
+      },
+      "charts": {
+        "global-code-average": {
+          "hr": "hours",
+          "min": "minutes"
+        },
+        "githubContributions": {
+          "title": "GitHub contributions",
+          "subtitle": "Contributions in the last year.",
+          "total-count": "{total, plural, =0 {0 contribution} =1 {1 contribution} other {# contributions}}"
+        },
+        "githubStats": {
+          "title": "GitHub activities",
+          "subtitle": "Overview of activities by segment.",
+          "stars": "Stars",
+          "commitments": "Commitments",
+          "prs": "Requests",
+          "issues": "Issues",
+          "contributions": "Contributions",
+          "total-repos": "Repositories",
+          "total-followers": "Followers"
+        },
+        "programming-languages": {
+          "title": "Programming languages",
+          "subtitle": "Most used programming languages.",
+          "hr": "hr",
+          "min": "mins"
+        },
+        "categories-tracking": {
+          "title": "Metrics by categories",
+          "subtitle": "Tracking log for each category.",
+          "hr": "hr",
+          "min": "mins"
+        },
+        "best-days": {
+          "title": "Best coding days",
+          "subtitle": "Best coding days in the last week.",
+          "label": "Total"
+        },
+        "best-days-avgs": {
+          "cumulative-total": {
+            "title": "Cumulative total",
+            "desc": "Total hours spent on software programming."
+          },
+          "difference-48hrs": {
+            "title": "Last 48 hours",
+            "desc": "Percentage differences.",
+            "min": "mins"
+          },
+          "daily-average": {
+            "title": "Daily programming",
+            "desc": "Average hours per day."
+          }
+        }
+      },
+      "experiences": {
+        "title": "Work experience",
+        "desc": "Explore my work history."
+      },
+      "podcast": {
+        "title": "Latest Podcasts",
+        "desc": "Listen to the recent episodes."
       }
     },
     "manifest": {

@@ -10,6 +10,11 @@
         "title": "Libro de visitas",
         "og-title": "Mario Pérez | Libro de visitas",
         "description": "Agrega tus reflexiones a nuestro libro de visitas: ¡tus aportes crean un espacio cálido y acogedor para todos!"
+      },
+      "about": {
+        "title": "Acerca de mí",
+        "og-title": "Mario Pérez :: Acerca de mí",
+        "description": "Soy desarrollador de software y creo aplicaciones web modernas e interfaces de usuario ingeniosas con Python, Next.js y otras tecnologías web."
       }
     },
     "globals": {
@@ -106,6 +111,110 @@
         "toast": {
           "message": "Enviaste el siguiente mensaje:"
         }
+      }
+    },
+    "about-me": {
+      "experience": "años de experiencia",
+      "bio": "Soy un desarrollador de software autodidacta competente en la creación de aplicaciones e interfaces de usuario.",
+      "hire-me": "Contrátame",
+      "job-networks": "Redes de trabajo",
+      "download": "Descargar curriculum",
+      "skills": {
+        "title": "Habilidades blandas y duras",
+        "description": "Algunas habilidades blandas y duras clave que resaltan mis capacidades profesionales.",
+        "average": "Promedio"
+      },
+      "soft-skills": {
+        "problem-solving": {
+          "title": "Resolución de problemas"
+        },
+        "time-management": {
+          "title": "Gestión del tiempo"
+        },
+        "organization": {
+          "title": "Organización"
+        },
+        "adaptability": {
+          "title": "Adaptabilidad"
+        },
+        "self-motivation": {
+          "title": "Automotivación"
+        },
+        "team-collaboration": {
+          "title": "Colaboración en equipo"
+        },
+        "critical-thinking": {
+          "title": "Pensamiento crítico"
+        },
+        "persistence": {
+          "title": "Persistencia"
+        }
+      },
+      "metrics": {
+        "title": "Flujo de trabajo y métricas",
+        "description": "Consulte las métricas de mis actividades de programación."
+      },
+      "charts": {
+        "global-code-average": {
+          "hr": "horas",
+          "min": "minutos"
+        },
+        "githubContributions": {
+          "title": "Contribuciones en GitHub",
+          "subtitle": "Contribuciones en el último año.",
+          "total-count": "{total, plural, =0 {0 contribucion} =1 {1 contribucion} other {# contribuciones}}"
+        },
+        "githubStats": {
+          "title": "Actividades de GitHub",
+          "subtitle": "Resumen de actividades por segmentos.",
+          "stars": "Estrellas",
+          "commitments": "Compromisos",
+          "prs": "Peticiones",
+          "issues": "Problemas",
+          "contributions": "Contribuciones",
+          "total-repos": "Repositorios",
+          "total-followers": "Seguidores"
+        },
+        "programming-languages": {
+          "title": "Lenguajes de programación",
+          "subtitle": "Lenguajes de programación más utilizados.",
+          "hr": "hr",
+          "min": "mins"
+        },
+        "categories-tracking": {
+          "title": "Métricas por categorías",
+          "subtitle": "Registro de seguimiento para cada categoría.",
+          "hr": "hr",
+          "min": "mins"
+        },
+        "best-days": {
+          "title": "Mejores días de codificación",
+          "subtitle": "Mejores días de codificación de la última semana.",
+          "label": "Total"
+        },
+        "best-days-avgs": {
+          "cumulative-total": {
+            "title": "Total acumulado",
+            "desc": "Total de horas dedicadas a la programación de software."
+          },
+          "difference-48hrs": {
+            "title": "Últimas 48 horas",
+            "desc": "Diferencias porcentuales.",
+            "min": "mins"
+          },
+          "daily-average": {
+            "title": "Programación diaria",
+            "desc": "Promedio de horas por día."
+          }
+        }
+      },
+      "experiences": {
+        "title": "Experiencia laboral",
+        "desc": "Explora mi historial laboral."
+      },
+      "podcast": {
+        "title": "Últimos podcasts",
+        "desc": "Escuche los episodios recientes."
       }
     },
     "manifest": {

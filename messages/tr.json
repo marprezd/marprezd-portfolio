@@ -10,6 +10,11 @@
         "title": "Ziyaretçi defteri",
         "og-title": "Mario Pérez | Ziyaretçi defteri",
         "description": "Düşüncelerinizi misafir defterimize ekleyin - girdileriniz herkes için sıcak ve samimi bir alan yaratır!"
+      },
+      "about": {
+        "title": "Benim hakkımda",
+        "og-title": "Mario Pérez :: Benim hakkımda",
+        "description": "Python, Next.js ve diğer web teknolojilerini kullanarak modern web uygulamaları ve şık kullanıcı arayüzleri oluşturan bir yazılım geliştiricisiyim."
       }
     },
     "globals": {
@@ -106,6 +111,110 @@
         "toast": {
           "message": "Aşağıdaki mesajı gönderdiniz:"
         }
+      }
+    },
+    "about-me": {
+      "experience": "yılların deneyimi",
+      "bio": "Python, ReactJS ve diğer yazılım teknolojilerini kullanarak uygulamalar ve kullanıcı arayüzleri oluşturma konusunda yetkin, kendi kendini yetiştirmiş bir yazılım geliştiricisiyim.",
+      "hire-me": "Beni işe al",
+      "job-networks": "İş Ağları",
+      "download": "Özgeçmişi indir",
+      "skills": {
+        "title": "Yumuşak ve sert beceriler",
+        "description": "İşte profesyonel yeteneklerimi vurgulayan bazı temel yumuşak ve sert beceriler.",
+        "average": "Ortalama"
+      },
+      "soft-skills": {
+        "problem-solving": {
+          "title": "Problem Çözme"
+        },
+        "time-management": {
+          "title": "Zaman Yönetimi"
+        },
+        "organization": {
+          "title": "Organizasyon"
+        },
+        "adaptability": {
+          "title": "Uyum sağlama yeteneği"
+        },
+        "self-motivation": {
+          "title": "Öz-Motivasyon"
+        },
+        "team-collaboration": {
+          "title": "Takım Çalışması"
+        },
+        "critical-thinking": {
+          "title": "Eleştirel Düşünme"
+        },
+        "persistence": {
+          "title": "Kalıcılık"
+        }
+      },
+      "metrics": {
+        "title": "İş akışı ve ölçümler",
+        "description": "Programlama faaliyetlerimin ölçümlerine göz atın."
+      },
+      "charts": {
+        "global-code-average": {
+          "hr": "saat",
+          "min": "dakika"
+        },
+        "githubContributions": {
+          "title": "GitHub katkıları",
+          "subtitle": "Geçen yılki katkılar.",
+          "total-count": "{total, plural, =0 {0 katkı} =1 {1 katkı} other {# katkı}}"
+        },
+        "githubStats": {
+          "title": "GitHub etkinlikleri",
+          "subtitle": "Segmentlere göre faaliyetlere genel bakış.",
+          "stars": "Yıldızlar",
+          "commitments": "Taahhütler",
+          "prs": "Dilekçeler",
+          "issues": "Sorunlar",
+          "contributions": "katkılar",
+          "total-repos": "Projeler",
+          "total-followers": "Takipçiler"
+        },
+        "programming-languages": {
+          "title": "Programlama dilleri",
+          "subtitle": "En çok kullanılan programlama dilleri | dakikalar içinde.",
+          "hr": "sa",
+          "min": "dk"
+        },
+        "categories-tracking": {
+          "title": "Kategorilere göre metrikler",
+          "subtitle": "Her kategori için takip kaydı.",
+          "hr": "sa",
+          "min": "dk"
+        },
+        "best-days": {
+          "title": "En iyi kodlama günleri",
+          "subtitle": "Geçen haftanın en iyi kodlama günleri.",
+          "label": "Toplam"
+        },
+        "best-days-avgs": {
+          "cumulative-total": {
+            "title": "Birikimli toplam",
+            "desc": "Yazılım programlamaya harcanan toplam saat."
+          },
+          "difference-48hrs": {
+            "title": "Son 48 saat",
+            "desc": "Yüzdesel farklar.",
+            "min": "dk"
+          },
+          "daily-average": {
+            "title": "Günlük programlama",
+            "desc": "Günlük ortalama çalışma saati."
+          }
+        }
+      },
+      "experiences": {
+        "title": "İş deneyimi",
+        "desc": "İş geçmişimi keşfedin."
+      },
+      "podcast": {
+        "title": "Son Podcast'ler",
+        "desc": "Son bölümleri dinleyin."
       }
     },
     "manifest": {
