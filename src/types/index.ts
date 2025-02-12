@@ -1,3 +1,9 @@
+import type { SVGProps } from 'react'
+// svg
+export type IconSvgProps = SVGProps<SVGSVGElement> & {
+  size?: number
+}
+
 // Wakapi
 export interface WakapiSummaries {
   data: {
