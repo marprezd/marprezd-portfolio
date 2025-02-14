@@ -1,4 +1,6 @@
-import { type ClassValue, clsx } from 'clsx'
+import type { Post } from '#site/content'
+import type { ClassValue } from 'clsx'
+import { clsx } from 'clsx'
 import { slug } from 'github-slugger'
 import { marked } from 'marked'
 import { twMerge } from 'tailwind-merge'
@@ -65,4 +67,91 @@ function htmlEntityDecoder(htmlWithEntities: string): string {
     },
   )
   return htmlWithoutEntities
+}
+
+// sort posts
+export function sortPosts(posts: Array<Post>) {
+  return posts.sort((a, b) => {
+    if (a.date > b.date)
+      return -1
+    if (a.date < b.date)
+      return 1
+
+    return 0
+  })
+}
+
+// capitalize first letter
+export function capitalizeFirstLetter(str: string): string {
+  return str.charAt(0).toUpperCase() + str.slice(1)
+}
+
+// get all tags from post.
+export function getAllTags(posts: Array<Post>) {
+  const tags: Record<string, number> = {}
+
+  posts.forEach((post) => {
+    if (post.published) {
+      post.tags?.forEach((tag) => {
+        tags[tag] = (tags[tag] ?? 0) + 1
+      })
+    }
+  })
+
+  return tags
+}
+
+// sort tags.
+export function sortTagsByCount(tags: Record<string, number>) {
+  return Object.keys(tags).sort((a, b) => tags[b] - tags[a])
+}
+
+// get post by tag slug.
+export function getPostsByTagSlug(posts: Array<Post>, tag: string) {
+  return posts.filter((post) => {
+    if (!post.tags)
+      return false
+    const slugifiedTags = post.tags.map(tag => slug(tag))
+
+    return slugifiedTags.includes(tag)
+  })
+}
+
+// get all categories from post.
+export function getAllCategories(posts: Array<Post>) {
+  const categories: Record<string, number> = {}
+
+  posts.forEach((post) => {
+    if (post.published) {
+      post.categories?.forEach((category) => {
+        categories[category] = (categories[category] ?? 0) + 1
+      })
+    }
+  })
+
+  return categories
+}
+
+// sort categories.
+export function sortCategoriesByCount(categories: Record<string, number>) {
+  return Object.keys(categories).sort((a, b) => categories[b] - categories[a])
+}
+
+// get post by category slug.
+export function getPostsByCategorySlug(posts: Array<Post>, category: string) {
+  return posts.filter((post) => {
+    if (!post.categories)
+      return false
+    const slugifiedCategories = post.categories.map(category => slug(category))
+
+    return slugifiedCategories.includes(category)
+  })
+}
+
+// detect if an array is not empty.
+export function isArrayNotEmpty<T>(arr: T[] | undefined): arr is T[] {
+  if (Array.isArray(arr) && arr.length > 0)
+    return true
+
+  return false
 }
