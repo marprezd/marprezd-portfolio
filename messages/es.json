@@ -6,6 +6,10 @@
         "description": "¡Explora mi sitio web! Adéntrate en mis proyectos y artículos sobre Python, Next.js y otras tecnologías para aprender a crear aplicaciones web increíbles.",
         "generator": "Mario Pérez | Personal Website"
       },
+      "blog": {
+        "title": "Lista de publicaciones del blog",
+        "description": "Mejora tus habilidades en Java, Python, JS, ML, diseño de API y más con nuestra interesante lista de publicaciones."
+      },
       "guest-book": {
         "title": "Libro de visitas",
         "og-title": "Mario Pérez | Libro de visitas",
@@ -19,7 +23,7 @@
     },
     "globals": {
       "read-more": "Leer más",
-      "loading": "¡Solo un segundo, por favor!",
+      "loading": "Espera unos segundos...",
       "back-to-home": "Volver a inicio",
       "back-to-top": "Volver arriba"
     },
@@ -73,6 +77,102 @@
       "title": "<h1>Hola, <span>soy Mario</span>, bienvenido a mi sitio web personal.</h1>",
       "description": "Un sitio web donde muestro mis proyectos y enseño a otros a crear productos de software utilizando Python, Next.js y otras tecnologías.",
       "started": "Empezar"
+    },
+    "blog": {
+      "callouts": {
+        "info": "Información",
+        "warning": "Advertencia",
+        "success": "Felicidades",
+        "danger": "Peligro"
+      },
+      "featured": {
+        "title": "Publicaciones destacadas",
+        "description": "Explora las últimas series de publicaciones.",
+        "cta": "Todas las publicaciones"
+      },
+      "reading-time": {
+        "label": "Tiempo estimado de lectura",
+        "mins": "minutos de lectura"
+      },
+      "series": {
+        "label": "Series",
+        "description": "Esta publicación se publica como parte de la serie {serie}.",
+        "episodes": "Episodios",
+        "read-articles": "Leer otros artículos",
+        "cta-btn": "Serie"
+      },
+      "pagination": {
+        "select": {
+          "label": "Filas por página",
+          "placeholder": "Seleccionar tamaño de página"
+        },
+        "previous-page": "Ir a la página anterior",
+        "previous": "Anterior",
+        "next-page": "Ir a la página siguiente",
+        "next": "Siguiente",
+        "more-pages": "Más páginas"
+      },
+      "tags": {
+        "seo": {
+          "title": "Publicaciones etiquetadas con {tag}",
+          "description": "Explora nuestra amplia colección de artículos de blog bajo la etiqueta {tag}."
+        },
+        "label": "Nube de etiquetas"
+      },
+      "categories": {
+        "seo": {
+          "title": "Publicaciones en la categoría {category}",
+          "description": "Explora nuestra amplia colección de artículos de blog bajo la categoría {category}."
+        },
+        "label": "Nube de categorías"
+      },
+      "available_in": "Leer en otros idiomas",
+      "save-to-read-later": "Guardar para leer más tarde",
+      "pocket": "Guardar en Pocket",
+      "next": "Publicación más reciente",
+      "prev": "Publicación más antigua",
+      "index": "Volver al índice",
+      "allPosts": "Todos los artículos",
+      "image": {
+        "credit": "Foto de {photographer} en {host}"
+      },
+      "readingTime": {
+        "label": "Tiempo estimado de lectura",
+        "mins": "minutos de lectura"
+      },
+      "toc": {
+        "label": "En esta página"
+      },
+      "words": "palabras",
+      "author": {
+        "label": "Escrito por",
+        "role": "Desarrollador de software",
+        "summary": "<p>Mario Pérez es un <span>Desarrollador de Software</span> radicado en Colombia. A menudo escribe sobre la creación de aplicaciones web modernas con <span>Python</span>, <span>Next.js</span> y otras <span>tecnologías web</span>.</p>",
+        "cta": "Más detalles"
+      },
+      "added": "Añadido",
+      "updated": "Última actualización",
+      "comments": {
+        "title": "¡Apreciamos sus comentarios!",
+        "sub-title": "Por favor comparte tus comentarios con nosotros."
+      },
+      "load-comments": "Cargar comentarios",
+      "donations": {
+        "label": "Patrociname",
+        "title": "¿Te gustó el contenido de esta publicación?",
+        "desc": "Si es así, ¡agradecería enormemente tu apoyo! ¡Considera comprarme un café por solo $5 al mes para ayudar a que la creatividad siga fluyendo!",
+        "cta": "Conviértete en patrocinador"
+      },
+      "share": {
+        "label": "Compartir",
+        "description": "Compártelo en tus redes sociales y ayuda a que muchas personas se beneficien de él."
+      },
+      "related-posts": {
+        "title": "Publicaciones relacionadas",
+        "sub-title": "No olvides leer..."
+      },
+      "view": "vez leído",
+      "views": "veces leído"
     },
     "guest-book": {
       "title": "Libro de visitas",

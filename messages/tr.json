@@ -6,6 +6,10 @@
         "description": "Web sitemi keşfedin! Python, Next.js ve diğer teknolojiler hakkındaki projelerimi ve makalelerimi inceleyerek çarpıcı web uygulamaları oluşturmayı öğrenin.",
         "generator": "Mario Pérez | Personal Website"
       },
+      "blog": {
+        "title": "Blog yazıları listesi",
+        "description": "İlgi çekici yazı listemizle Java, Python, JS, Makine Öğrenimi, API tasarımı ve daha fazlasındaki becerilerinizi geliştirin."
+      },
       "guest-book": {
         "title": "Ziyaretçi defteri",
         "og-title": "Mario Pérez | Ziyaretçi defteri",
@@ -19,7 +23,7 @@
     },
     "globals": {
       "read-more": "Daha fazla oku",
-      "loading": "Sadece bir saniye, lütfen!",
+      "loading": "Birkaç saniye bekle...",
       "back-to-home": "Anasayfaya dön",
       "back-to-top": "Başa dön"
     },
@@ -73,6 +77,102 @@
       "title": "<h1>Merhaba, <span>ben Mario</span>, kişisel web siteme hoş geldiniz.</h1>",
       "description": "Projelerimi sergilediğim ve başkalarına Python, Next.js ve diğer teknolojileri kullanarak yazılım ürünleri oluşturmayı öğrettiğim bir web sitesi.",
       "started": "Başlayın"
+    },
+    "blog": {
+      "callouts": {
+        "info": "Bilgi",
+        "warning": "Uyarı",
+        "success": "Başarı",
+        "danger": "Tehlike"
+      },
+      "featured": {
+        "title": "Öne çıkan gönderiler",
+        "description": "Son gönderi serisine göz atın.",
+        "cta": "Tüm gönderiler"
+      },
+      "reading-time": {
+        "label": "Tahmini okuma süresi",
+        "mins": "dakika okumak"
+      },
+      "series": {
+        "label": "Seri",
+        "description": "Bu yazı {serie} dizisinin bir parçası olarak yayınlanmıştır",
+        "episodes": "Bölümler",
+        "read-articles": "Diğer makaleleri okuyun",
+        "cta-btn": "Seri"
+      },
+      "pagination": {
+        "select": {
+          "label": "Sayfa başına satırlar",
+          "placeholder": "Sayfa boyutunu seçin"
+        },
+        "previous-page": "Önceki sayfaya git",
+        "previous": "Önceki",
+        "next-page": "Sonraki sayfaya git",
+        "next": "Sonraki",
+        "more-pages": "Daha fazla sayfa"
+      },
+      "tags": {
+        "seo": {
+          "title": "{tag} etiketli gönderiler",
+          "description": "{tag} etiketi altında blog yazılarımızın geniş koleksiyonumuzu keşfedin."
+        },
+        "label": "Etiket bulutu"
+      },
+      "categories": {
+        "seo": {
+          "title": "{category} kategorisindeki gönderiler",
+          "description": "{category} kategorisi altındaki geniş blog yazıları koleksiyonumuzu keşfedin."
+        },
+        "label": "Kategori bulutu"
+      },
+      "available_in": "Diğer dillerde oku",
+      "save-to-read-later": "Daha sonra okumak için kaydet",
+      "pocket": "Pocket'a kaydedin",
+      "next": "En son gönderi",
+      "prev": "Daha eski gönderi",
+      "index": "Dizine geri dön",
+      "allPosts": "Tüm gönderiler",
+      "image": {
+        "credit": "Fotoğraf: {photographer}, {host}"
+      },
+      "readingTime": {
+        "label": "Tahmini okuma süresi",
+        "mins": "dakika okumak"
+      },
+      "toc": {
+        "label": "Bu sayfada"
+      },
+      "words": "kelimeler",
+      "author": {
+        "label": "Tarafından yazıldı",
+        "role": "Yazılım Geliştirici",
+        "summary": "<p>Mario Perez, Kolombiya merkezli bir <span>Yazılım Geliştiricisidir.</span> <span>Python</span>, <span>Next.js</span> ve diğer <span>web teknolojileriyle</span> modern web uygulamaları oluşturma hakkında sık sık yazıyor.</p>",
+        "cta": "Daha fazla ayrıntı"
+      },
+      "added": "Eklendi",
+      "updated": "Son güncelleme",
+      "comments": {
+        "title": "Geri bildiriminizi takdir ediyoruz!",
+        "sub-title": "Lütfen yorumlarınızı bizimle paylaşın."
+      },
+      "load-comments": "Yorumları yükle",
+      "donations": {
+        "label": "Bana Sponsor Ol",
+        "title": "Bu yazının içeriğini beğendiniz mi?",
+        "desc": "Eğer öyleyse, desteğinizi çok takdir ediyorum! Yaratıcılığımın devam etmesine yardımcı olmak için bana ayda sadece 5 dolara bir kahve almayı düşünün!",
+        "cta": "Sponsor ol"
+      },
+      "share": {
+        "label": "Paylaşmak",
+        "description": "Sosyal ağlarınızda paylaşın ve birçok kişinin bundan faydalanmasına yardımcı olun."
+      },
+      "related-posts": {
+        "title": "İlgili gönderiler",
+        "sub-title": "Okumayı unutmayın..."
+      },
+      "view": "kez okundu",
+      "views": "kez okundu"
     },
     "guest-book": {
       "title": "Misafir Defteri",

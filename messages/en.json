@@ -6,6 +6,10 @@
         "description": "Explore my website! Delve into my projects and articles on Python, Next.js, and other technologies to learn how to build stunning web apps.",
         "generator": "Mario Pérez | Personal Website"
       },
+      "blog": {
+        "title": "List of blog posts",
+        "description": "Enhance your skills in Java, Python, JavaScript, ML, API design, and more with our engaging list of posts."
+      },
       "guest-book": {
         "title": "Guest Book",
         "og-title": "Mario Pérez | Guest Book",
@@ -19,7 +23,7 @@
     },
     "globals": {
       "read-more": "Read more",
-      "loading": "Just one second, please!",
+      "loading": "Wait a few seconds...",
       "back-to-home": "Back to home",
       "back-to-top": "Back to top"
     },
@@ -73,6 +77,102 @@
       "title": "<h1>Hi, <span>I am Mario</span>, welcome to my personal website.</h1>",
       "description": "A website where I showcase my projects and teach others how to build software products using Python, Next.js, and other technologies.",
       "started": "Get started"
+    },
+    "blog": {
+      "callouts": {
+        "info": "Info",
+        "warning": "Warning",
+        "success": "Success",
+        "danger": "Danger"
+      },
+      "featured": {
+        "title": "Featured posts",
+        "description": "Browse the latest series of posts.",
+        "cta": "All posts"
+      },
+      "reading-time": {
+        "label": "Estimated reading time",
+        "mins": "mins read"
+      },
+      "series": {
+        "label": "Series",
+        "description": "This post is published as part of the series {serie}.",
+        "episodes": "Episodes",
+        "read-articles": "Read other articles",
+        "cta-btn": "Serie"
+      },
+      "pagination": {
+        "select": {
+          "label": "Rows per page",
+          "placeholder": "Select page size"
+        },
+        "previous-page": "Go to previous page",
+        "previous": "Previous",
+        "next-page": "Go to next page",
+        "next": "Next",
+        "more-pages": "More pages"
+      },
+      "tags": {
+        "seo": {
+          "title": "Posts tagged {tag}",
+          "description": "Explore our vast collection of blog articles under the {tag} tag."
+        },
+        "label": "Tag cloud"
+      },
+      "categories": {
+        "seo": {
+          "title": "Posts in the category {category}",
+          "description": "Explore our vast collection of blog articles under the {category} category."
+        },
+        "label": "Category cloud"
+      },
+      "available_in": "Read in other languages",
+      "save-to-read-later": "Save to read later",
+      "pocket": "Saved to Pocket",
+      "next": "Most recent post",
+      "prev": "Oldest post",
+      "index": "Back to the index",
+      "allPosts": "All posts",
+      "image": {
+        "credit": "Photo by {photographer} on {host}"
+      },
+      "readingTime": {
+        "label": "Estimated reading time",
+        "mins": "mins read"
+      },
+      "toc": {
+        "label": "On this page"
+      },
+      "words": "words",
+      "author": {
+        "label": "Written by",
+        "role": "Software Developer",
+        "summary": "<p>Mario Pérez is a <span>Software Developer</span> based in Colombia. He often writes about creating modern web apps with <span>Python</span>, <span>Next.js</span>, and other <span>web tech</span>.</p>",
+        "cta": "More details"
+      },
+      "added": "Added",
+      "updated": "Last updated",
+      "comments": {
+        "title": "We appreciate your feedback!",
+        "sub-title": "Please share your comments with us."
+      },
+      "load-comments": "Load comments",
+      "donations": {
+        "label": "Sponsor Me",
+        "title": "Did you enjoy the content of this post?",
+        "desc": "If so, I'd greatly appreciate your support! Consider buying me a coffee for just $5 a month to help keep the creativity flowing!",
+        "cta": "Become a patron"
+      },
+      "share": {
+        "label": "Share",
+        "description": "Help spread the word by sharing this post on your social networks and enabling more people to benefit!"
+      },
+      "related-posts": {
+        "title": "Related post",
+        "sub-title": "Don't forget to read..."
+      },
+      "view": "time read",
+      "views": "times read"
     },
     "guest-book": {
       "title": "Guestbook",
