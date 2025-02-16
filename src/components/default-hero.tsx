@@ -8,7 +8,7 @@ interface Props {
 
 export default function DefaultHero({ title, description }: Props) {
   return (
-    <div className="grid grid-cols-12">
+    <div className="grid grid-cols-12 space-y-4 pt-10 lg:pt-0">
       <div className="col-span-full lg:col-span-6 lg:place-self-center">
         <h1 className="mb-4 text-center text-4xl font-bold md:text-[2.6rem] lg:text-left">
           {title}
