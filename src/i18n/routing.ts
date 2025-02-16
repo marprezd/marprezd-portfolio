@@ -19,6 +19,26 @@ export const routing = defineRouting({
       es: '/blog/[slug]',
       tr: '/blog/[slug]',
     },
+    '/blog/tags': {
+      en: '/blog/tags',
+      es: '/blog/etiquetas',
+      tr: '/blog/etiketler',
+    },
+    '/blog/tags/[tag]': {
+      en: '/blog/tags/[tag]',
+      es: '/blog/etiquetas/[tag]',
+      tr: '/blog/etiketler/[tag]',
+    },
+    '/blog/categories': {
+      en: '/blog/categories',
+      es: '/blog/categorias',
+      tr: '/blog/kategoriler',
+    },
+    '/blog/categories/[category]': {
+      en: '/blog/categories/[category]',
+      es: '/blog/categorias/[category]',
+      tr: '/blog/kategoriler/[category]',
+    },
     '/projects': {
       en: '/projects',
       es: '/proyectos',
