@@ -275,3 +275,8 @@
     @apply content-['#'];
   }
 }
+
+/* Inline Code | set border and font styles */
+p span.inline-code code {
+  @apply border border-dashed border-gray-800 dark:border-gray-600 font-normal 
+}
