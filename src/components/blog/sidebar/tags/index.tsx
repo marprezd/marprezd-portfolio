@@ -1,4 +1,5 @@
 import { posts } from '#site/content'
+import Animation from '@/components/animation'
 import {
   Card,
   CardContent,
@@ -7,7 +8,6 @@ import {
 } from '@/components/ui/card'
 import { Separator } from '@/components/ui/separator'
 import { getAllTags, sortTagsByCount } from '@/lib/utils'
-import { motion } from 'motion/react'
 import { useLocale, useTranslations } from 'next-intl'
 import TagCloud from './tag-cloud'
 
@@ -20,12 +20,7 @@ export default function Tags() {
   const t = useTranslations('app')
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ amount: 0.3 }}
-      transition={{ duration: 2, ease: 'easeOut', delay: 0.7, type: 'tween' }}
-    >
+    <Animation>
       <Card className="border-1 border-gray-300 bg-white dark:border-gray-700 dark:bg-gray-900">
         <CardHeader>
           <CardTitle>
@@ -41,6 +36,6 @@ export default function Tags() {
           </ul>
         </CardContent>
       </Card>
-    </motion.div>
+    </Animation>
   )
 }

@@ -3,6 +3,7 @@
 import type { QueryPaginationProps } from '@/components/query-pagination'
 import type { Locale } from '@/i18n/routing'
 import { posts } from '#site/content'
+import Animation from '@/components/animation'
 import CategoriesCloud from '@/components/blog/sidebar/categories/category-cloud'
 import {
   Card,
@@ -12,7 +13,6 @@ import {
 } from '@/components/ui/card'
 import { Separator } from '@/components/ui/separator'
 import { getAllCategories, getPostsByCategorySlug, slugify, sortCategoriesByCount, sortPosts } from '@/lib/utils'
-import { motion } from 'motion/react'
 import { useTranslations } from 'next-intl'
 import dynamic from 'next/dynamic'
 import { useSearchParams } from 'next/navigation'
@@ -32,8 +32,8 @@ export default function AllCategories({
     triggerOnce: true,
     threshold: 0.5,
   })
-  const PostGridsComponent = dynamic(
-    () => import('../../posts-grids'),
+  const PostGridComponent = dynamic(
+    () => import('../../post-grid'),
     {
       ssr: false,
     },
@@ -67,7 +67,7 @@ export default function AllCategories({
         <div className="space-y-10 ">
           <div ref={ref}>
             {inView && (
-              <PostGridsComponent posts={displayPosts} />
+              <PostGridComponent posts={displayPosts} />
             )}
           </div>
           <div ref={ref}>
@@ -86,12 +86,7 @@ export default function AllCategories({
         </div>
       </div>
       <aside className="basis-full lg:basis-3/12">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ amount: 0.3 }}
-          transition={{ duration: 2, ease: 'easeOut', delay: 0.7, type: 'tween' }}
-        >
+        <Animation>
           <Card className="border-1 border-gray-300 bg-white dark:border-gray-700 dark:bg-gray-900">
             <CardHeader>
               <CardTitle>
@@ -107,7 +102,7 @@ export default function AllCategories({
               </ul>
             </CardContent>
           </Card>
-        </motion.div>
+        </Animation>
       </aside>
     </section>
   )
