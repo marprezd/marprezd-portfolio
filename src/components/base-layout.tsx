@@ -71,7 +71,7 @@ export default async function BaseLayout({
             <SidebarProvider>
               <AppSidebar />
               <SidebarInset>
-                <header className="sticky top-0 flex h-16 shrink-0 items-center gap-2 rounded-t-lg border-b bg-background/95 px-4 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+                <header className="sticky top-0 flex h-16 shrink-0 items-center gap-2 rounded-t-lg border-b bg-background px-4">
                   <div className="flex flex-1 items-center gap-2 px-4">
                     <SidebarTrigger className="-ml-1" />
                     <Separator orientation="vertical" className="mr-2 h-4" />
@@ -84,11 +84,11 @@ export default async function BaseLayout({
                     </Suspense>
                   </div>
                 </header>
-                <div className="flex flex-1 flex-col gap-4 overflow-auto p-4 pt-0 [&::-webkit-scrollbar-thumb]:bg-gray-300
-  dark:[&::-webkit-scrollbar-thumb]:bg-slate-500
-  [&::-webkit-scrollbar-track]:bg-gray-100
-  dark:[&::-webkit-scrollbar-track]:bg-slate-700
-  [&::-webkit-scrollbar]:w-2"
+                <div className="flex flex-1 flex-col gap-4 overflow-y-auto p-4 pt-0
+    [&::-webkit-scrollbar-thumb]:bg-gray-300
+    dark:[&::-webkit-scrollbar-thumb]:bg-slate-500
+    [&::-webkit-scrollbar-track]:bg-gray-100
+    dark:[&::-webkit-scrollbar-track]:bg-slate-700 [&::-webkit-scrollbar]:w-2"
                 >
                   {children}
                 </div>
