@@ -155,3 +155,16 @@ export function isArrayNotEmpty<T>(arr: T[] | undefined): arr is T[] {
 
   return false
 }
+
+export async function copyToClipboard(text: string) {
+  try {
+    await navigator.clipboard.writeText(text)
+  }
+  catch (error) {
+    console.error(error)
+
+    return false
+  }
+
+  return true
+}
