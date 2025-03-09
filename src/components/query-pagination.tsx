@@ -12,10 +12,10 @@ import {
 } from '@/components/ui/pagination'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { cn } from '@/lib/utils'
-import { motion } from 'motion/react'
 import { useTranslations } from 'next-intl'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import { useCallback } from 'react'
+import Animation from './animation'
 
 export interface QueryPaginationProps {
   pageSizeSelectOptions?: {
@@ -129,44 +129,40 @@ export default function QueryPagination({
   }
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ amount: 0.3 }}
-      transition={{ duration: 2, ease: 'easeOut', delay: 0.7, type: 'tween' }}
-      className="flex w-full flex-col items-center gap-3 md:flex-row"
-    >
-      {pageSizeSelectOptions && (
-        <div className="flex flex-1 flex-col gap-4">
-          <SelectRowsPerPage
-            options={pageSizeSelectOptions.pageSizeOptions}
-            setPageSize={navToPageSize}
-            pageSize={pageSize}
-          />
-        </div>
-      )}
-      <Pagination className={cn({ 'md:justify-end': pageSizeSelectOptions })}>
-        <PaginationContent className="max-sm:gap-0">
-          <PaginationItem>
-            <PaginationPrevious
-              href={buildLink(Math.max(page - 1, 1))}
-              aria-disabled={page === 1}
-              tabIndex={page === 1 ? -1 : undefined}
-              className={page === 1 ? 'pointer-events-none opacity-50' : undefined}
+    <Animation>
+      <div className="flex w-full flex-col items-center gap-3 md:flex-row">
+        {pageSizeSelectOptions && (
+          <div className="flex flex-1 flex-col gap-4">
+            <SelectRowsPerPage
+              options={pageSizeSelectOptions.pageSizeOptions}
+              setPageSize={navToPageSize}
+              pageSize={pageSize}
             />
-          </PaginationItem>
-          {renderPageNumbers()}
-          <PaginationItem>
-            <PaginationNext
-              href={buildLink(Math.min(page + 1, totalPageCount))}
-              aria-disabled={page === totalPageCount}
-              tabIndex={page === totalPageCount ? -1 : undefined}
-              className={page === totalPageCount ? 'pointer-events-none opacity-50' : undefined}
-            />
-          </PaginationItem>
-        </PaginationContent>
-      </Pagination>
-    </motion.div>
+          </div>
+        )}
+        <Pagination className={cn({ 'md:justify-end': pageSizeSelectOptions })}>
+          <PaginationContent className="max-sm:gap-0">
+            <PaginationItem>
+              <PaginationPrevious
+                href={buildLink(Math.max(page - 1, 1))}
+                aria-disabled={page === 1}
+                tabIndex={page === 1 ? -1 : undefined}
+                className={page === 1 ? 'pointer-events-none opacity-50' : undefined}
+              />
+            </PaginationItem>
+            {renderPageNumbers()}
+            <PaginationItem>
+              <PaginationNext
+                href={buildLink(Math.min(page + 1, totalPageCount))}
+                aria-disabled={page === totalPageCount}
+                tabIndex={page === totalPageCount ? -1 : undefined}
+                className={page === totalPageCount ? 'pointer-events-none opacity-50' : undefined}
+              />
+            </PaginationItem>
+          </PaginationContent>
+        </Pagination>
+      </div>
+    </Animation>
   )
 }
 
