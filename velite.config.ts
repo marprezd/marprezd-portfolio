@@ -1,10 +1,6 @@
 import { exec } from 'node:child_process'
 import { promisify } from 'node:util'
-import rehypeShiki from '@shikijs/rehype'
-import {
-  transformerNotationDiff,
-  transformerNotationFocus,
-} from '@shikijs/transformers'
+import { syntaxHighlight } from '@/lib/mdx/syntax-highlight'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeMathjax from 'rehype-mathjax'
 import rehypeSlug from 'rehype-slug'
@@ -127,24 +123,6 @@ export default defineConfig({
   collections: { posts, projects },
   mdx: {
     rehypePlugins: [
-      [
-        rehypeShiki,
-        {
-          themes: {
-            dark: 'dark-plus',
-            light: 'light-plus',
-          },
-          skipInline: true,
-          transformers: [
-            transformerNotationDiff({
-              matchAlgorithm: 'v3',
-            }),
-            transformerNotationFocus({
-              matchAlgorithm: 'v3',
-            }),
-          ],
-        },
-      ],
       rehypeStringify,
       rehypeSlug,
       rehypeMathjax,
@@ -158,6 +136,7 @@ export default defineConfig({
           },
         },
       ],
+      [syntaxHighlight],
       rehypeUnwrapImages,
     ],
     remarkPlugins: [
