@@ -15,7 +15,7 @@ function ToastViewport({ ref, className, ...props }: React.ComponentPropsWithout
     <ToastPrimitives.Viewport
       ref={ref}
       className={cn(
-        'fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]',
+        'fixed top-0 shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]',
         className,
       )}
       {...props}
