@@ -7,7 +7,7 @@
         "generator": "Mario Pérez | Personal Website"
       },
       "blog": {
-        "title": "List of blog posts",
+        "title": "Blog posts",
         "description": "Enhance your skills in Java, Python, JavaScript, ML, API design, and more with our engaging list of posts."
       },
       "guest-book": {
@@ -25,7 +25,8 @@
       "read-more": "Read more",
       "loading": "Wait a few seconds...",
       "back-to-home": "Back to home",
-      "back-to-top": "Back to top"
+      "back-to-top": "Back to top",
+      "more-details": "More details"
     },
     "layouts": {
       "app-sidebar": {
@@ -94,16 +95,9 @@
         "label": "Estimated reading time",
         "mins": "mins read"
       },
-      "series": {
-        "label": "Series",
-        "description": "This post is published as part of the series {serie}.",
-        "episodes": "Episodes",
-        "read-articles": "Read other articles",
-        "cta-btn": "Serie"
-      },
       "pagination": {
         "select": {
-          "label": "Rows per page",
+          "label": "Items per page",
           "placeholder": "Select page size"
         },
         "previous-page": "Go to previous page",
@@ -140,39 +134,63 @@
         "label": "Estimated reading time",
         "mins": "mins read"
       },
+      "hr-label": "A detailed description of the article",
       "toc": {
         "label": "On this page"
       },
       "words": "words",
-      "author": {
-        "label": "Written by",
-        "role": "Software Developer",
-        "summary": "<p>Mario Pérez is a <span>Software Developer</span> based in Colombia. He often writes about creating modern web apps with <span>Python</span>, <span>Next.js</span>, and other <span>web tech</span>.</p>",
-        "cta": "More details"
+      "tabs": {
+        "list": {
+          "author": "Author",
+          "series": "Series",
+          "share": "Share",
+          "comments": "Comments",
+          "related": "Related posts",
+          "donations": "Sponsor Me"
+        },
+        "content": {
+          "author": {
+            "first-line": "Written by",
+            "second-line": "Mario Pérez.",
+            "summary": "<p>Mario Pérez is a <span>Software Developer</span> based in Colombia. He often writes about creating modern web apps with <span>Python</span>, <span>Next.js</span>, and other <span>web tech</span>.</p>"
+          },
+          "series": {
+            "first-line": "Post series",
+            "second-line": "Explore the collection of episodes.",
+            "summary": "This publication is part of the series:",
+            "episodes": "Episodes",
+            "read-articles": "Read other articles",
+            "cta-btn": "Serie"
+          },
+          "share": {
+            "first-line": "Share it",
+            "second-line": "Be Social.",
+            "summary": "Spread this post on your social media to help others."
+          },
+          "comments": {
+            "first-line": "Feedback",
+            "second-line": "Add your post feedback.",
+            "load-comments": "Load comments"
+          },
+          "related-posts": {
+            "first-line": "Related posts",
+            "second-line": "Don't forget to read."
+          },
+          "donations": {
+            "first-line": "Sponsor Me",
+            "second-line": "Become a sponsor!",
+            "summary": "Did you enjoy this post? If so, consider supporting me with a $5 monthly donation to keep the creativity flowing!",
+            "cta": "I want to be a sponsor!"
+          }
+        }
       },
       "added": "Added",
       "updated": "Last updated",
-      "comments": {
-        "title": "We appreciate your feedback!",
-        "sub-title": "Please share your comments with us."
-      },
-      "load-comments": "Load comments",
-      "donations": {
-        "label": "Sponsor Me",
-        "title": "Did you enjoy the content of this post?",
-        "desc": "If so, I'd greatly appreciate your support! Consider buying me a coffee for just $5 a month to help keep the creativity flowing!",
-        "cta": "Become a patron"
-      },
-      "share": {
-        "label": "Share",
-        "description": "Help spread the word by sharing this post on your social networks and enabling more people to benefit!"
-      },
-      "related-posts": {
-        "title": "Related post",
-        "sub-title": "Don't forget to read..."
-      },
       "view": "time read",
-      "views": "times read"
+      "views": "times read",
+      "knowledge-quiz": {
+        "start-quiz-btn": "Start Quiz"
+      }
     },
     "guest-book": {
       "title": "Guestbook",

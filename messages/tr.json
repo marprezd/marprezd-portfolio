@@ -7,7 +7,7 @@
         "generator": "Mario Pérez | Personal Website"
       },
       "blog": {
-        "title": "Blog yazıları listesi",
+        "title": "Blog yazıları",
         "description": "İlgi çekici yazı listemizle Java, Python, JS, Makine Öğrenimi, API tasarımı ve daha fazlasındaki becerilerinizi geliştirin."
       },
       "guest-book": {
@@ -25,7 +25,8 @@
       "read-more": "Daha fazla oku",
       "loading": "Birkaç saniye bekle...",
       "back-to-home": "Anasayfaya dön",
-      "back-to-top": "Başa dön"
+      "back-to-top": "Başa dön",
+      "more-details": "Daha fazla detay"
     },
     "layouts": {
       "app-sidebar": {
@@ -94,16 +95,9 @@
         "label": "Tahmini okuma süresi",
         "mins": "dakika okumak"
       },
-      "series": {
-        "label": "Seri",
-        "description": "Bu yazı {serie} dizisinin bir parçası olarak yayınlanmıştır",
-        "episodes": "Bölümler",
-        "read-articles": "Diğer makaleleri okuyun",
-        "cta-btn": "Seri"
-      },
       "pagination": {
         "select": {
-          "label": "Sayfa başına satırlar",
+          "label": "Sayfa başına öğe",
           "placeholder": "Sayfa boyutunu seçin"
         },
         "previous-page": "Önceki sayfaya git",
@@ -136,6 +130,7 @@
       "image": {
         "credit": "Fotoğraf: {photographer}, {host}"
       },
+      "hr-label": "Gönderinin ayrıntılı açıklaması",
       "readingTime": {
         "label": "Tahmini okuma süresi",
         "mins": "dakika okumak"
@@ -144,35 +139,58 @@
         "label": "Bu sayfada"
       },
       "words": "kelimeler",
-      "author": {
-        "label": "Tarafından yazıldı",
-        "role": "Yazılım Geliştirici",
-        "summary": "<p>Mario Perez, Kolombiya merkezli bir <span>Yazılım Geliştiricisidir.</span> <span>Python</span>, <span>Next.js</span> ve diğer <span>web teknolojileriyle</span> modern web uygulamaları oluşturma hakkında sık sık yazıyor.</p>",
-        "cta": "Daha fazla ayrıntı"
+      "tabs": {
+        "list": {
+          "author": "Yazar",
+          "series": "Seriler",
+          "share": "Paylaş",
+          "comments": "Yorumlar",
+          "related": "İlgili gönderiler",
+          "donations": "Bana Sponsor Ol"
+        },
+        "content": {
+          "author": {
+            "first-line": "Yazan",
+            "second-line": "Mario Pérez.",
+            "summary": "<p>Mario Perez, Kolombiya merkezli bir <span>Yazılım Geliştiricisidir.</span> <span>Python</span>, <span>Next.js</span> ve diğer <span>web teknolojileriyle</span> modern web uygulamaları oluşturma hakkında sık sık yazıyor.</p>"
+          },
+          "series": {
+            "first-line": "Gönderi dizisi",
+            "second-line": "Bölüm koleksiyonunu keşfedin.",
+            "summary": "This publication is part of the series:",
+            "episodes": "Bölümler",
+            "read-articles": "Diğer makaleleri okuyun",
+            "cta-btn": "Seri"
+          },
+          "share": {
+            "first-line": "Paylaşın",
+            "second-line": "Sosyal olun.",
+            "summary": "Başkalarına yardım etmek için bu gönderiyi sosyal medyanızda yayın"
+          },
+          "comments": {
+            "first-line": "Geri bildirim",
+            "second-line": "Gönderi geri bildiriminizi ekleyin.",
+            "load-comments": "Yorumları yükle"
+          },
+          "related-posts": {
+            "first-line": "İlgili gönderiler",
+            "second-line": "Okumayı unutmayın"
+          },
+          "donations": {
+            "first-line": "Bana Sponsor Ol",
+            "second-line": "Sponsor olun!",
+            "summary": "Bu gönderiyi beğendiniz mi? Eğer öyleyse, yaratıcılığımı canlı tutmak için bana aylık 5$ bağışta bulunarak destek olmayı düşünün!",
+            "cta": "Sponsor olmak istiyorum!"
+          }
+        }
       },
       "added": "Eklendi",
       "updated": "Son güncelleme",
-      "comments": {
-        "title": "Geri bildiriminizi takdir ediyoruz!",
-        "sub-title": "Lütfen yorumlarınızı bizimle paylaşın."
-      },
-      "load-comments": "Yorumları yükle",
-      "donations": {
-        "label": "Bana Sponsor Ol",
-        "title": "Bu yazının içeriğini beğendiniz mi?",
-        "desc": "Eğer öyleyse, desteğinizi çok takdir ediyorum! Yaratıcılığımın devam etmesine yardımcı olmak için bana ayda sadece 5 dolara bir kahve almayı düşünün!",
-        "cta": "Sponsor ol"
-      },
-      "share": {
-        "label": "Paylaşmak",
-        "description": "Sosyal ağlarınızda paylaşın ve birçok kişinin bundan faydalanmasına yardımcı olun."
-      },
-      "related-posts": {
-        "title": "İlgili gönderiler",
-        "sub-title": "Okumayı unutmayın..."
-      },
       "view": "kez okundu",
-      "views": "kez okundu"
+      "views": "kez okundu",
+      "knowledge-quiz": {
+        "start-quiz-btn": "Sınavı Başlat"
+      }
     },
     "guest-book": {
       "title": "Misafir Defteri",
