@@ -146,7 +146,7 @@
           "share": "Paylaş",
           "comments": "Yorumlar",
           "related": "İlgili gönderiler",
-          "donations": "Bana Sponsor Ol"
+          "quiz": "Sınav"
         },
         "content": {
           "author": {
@@ -176,21 +176,41 @@
             "first-line": "İlgili gönderiler",
             "second-line": "Okumayı unutmayın"
           },
-          "donations": {
-            "first-line": "Bana Sponsor Ol",
-            "second-line": "Sponsor olun!",
-            "summary": "Bu gönderiyi beğendiniz mi? Eğer öyleyse, yaratıcılığımı canlı tutmak için bana aylık 5$ bağışta bulunarak destek olmayı düşünün!",
-            "cta": "Sponsor olmak istiyorum!"
+          "knowledge-quiz": {
+            "first-line": "Genel Bilgi Testi",
+            "second-line": "Genel bilginizi bu sınavla test edin.",
+            "header-text": "{number} Soru",
+            "start-quiz-btn": "Sınava Başla",
+            "question": "Soru",
+            "timer-time-taken": "Harcanan Zaman",
+            "timer-time-remaining": "Kalan Süre",
+            "pause-screen-pause": "Duraklat",
+            "pause-screen-resume": "Özgeçmiş",
+            "test-paused": "Test duraklatıldı.",
+            "pause-screen-display": "Test duraklatıldı. Devam etmek için Sürdür düğmesine tıklandı.",
+            "marks-of-question": "({marks} puan)",
+            "next-question": "Sonraki",
+            "result-page-header-text": "Toplam {questionLength} sorudan oluşan anketi tamamladınız. {correctIndexLength} soruya doğru cevap verdiniz.",
+            "result-page-point": "{totalPoints} sorudan {correctPoints} aldınız.",
+            "filter-by": "Süzmek",
+            "all-answers": "Tüm cevaplar",
+            "correct-answers": "Doğru cevaplar",
+            "incorrect-answers": "Yanlış cevaplar",
+            "unanswered": "Cevaplanmamış",
+            "explanation": "Açıklama:",
+            "response": "Cevapladınız:",
+            "single-selection-tag-text": "Tekli Seçim",
+            "multiple-selection-tag-text": "Çoklu Seçim",
+            "pick-number-of-selection": "{numberOfSelection, plural, =1 {1'i seç} =2 {2'yi seç} =3 {3'ü seç} =4 {4'ü seç} =5 {5'i seç} other {#'i seç}}",
+            "message-for-correct-answer": "Haklısınız. Devam etmek için lütfen İleri'ye tıklayın.",
+            "message-for-incorrect-answer": "Yanlış cevap. Lütfen tekrar deneyin."
           }
         }
       },
       "added": "Eklendi",
       "updated": "Son güncelleme",
       "view": "kez okundu",
-      "views": "kez okundu",
-      "knowledge-quiz": {
-        "start-quiz-btn": "Sınavı Başlat"
-      }
+      "views": "kez okundu"
     },
     "guest-book": {
       "title": "Misafir Defteri",

@@ -146,7 +146,7 @@
           "share": "Compartir",
           "comments": "Comentarios",
           "related": "Artículos relacionados",
-          "donations": "Patrociname"
+          "quiz": "Cuestionario"
         },
         "content": {
           "author": {
@@ -176,21 +176,41 @@
             "first-line": "Publicaciones relacionadas",
             "second-line": "No olvides leer."
           },
-          "donations": {
-            "first-line": "Patrociname",
-            "second-line": "Become a sponsor!",
-            "summary": "¿Disfrutaste esta publicación? Si es así, ¡considera apoyarme con una donación mensual de $5 para que la creatividad siga fluyendo!",
-            "cta": "¡Quiero ser patrocinador!"
+          "knowledge-quiz": {
+            "first-line": "Prueba de conocimiento general",
+            "second-line": "Pon a prueba tu conocimiento general con este cuestionario.",
+            "header-text": "{number} Preguntas",
+            "start-quiz-btn": "Iniciar cuestionario",
+            "question": "Pregunta",
+            "timer-time-taken": "Tiempo empleado",
+            "timer-time-remaining": "Tiempo restante",
+            "pause-screen-pause": "Pausa",
+            "pause-screen-resume": "Reanudar",
+            "test-paused": "Prueba pausada.",
+            "pause-screen-display": "La prueba está en pausa. Haga clic en el botón Reanudar para continuar.",
+            "marks-of-question": "({marks} puntos)",
+            "next-question": "Siguiente",
+            "result-page-header-text": "Has completado el cuestionario de {questionLength} preguntas. Usted respondió {correctIndexLength} preguntas correctamente.",
+            "result-page-point": "Tu puntuación fue de {correctPoints} sobre {totalPoints}.",
+            "filter-by": "Filtrar por",
+            "all-answers": "Todas las respuestas",
+            "correct-answers": "Respuestas correctas",
+            "incorrect-answers": "Respuestas incorrectas",
+            "unanswered": "Sin respuesta",
+            "explanation": "Explicación:",
+            "response": "Respondiste:",
+            "single-selection-tag-text": "Selección única",
+            "multiple-selection-tag-text": "Selección múltiple",
+            "pick-number-of-selection": "Elije {numberOfSelection}",
+            "message-for-correct-answer": "Tienes razón. Haz clic en Siguiente para continuar.",
+            "message-for-incorrect-answer": "Respuesta incorrecta. Inténtalo de nuevo."
           }
         }
       },
       "added": "Añadido",
       "updated": "Última actualización",
       "view": "vez leído",
-      "views": "veces leído",
-      "knowledge-quiz": {
-        "start-quiz-btn": "Iniciar cuestionario"
-      }
+      "views": "veces leído"
     },
     "guest-book": {
       "title": "Libro de visitas",

@@ -146,7 +146,7 @@
           "share": "Share",
           "comments": "Comments",
           "related": "Related posts",
-          "donations": "Sponsor Me"
+          "quiz": "Quiz"
         },
         "content": {
           "author": {
@@ -176,21 +176,41 @@
             "first-line": "Related posts",
             "second-line": "Don't forget to read."
           },
-          "donations": {
-            "first-line": "Sponsor Me",
-            "second-line": "Become a sponsor!",
-            "summary": "Did you enjoy this post? If so, consider supporting me with a $5 monthly donation to keep the creativity flowing!",
-            "cta": "I want to be a sponsor!"
+          "knowledge-quiz": {
+            "first-line": "General Knowledge Quiz",
+            "second-line": "Test your general knowledge with this quiz.",
+            "header-text": "{number} Questions",
+            "start-quiz-btn": "Start Quiz",
+            "question": "Question",
+            "timer-time-taken": "Time Spent",
+            "timer-time-remaining": "Time Remaining",
+            "pause-screen-pause": "Pause",
+            "pause-screen-resume": "Resume",
+            "test-paused": "Test paused.",
+            "pause-screen-display": "Test is paused. Clicked the Resume button to continue.",
+            "marks-of-question": "({marks} points)",
+            "next-question": "Next",
+            "result-page-header-text": "You have completed the quiz, which has {questionLength} questions. You answered {correctIndexLength} questions correctly.",
+            "result-page-point": "You scored {correctPoints} out of {totalPoints}.",
+            "filter-by": "Filter by",
+            "all-answers": "All answers",
+            "correct-answers": "Correct answers",
+            "incorrect-answers": "Incorrect answers",
+            "unanswered": "Unanswered",
+            "explanation": "Explanation:",
+            "response": "You Answered:",
+            "single-selection-tag-text": "Single Selection",
+            "multiple-selection-tag-text": "Multiple Selection",
+            "pick-number-of-selection": "Pick {numberOfSelection}",
+            "message-for-correct-answer": "You are correct. Please click Next to continue.",
+            "message-for-incorrect-answer": "Incorrect answer. Please try again."
           }
         }
       },
       "added": "Added",
       "updated": "Last updated",
       "view": "time read",
-      "views": "times read",
-      "knowledge-quiz": {
-        "start-quiz-btn": "Start Quiz"
-      }
+      "views": "times read"
     },
     "guest-book": {
       "title": "Guestbook",
