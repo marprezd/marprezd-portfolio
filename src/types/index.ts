@@ -1,4 +1,4 @@
-import type { JSX, SVGProps } from 'react'
+import type { SVGProps } from 'react'
 // svg
 export type IconSvgProps = SVGProps<SVGSVGElement> & {
   size?: number
@@ -76,27 +76,14 @@ export interface Question {
   answerSelectionType: AnswerSelectionType
   answers: string[]
   correctAnswer: string | number[]
-  messageForCorrectAnswer: string
-  messageForIncorrectAnswer: string
   explanation: string
   point: string
 }
 
 export interface QuizStructure {
   quizTitle: string
-  quizSynopsis: JSX.Element
+  quizSynopsis: string
   progressBarColor: string
   nrOfQuestions: number
-  appLocale: {
-    landingHeaderText: string
-    question: string
-    startQuizBtn: string
-    resultFilterAll: string
-    resultFilterCorrect: string
-    resultFilterIncorrect: string
-    nextQuestionBtn: string
-    resultPageHeaderText: string
-    // other locale properties...
-  }
   questions: Question[]
 }
