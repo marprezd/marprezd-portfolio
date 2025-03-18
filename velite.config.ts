@@ -86,6 +86,7 @@ const posts = defineCollection({
       meta,
       metadata: s.metadata(),
       published: s.boolean().default(true),
+      quizId: s.string().max(99)
     })
     .transform(computedFields),
 })
