@@ -8,11 +8,10 @@ import Comments from './comments'
 import PostAuthor from './post-author'
 import PostContent from './post-content'
 import PostCover from './post-cover'
-// import PostFooter from './post-footer'
 import PostHeader from './post-header'
 import PostMeta from './post-meta'
 import { PostSeries } from './post-series'
-// import ProgrammingQuiz from './programming-quiz'
+import ProgrammingQuiz from './programming-quiz'
 import RelatedPosts from './related-posts'
 import SharePost from './share-post'
 import TocDesktop, { TocMobile } from './toc'
@@ -81,6 +80,7 @@ export default function PostLayout({ children, post, similarPosts }: PostLayoutP
                 <TabsTrigger value="share">{t('blog.tabs.list.share')}</TabsTrigger>
                 <TabsTrigger value="comments">{t('blog.tabs.list.comments')}</TabsTrigger>
                 {similarPosts?.length ? <TabsTrigger value="related">{t('blog.tabs.list.related')}</TabsTrigger> : ''}
+                <TabsTrigger value="quiz">{t('blog.tabs.list.quiz')}</TabsTrigger>
               </TabsList>
               <TabsContent value="author">
                 <PostAuthor />
@@ -103,15 +103,13 @@ export default function PostLayout({ children, post, similarPosts }: PostLayoutP
                     </TabsContent>
                   )
                 : ''}
+              <TabsContent value="quiz">
+                <ProgrammingQuiz post={post.quizId} />
+              </TabsContent>
             </Tabs>
           </ProseLayout>
         </div>
       </PostContent>
-      {/* Todo:
-      <PostFooter>
-         <ProgrammingQuiz />
-      </PostFooter>
-       */}
     </article>
   )
 }

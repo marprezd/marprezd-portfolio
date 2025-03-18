@@ -1,0 +1,148 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+.react-quiz-container {
+  @apply max-w-2xl m-5 items-center flex justify-center;
+}
+.react-quiz-container .startQuizWrapper {
+  @apply mt-2.5;
+}
+.react-quiz-container .btn {
+  @apply font-semibold text-center align-middle touch-manipulation cursor-pointer bg-none border whitespace-nowrap select-none cursor-pointer mb-0 px-3 py-[11px] border-solid border-transparent;
+  -webkit-user-select: none;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.react-quiz-container .questionWrapper .btn {
+  @apply rounded border text-[15px] block whitespace-normal my-2.5 border-solid border-[#e8e8e8];
+  text-align: unset;
+}
+.react-quiz-container .questionWrapper .btn.correct {
+  @apply text-[white];
+  background: green;
+}
+.timerBtn {
+  @apply w-20 text-white top-[-35px] relative float-right cursor-pointer p-[5px] rounded-[10px] border-0;
+  background: green;
+}
+.timerPauseScreen {
+  @apply text-3xl;
+}
+.react-quiz-container .questionModal .alert {
+  @apply border text-white mb-[21px] p-5 rounded-sm border-solid border-transparent;
+}
+.react-quiz-container .correct {
+  background: green;
+}
+.react-quiz-container .incorrect {
+  @apply text-[white];
+  background: red;
+}
+.react-quiz-container .unanswered {
+  @apply text-[white];
+  background: grey;
+}
+.react-quiz-container .questionWrapper img {
+  @apply w-full;
+}
+.react-quiz-container .answerBtn {
+  @apply w-full;
+}
+.react-quiz-container .selected {
+  @apply text-[white];
+  background: #007bff;
+}
+.react-quiz-container .startQuizWrapper .startQuizBtn {
+  @apply text-[15px] leading-[1.35135] text-[rgba(0,0,0,0.65)] bg-white border rounded-sm border-solid border-[#d9d9d9];
+}
+.react-quiz-container .result-answer-wrapper {
+  @apply border mb-5 rounded-br-[5px] rounded-bl-[5px] border-solid border-[#e8e8e8];
+}
+.react-quiz-container .result-answer-wrapper h3 {
+  @apply bg-neutral-50 opacity-80 text-[rgba(0,0,0,0.9)] m-0 p-2.5 rounded-t-[5px];
+}
+.react-quiz-container .result-answer-wrapper .explanation {
+  @apply border mt-0 mb-5 mx-5 p-5 border-solid border-[#e8e8e8];
+}
+.react-quiz-container .result-answer-wrapper .tag-container {
+  @apply m-5;
+}
+.react-quiz-container .result-answer {
+  @apply px-5 py-0;
+}
+.react-quiz-container .quiz-synopsis {
+  @apply mx-0 my-[15px];
+}
+.react-quiz-container .tag-container {
+  @apply flex flex-wrap gap-[5px] my-5;
+}
+.react-quiz-container .selection-tag,
+.react-quiz-container .number-of-selection {
+  @apply text-white p-[7px] rounded-[5px];
+}
+.react-quiz-container .number-of-selection {
+  @apply ml-[5px];
+  background: #673ab7;
+}
+.react-quiz-container .selection-tag.single {
+  background: #3f51b5;
+}
+.react-quiz-container .selection-tag.multiple {
+  background: #ff9800;
+}
+.react-quiz-container .selection-tag.segment {
+  @apply ml-[5px];
+  background: #3db4b9;
+}
+.react-quiz-container .questionBtnContainer {
+  @apply flex justify-between;
+}
+.react-quiz-container .quiz-result-filter {
+  @apply relative w-[120px] bottom-[15px];
+}
+.react-quiz-container .quiz-result-filter .filter-dropdown-select {
+  @apply capitalize bg-[#fcfcfc] text-[#333] text-base cursor-pointer relative h-3 mt-0.5 p-2 rounded-[7px] border-2 border-solid border-[#c2c5c7] bottom-2.5 after:transition-all after:duration-[0.3s] after:ease-[ease] after:content-["▼"] after:absolute after:-translate-y-2/4 after:text-[#a5a5a5] after:text-[11px] after:right-2.5 after:top-[57%] hover:shadow-[0_0_6px_rgba(109,179,250,0.5)] hover:border-2 hover:border-solid hover:border-[#51aae6];
+}
+.react-quiz-container .quiz-result-filter .dropdown-options {
+  @apply absolute z-[1] w-full bg-[#fcfcfc] shadow-[0_0_10px_rgba(141,143,145,0.5)] m-0 p-0 rounded-[10px] left-0 top-[85%];
+  list-style: none;
+}
+.react-quiz-container .quiz-result-filter .filter-dropdown-select.open {
+  @apply shadow-[0_0_6px_rgba(109,179,250,0.5)] border-2 border-solid border-[#51aae6];
+}
+.react-quiz-container
+  .quiz-result-filter
+  .dropdown-options
+  .dropdown-options-item {
+  @apply text-base cursor-pointer p-2.5 hover:bg-[rgba(226,226,226,0.852)] hover:rounded-[5px] focus:bg-[#d7f1f9] focus:font-[bold];
+}
+.react-quiz-container
+  .quiz-result-filter
+  .filter-dropdown-select
+  .selected-option.selected-open {
+  @apply text-[#c6c2c2] font-[lighter];
+}
+.react-quiz-container
+  .quiz-result-filter
+  .filter-dropdown-select
+  .selected-option {
+  @apply text-base relative bottom-0.5;
+}
+.react-quiz-container
+  .quiz-result-filter
+  .filter-dropdown-select:focus
+  + .dropdown-options {
+  @apply max-h-[200px];
+}
+.react-quiz-container
+  .quiz-result-filter
+  .dropdown-options
+  .dropdown-options-item.selected {
+  @apply bg-[#d7f1f9] text-[#333] font-[bold];
+}
+.react-quiz-container .quiz-result-filter .dropdown-options.open {
+  @apply max-h-[200px];
+}
