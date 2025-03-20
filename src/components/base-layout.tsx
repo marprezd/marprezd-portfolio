@@ -57,7 +57,7 @@ export default async function BaseLayout({
           inter.variable,
           jetbrainsMono.variable,
           'flex h-full flex-col font-sans antialiased',
-          'selection:bg-green-200 selection:text-green-900 dark:selection:bg-gray-900 dark:selection:text-gray-200',
+          'selection:bg-green-200 selection:text-green-900 dark:selection:bg-cyan-900 dark:selection:text-cyan-200',
         )
       }
       >
@@ -85,10 +85,10 @@ export default async function BaseLayout({
                   </div>
                 </header>
                 <div className="flex flex-1 flex-col gap-4 overflow-y-auto p-4 pt-0
-    [&::-webkit-scrollbar-thumb]:bg-gray-300
-    dark:[&::-webkit-scrollbar-thumb]:bg-slate-500
-    [&::-webkit-scrollbar-track]:bg-gray-100
-    dark:[&::-webkit-scrollbar-track]:bg-slate-700 [&::-webkit-scrollbar]:w-2"
+    [&::-webkit-scrollbar-thumb]:bg-cyan-300
+    dark:[&::-webkit-scrollbar-thumb]:bg-teal-500
+    [&::-webkit-scrollbar-track]:bg-cyan-100
+    dark:[&::-webkit-scrollbar-track]:bg-teal-700 [&::-webkit-scrollbar]:w-2"
                 >
                   {children}
                 </div>
