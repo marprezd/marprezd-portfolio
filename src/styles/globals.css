@@ -28,6 +28,8 @@
   --color-muted: var(--muted);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-secondary: var(--secondary);
+  --color-tertiary-foreground: var(--tertiary-foreground);
+  --color-tertiary: var(--tertiary);
   --color-primary-foreground: var(--primary-foreground);
   --color-primary: var(--primary);
   --color-popover-foreground: var(--popover-foreground);
@@ -38,98 +40,70 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  --animate-accordion-down: accordion-down 0.2s ease-out;
-  --animate-accordion-up: accordion-up 0.2s ease-out;
-  /*
-  ---break---
-*/
-  @keyframes accordion-down {
-    from {
-      height: 0;
-    }
-    to {
-      height: var(--radix-accordion-content-height);
-    }
-  }
-  /*
-  ---break---
-*/
-  @keyframes accordion-up {
-    from {
-      height: var(--radix-accordion-content-height);
-    }
-    to {
-      height: 0;
-    }
-  }
 }
 
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
-  --foreground: oklch(0.28 0.04 260);
+  --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.129 0.042 264.695);
+  --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.129 0.042 264.695);
+  --popover-foreground: oklch(0.145 0 0);
   --primary: oklch(0.52 0.09 223);
   --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(0.51 0.19 28);
+  --secondary: oklch(0.52 0.20 4);
   --secondary-foreground: oklch(1 0 0);
-  --muted: oklch(0.98 0.02 201);
-  --muted-foreground: oklch(0.45 0.08 224);
-  --accent: oklch(0.98 0.02 201);
-  --accent-foreground: oklch(0.45 0.08 224);
+  --tertiary: oklch(0.55 0.12 66);
+  --tertiary-foreground: oklch(1 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.20 0.00 0);
+  --accent: oklch(0.96 0.04 203);
+  --accent-foreground: oklch(0.30 0.05 230);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.92 0.08 205);
-  --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.64 0.21 25);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.52 0.09 223);
   --sidebar: oklch(0.98 0.02 201);
   --sidebar-foreground: oklch(0.40 0.07 227);
   --sidebar-primary: oklch(0.52 0.09 223);
   --sidebar-primary-foreground: oklch(0 0% 98%);
   --sidebar-accent: oklch(0.96 0.04 203);
   --sidebar-accent-foreground: oklch(0.30 0.05 230);
-  --sidebar-border: oklch(0.87 0.12 207);
-  --sidebar-ring: oklch(0.64 0.21 25);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.52 0.09 223);
 }
 .dark {
-  --background: oklch(0.28 0.04 260);
-  --foreground: oklch(1 0 0);
-  --card: oklch(0.208 0.042 265.755);
-  --card-foreground: oklch(0.984 0.003 247.858);
-  --popover: oklch(0.984 0.003 247.858);
-  --popover-foreground: oklch(0.984 0.003 247.858);
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
   --primary: oklch(0.92 0.08 205);
   --primary-foreground: oklch(0.30 0.05 230);
-  --secondary: oklch(0.88 0.06 18);
-  --secondary-foreground: oklch(0.26 0.09 26);
-  --muted: oklch(0.52 0.09 223);
-  --muted-foreground: oklch(0.98 0.02 201);
-  --accent: oklch(0.61 0.11 222);
-  --accent-foreground: oklch(1 0 0);
+  --secondary: oklch(0.82 0.11 346);
+  --secondary-foreground: oklch(0.28 0.10 4);
+  --tertiary: oklch(0.95 0.12 102);
+  --tertiary-foreground: oklch(0.29 0.06 54);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.97 0.00 0);
+  --accent: oklch(0.92 0.08 205);
+  --accent-foreground: oklch(0.30 0.05 230);
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(0.52 0.09 223);
+  --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.71 0.17 22);
-  --sidebar: oklch(0.30 0.05 230);
-  --sidebar-foreground: oklch(0.96 0.04 203);
+  --ring: oklch(0.92 0.08 205);
+  --sidebar: oklch(0.20 0.00 0);
+  --sidebar-foreground: oklch(0.97 0.00 0);
   --sidebar-primary: oklch(0.92 0.08 205);
   --sidebar-primary-foreground: oklch(0.30 0.05 230);
-  --sidebar-accent: oklch(0.40 0.07 227);
-  --sidebar-accent-foreground: oklch(0.98 0.02 201);
-  --sidebar-border: oklch(0.45 0.08 224);
-  --sidebar-ring: oklch(0.71 0.17 22);
+  --sidebar-accent: oklch(0.92 0.08 205);
+  --sidebar-accent-foreground: oklch(0.30 0.05 230);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.92 0.08 205);
 }
 
-/*
-  The default border color has changed to `currentColor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
 @layer base {
   *,
   ::after,
@@ -141,7 +115,7 @@
 }
 
 @utility shiki {
-  &pre {
+  & pre {
     display: block;
     overflow-x: auto;
     padding-top: var(--code-padding);
@@ -170,7 +144,6 @@
   }
 
   /********** Line highlight **********/
-
   & code span.highlighted {
     display: inline-block;
     width: calc(100% + 2 * var(--code-padding));
@@ -192,7 +165,6 @@
   }
 
   /********** Line numbers **********/
-
   & code span.line-number::before {
     display: inline-block;
     font-size: 0.875rem;
@@ -207,14 +179,12 @@
   }
 
   /********** CLI **********/
-
   & code span.line-command::before {
     content: '$';
     margin-right: 0.5rem;
   }
 
   /********** Required for Shiki **********/
-
   .dark & {
     color: var(--shiki-dark) !important;
     background-color: var(--background) !important;
@@ -232,7 +202,6 @@
   }
 
   /********** Highlighted word **********/
-
   & code span span.highlighted-word {
     @apply rounded-[0.30rem] dark:bg-red-900! dark:text-red-200! bg-red-200 text-red-900! p-0.5;
   }
@@ -277,7 +246,6 @@
 
 @utility highlighted {
   /********** Line highlight **********/
-
   .shiki code &span {
     display: inline-block;
     width: calc(100% + 2 * var(--code-padding));
@@ -307,7 +275,6 @@
   }
 
   /********** Required for Shiki **********/
-
   & .shiki {
     color: var(--shiki-dark) !important;
     background-color: var(--background) !important;
