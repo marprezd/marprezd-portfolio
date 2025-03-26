@@ -15,12 +15,8 @@ export default antfu({
     'ts/no-unused-expressions': ['error', { allowTernary: true }],
   },
 }, ...compat.config({
-  // https://github.com/francoismassart/eslint-plugin-tailwindcss
   extends: [
     'next/core-web-vitals',
-    'plugin:tailwindcss/recommended',
   ],
-  rules: {
-    'tailwindcss/no-custom-classname': 'off',
-  },
+  rules: {},
 }))
