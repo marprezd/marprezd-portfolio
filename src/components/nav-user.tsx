@@ -70,32 +70,32 @@ export function NavUser() {
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <SidebarMenuButton size="lg">
-              <Avatar className="size-8 rounded-lg">
+              <Avatar className="rounded-lg size-8">
                 <AvatarImage src="https://res.cloudinary.com/dieoeaoiy/image/upload/bo_0px_solid_rgb:ffffff,c_fill,f_auto,g_face:auto,h_32,o_100,q_auto:best,r_0,w_32/v1662047991/profile_uezzbj.jpg" alt="Mario Pérez" />
                 <AvatarFallback className="rounded-lg">MP</AvatarFallback>
               </Avatar>
-              <div className="grid flex-1 text-left text-sm leading-tight">
-                <span className="truncate font-semibold">Mario Pérez</span>
-                <span className="truncate text-xs">{t('layouts.app-sidebar.social-networks')}</span>
+              <div className="flex-1 grid text-sm text-left leading-tight">
+                <span className="font-semibold truncate">Mario Pérez</span>
+                <span className="text-xs truncate">{t('layouts.app-sidebar.social-networks')}</span>
               </div>
               <ChevronsUpDown className="ml-auto size-4" />
             </SidebarMenuButton>
           </DropdownMenuTrigger>
           <DropdownMenuContent
-            className="w-[--radix-dropdown-menu-trigger-width] min-w-56 rounded-lg"
+            className="rounded-lg w-(--radix-dropdown-menu-trigger-width) min-w-56"
             side={isMobile ? 'bottom' : 'right'}
             align="end"
             sideOffset={4}
           >
             <DropdownMenuLabel className="p-0 font-normal">
-              <div className="flex items-center gap-2 px-1 py-1.5 text-left text-sm">
-                <Avatar className="size-8 rounded-lg">
+              <div className="flex items-center gap-2 px-1 py-1.5 text-sm text-left">
+                <Avatar className="rounded-lg size-8">
                   <AvatarImage src="https://res.cloudinary.com/dieoeaoiy/image/upload/bo_0px_solid_rgb:ffffff,c_fill,f_auto,g_face:auto,h_32,o_100,q_auto:best,r_0,w_32/v1662047991/profile_uezzbj.jpg" alt="Mario Pérez" />
                   <AvatarFallback className="rounded-lg">MP</AvatarFallback>
                 </Avatar>
-                <div className="grid flex-1 text-left text-sm leading-tight">
-                  <span className="truncate font-semibold">Mario Pérez</span>
-                  <span className="truncate text-xs">{t('layouts.app-sidebar.social-networks')}</span>
+                <div className="flex-1 grid text-sm text-left leading-tight">
+                  <span className="font-semibold truncate">Mario Pérez</span>
+                  <span className="text-xs truncate">{t('layouts.app-sidebar.social-networks')}</span>
                 </div>
               </div>
             </DropdownMenuLabel>
@@ -109,7 +109,7 @@ export function NavUser() {
                   target="_blank"
                 >
                   <DropdownMenuItem>
-                    <item.icon />
+                    <item.icon className="text-current" />
                     {item.label}
                   </DropdownMenuItem>
                 </a>
