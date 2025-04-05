@@ -203,7 +203,7 @@
 
   /********** Highlighted word **********/
   & code span span.highlighted-word {
-    @apply rounded-[0.30rem] dark:bg-red-900! dark:text-red-200! bg-red-200 text-red-900! p-0.5;
+    @apply bg-red-200 dark:bg-red-900! p-0.5 rounded-[0.30rem] text-red-900! dark:text-red-200!;
   }
 
   /********** Focused **********/
@@ -319,7 +319,7 @@
 @utility highlighted-word {
   /********** Highlighted word **********/
   .shiki code span &span {
-    @apply rounded-[0.30rem] dark:bg-red-900! dark:text-red-200! bg-red-200 text-red-900! p-0.5;
+    @apply bg-red-200 dark:bg-red-900! p-0.5 rounded-[0.30rem] text-red-900! dark:text-red-200!;
   }
 }
 
@@ -366,23 +366,23 @@
 
 @utility correct {
   /********** Quiz **********/
-  @apply bg-green-700! text-white! focus:ring-green-700! dark:border-green-300! dark:bg-green-300! dark:text-green-950! dark:focus:ring-green-300!;
+  @apply bg-green-700! dark:bg-green-300! dark:border-green-300! focus:ring-green-700! dark:focus:ring-green-300! text-white! dark:text-green-950!;
 }
 
 @utility questionModal {
   & .alert {
-    @apply border text-white mb-[21px] p-5 rounded-sm border-solid border-transparent;
+    @apply mb-[21px] p-5 border border-transparent border-solid rounded-sm text-white;
   }
 }
 
 @utility alert {
   .questionModal & {
-    @apply border text-white mb-[21px] p-5 rounded-sm border-solid border-transparent;
+    @apply mb-[21px] p-5 border border-transparent border-solid rounded-sm text-white;
   }
 }
 
 @utility incorrect {
-  @apply bg-red-700! text-white! focus:ring-red-700! dark:border-red-300! dark:bg-red-300! dark:text-red-950! dark:focus:ring-red-300!;
+  @apply bg-red-700! dark:bg-red-300! dark:border-red-300! focus:ring-red-700! dark:focus:ring-red-300! text-white! dark:text-red-950!;
 }
 
 @utility unanswered {
@@ -455,10 +455,10 @@
 
 /* mdx - anchor and rehypeAutolinkHeadings style */
 .subheading-anchor {
-    @apply no-underline hover:underline;
+    @apply hover:underline no-underline;
 }
 .anchor-link {
-  @apply ml-2 text-primary underline decoration-primary decoration-dotted decoration-1 underline-offset-2;
+  @apply ml-2 text-primary decoration-1 decoration-dotted decoration-primary underline underline-offset-2;
   @apply transition-[opacity,color] duration-100;    
   @apply opacity-0 focus-visible:opacity-100;
 
@@ -472,7 +472,7 @@
 
 /* mdx - inline Code | set border and font styles */
 p span.inline-code code {
-  @apply border border-dashed border-gray-400 dark:border-gray-600 font-light 
+  @apply inline-flex items-center gap-x-1.5 px-[0.3rem] py-[0.2rem] rounded-md text-xs font-medium border border-neutral-500 text-neutral-500 dark:text-neutral-300 
 }
 /*
   ---break---
