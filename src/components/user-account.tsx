@@ -29,7 +29,7 @@ export default async function UserAccount() {
       <DropdownMenuTrigger asChild>
         {session
           ? (
-              <Avatar className="size-[2.30rem] rounded-lg">
+              <Avatar className="rounded-lg size-[2.30rem]">
                 <AvatarImage
                   src={`${session.user?.image}`}
                   alt={`${session.user?.name}`}
@@ -40,7 +40,7 @@ export default async function UserAccount() {
               </Avatar>
             )
           : (
-              <Button variant="outline" size="icon">
+              <Button className='hover:text-primary' variant="outline" size="icon">
                 <IconUser className="size-[1.2rem]" />
               </Button>
             )}
@@ -51,10 +51,10 @@ export default async function UserAccount() {
               <>
                 <DropdownMenuLabel className="font-normal">
                   <div className="flex flex-col space-y-1">
-                    <p className="text-sm font-medium leading-none">
+                    <p className="font-medium text-sm leading-none">
                       {t('guest-book.user.greeting', { user: session.user?.name })}
                     </p>
-                    <p className="text-xs leading-none text-gray-700 dark:text-gray-300">
+                    <p className="text-gray-700 dark:text-gray-300 text-xs leading-none">
                       {session.user?.email}
                     </p>
                   </div>
@@ -67,10 +67,10 @@ export default async function UserAccount() {
               <>
                 <DropdownMenuLabel className="font-normal">
                   <div className="flex flex-col space-y-1">
-                    <p className="text-sm font-medium leading-none">
+                    <p className="font-medium text-sm leading-none">
                       {t('guest-book.not-user.label')}
                     </p>
-                    <p className="text-xs leading-none text-gray-700 dark:text-gray-300">
+                    <p className="text-gray-700 dark:text-gray-300 text-xs leading-none">
                       {t('guest-book.not-user.description')}
                     </p>
                   </div>
