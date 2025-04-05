@@ -14,7 +14,7 @@ export default function Hero() {
       <header className="flex justify-center">
         <Link
           href="/#quick-summary"
-          className="inline-flex cursor-pointer items-center gap-x-2 rounded-full border border-gray-300 bg-white p-1 ps-3 text-xs text-gray-800 transition hover:border-gray-400 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-200 dark:hover:border-gray-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+          className="inline-flex cursor-pointer items-center gap-x-2 rounded-full border border-gray-300 bg-white p-1 ps-3 text-xs text-gray-800 transition hover:border-gray-400 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-200 dark:hover:border-gray-600 dark:focus:outline-hidden dark:focus:ring-1 dark:focus:ring-gray-600"
         >
           {t('home-page.badge-title')}
           <span className="inline-flex items-center justify-center gap-x-2 rounded-full bg-gray-300 px-2.5 py-1.5 text-sm font-semibold text-gray-600 dark:bg-gray-700 dark:text-gray-400">
