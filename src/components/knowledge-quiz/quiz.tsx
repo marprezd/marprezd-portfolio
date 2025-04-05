@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks-extra/no-direct-set-state-in-use-effect */
 'use client'
 
 import type { Question, QuizStructure } from '@/types/index'
@@ -238,34 +239,33 @@ function Quiz({
 
   return (
     <Animation>
-      <Card className="mt-2.5 border-none shadow-none">
+      <Card className="bg-transparent shadow-none px-0 border-none">
         {!start && (
           <>
             <CardHeader>
-              <div className="size-full rounded-lg bg-muted p-4">
-                <div className="mb-3 flex items-center gap-x-4">
-                  <div className="inline-flex size-14 items-center justify-center rounded-full border-4 border-cyan-200 bg-cyan-100 dark:border-cyan-900 dark:bg-cyan-800">
-                    <IconFlask2Filled className="size-6 shrink-0 text-cyan-600 dark:text-cyan-400" />
-                  </div>
-                  <div className="shrink-0">
-                    <h3 className="block text-lg font-semibold text-gray-900 dark:text-white">
-                      {quiz.quizTitle}
-                    </h3>
-                  </div>
+              <div className="flex items-center gap-x-5 sm:gap-x-8">
+                <div className="flex justify-center items-center bg-tertiary mt-2 rounded-full size-14 text-tertiary-foreground shrink-0">
+                  <IconFlask2Filled className="size-6 shrink-0" />
                 </div>
-                {quiz.quizSynopsis && (
-                  <div className="text-sm text-muted-foreground">
-                    {quiz.quizSynopsis}
-                    <span className="ms-1 gap-x-1.5 rounded-sm bg-gray-200 px-3 py-1.5 text-xs font-medium text-gray-900 dark:bg-gray-900 dark:text-gray-100">
-                      {t('blog.tabs.content.knowledge-quiz.header-text', { number: nrOfQuestions })}
-                    </span>
-                  </div>
-                )}
+                <div className="grow">
+                  <p className="font-medium">
+                    {quiz.quizTitle}
+                  </p>
+                  {quiz.quizSynopsis && (
+                    <div className="font-light text-sm">
+                      {quiz.quizSynopsis}
+                    </div>
+                  )}
+                </div>
               </div>
             </CardHeader>
-            <CardContent>
-              <div className="text-center">
-                <Button onClick={() => setStart(true)} variant="outline" className="touch-manipulation">
+            <CardContent className="px-0">
+              <div className="flex gap-x-2 mt-4">
+                <span className="inline-flex items-center gap-x-1.5 bg-pink-100 dark:bg-pink-300 px-3 py-1.5 rounded-lg font-medium text-pink-800 dark:text-pink-950 text-xs">
+                  <span className="inline-block bg-pink-800 dark:bg-pink-950 rounded-full size-1.5"></span>
+                    {t('blog.tabs.content.knowledge-quiz.header-text', { number: nrOfQuestions })}
+                </span>
+                <Button onClick={() => setStart(true)} variant="ghost" className="touch-manipulation">
                   <SquareCheckBig />
                   {t('blog.tabs.content.knowledge-quiz.start-quiz-btn')}
                 </Button>

@@ -244,7 +244,7 @@ function Core({
           <button
             type="button"
             disabled
-            className={`answerBtn mb-2 rounded-lg bg-gray-700 px-5 py-2.5 text-sm font-medium text-white hover:opacity-90 focus:outline-none focus:ring-4 focus:ring-gray-700 dark:border-gray-300 dark:bg-gray-900 dark:text-white dark:focus:ring-gray-800 ${answerBtnCorrectClassName}${answerBtnIncorrectClassName}`}
+            className={`answerBtn mb-2 rounded-lg bg-gray-700 px-5 py-2.5 text-sm font-medium text-white hover:opacity-90 focus:outline-hidden focus:ring-4 focus:ring-gray-700 dark:border-gray-300 dark:bg-gray-800 dark:text-white dark:focus:ring-gray-800 ${answerBtnCorrectClassName}${answerBtnIncorrectClassName}`}
           >
             {questionType === 'text' && <span>{answer}</span>}
             {questionType === 'photo' && <img src={answer} alt="answer" />}
@@ -256,12 +256,12 @@ function Core({
 
   const renderTags = (answerSelectionType: string, numberOfSelection: number, segment: string | number | bigint | boolean | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | Promise<string | number | bigint | boolean | React.ReactPortal | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | null | undefined> | null | undefined) => {
     return (
-      <div className="flex w-full items-center gap-2">
+      <div className="flex items-center gap-2 w-full">
         {answerSelectionType === 'single'
-          && <span className="flex items-center gap-x-1.5 rounded-sm bg-cyan-100 px-3 py-1.5 text-xs font-medium text-cyan-900 dark:bg-cyan-800 dark:text-white">{t('blog.tabs.content.knowledge-quiz.single-selection-tag-text')}</span>}
+          && <span className="flex items-center gap-x-1.5 bg-yellow-100 dark:bg-yellow-200 px-3 py-1.5 rounded-sm font-medium text-yellow-900 dark:text-yellow-950 text-xs">{t('blog.tabs.content.knowledge-quiz.single-selection-tag-text')}</span>}
         {answerSelectionType === 'multiple'
-          && <span className="flex items-center gap-x-1.5 rounded-sm bg-cyan-100 px-3 py-1.5 text-xs font-medium text-cyan-900 dark:bg-cyan-800 dark:text-white">{t('blog.tabs.content.knowledge-quiz.multiple-selection-tag-text')}</span>}
-        <span className="flex items-center gap-x-1.5 rounded-sm bg-gray-200 px-3 py-1.5 text-xs font-medium text-gray-900 dark:bg-gray-800 dark:text-gray-100">
+          && <span className="flex items-center gap-x-1.5 bg-yellow-100 dark:bg-yellow-200 px-3 py-1.5 rounded-sm font-medium text-yellow-900 dark:text-yellow-950 text-xs">{t('blog.tabs.content.knowledge-quiz.multiple-selection-tag-text')}</span>}
+        <span className="flex items-center gap-x-1.5 bg-gray-200 dark:bg-gray-800 px-3 py-1.5 rounded-sm font-medium text-gray-900 dark:text-gray-100 text-xs">
           {t('blog.tabs.content.knowledge-quiz.pick-number-of-selection', { numberOfSelection })}
         </span>
         {segment && <span>{segment}</span>}
@@ -299,7 +299,7 @@ function Core({
 
       return (
         <Card key={nanoid()} className="my-5">
-          <CardHeader>
+          <CardHeader className='pb-4'>
             <CardTitle>
               <h3
                 // eslint-disable-next-line react-dom/no-dangerously-set-innerhtml
@@ -323,13 +323,13 @@ function Core({
           </CardHeader>
           <Separator />
           <CardContent className="pt-4">
-            <h4 className="mb-2 text-sm font-semibold">{t('blog.tabs.content.knowledge-quiz.response')}</h4>
+            <h4 className="mb-2 font-semibold text-sm">{t('blog.tabs.content.knowledge-quiz.response')}</h4>
             {renderAnswerInResult(question, userInputIndex)}
           </CardContent>
           <Separator />
           <CardFooter className="pt-4">
             <div>
-              <h4 className="mb-2 text-sm font-semibold">{t('blog.tabs.content.knowledge-quiz.explanation')}</h4>
+              <h4 className="mb-2 font-semibold text-sm">{t('blog.tabs.content.knowledge-quiz.explanation')}</h4>
               <Explanation question={question} isResultPage />
             </div>
           </CardFooter>
@@ -399,7 +399,7 @@ function Core({
               <button
                 type="button"
                 disabled={answerButtons[index].disabled || false}
-                className={`${answerButtons[index].className || ''} answerBtn mb-2 rounded-lg bg-gray-700 px-5 py-2.5 text-sm font-medium text-white hover:opacity-90 focus:outline-none focus:ring-4 focus:ring-gray-700 dark:border-gray-300 dark:bg-gray-900 dark:text-white dark:focus:ring-gray-800`}
+                className={`${answerButtons[index].className || ''} answerBtn mb-2 rounded-lg bg-gray-700 px-5 py-2.5 text-sm font-medium text-white hover:opacity-90 focus:outline-hidden focus:ring-4 focus:ring-gray-700 dark:border-gray-300 dark:bg-gray-800 dark:text-white dark:focus:ring-gray-800`}
                 onClick={() => (revealAnswerOnSubmit ? onSelectAnswer(index) : onClickAnswer(index))}
               >
                 {questionType === 'text' && <span>{answer}</span>}
@@ -410,7 +410,7 @@ function Core({
               <button
                 type="button"
                 onClick={() => (revealAnswerOnSubmit ? onSelectAnswer(index) : onClickAnswer(index))}
-                className={`answerBtn mb-2 rounded-lg bg-gray-700 px-5 py-2.5 text-sm font-medium text-white hover:opacity-90 focus:outline-none focus:ring-4 focus:ring-gray-700 dark:border-gray-300 dark:bg-gray-900 dark:text-white dark:focus:ring-gray-800 ${(allowNavigation && checkSelectedAnswer(index + 1)) ? 'selected' : ''}`}
+                className={`answerBtn mb-2 rounded-lg bg-gray-700 px-5 py-2.5 text-sm font-medium text-white hover:opacity-90 focus:outline-hidden focus:ring-4 focus:ring-gray-700 dark:border-gray-300 dark:bg-gray-800 dark:text-white dark:focus:ring-gray-800 ${(allowNavigation && checkSelectedAnswer(index + 1)) ? 'selected' : ''}`}
               >
                 {questionType === 'text' && answer}
                 {questionType === 'photo' && <img src={answer} alt="answer" />}
@@ -429,12 +429,12 @@ function Core({
   }
 
   const renderResult = () => (
-    <Card className="border-none shadow-none">
+    <Card className="bg-transparent shadow-none px-0 border-none">
       <CardHeader>
         <CardTitle>
           {t('blog.tabs.content.knowledge-quiz.result-page-header-text', { correctIndexLength: correct.length, questionLength: questions.length })}
         </CardTitle>
-        <div className="flex items-center justify-between text-sm text-muted-foreground">
+        <div className="flex justify-between items-center text-muted-foreground text-sm">
           {t('blog.tabs.content.knowledge-quiz.result-page-point', { correctPoints, totalPoints })}
           <QuizResultFilter
             filteredValue={filteredValue}
@@ -442,7 +442,7 @@ function Core({
           />
         </div>
       </CardHeader>
-      <CardContent>
+      <CardContent className='px-0'>
         {renderQuizResultQuestions()}
       </CardContent>
     </Card>
@@ -498,8 +498,8 @@ function Core({
 
   return (
     <>
-      <CardHeader>
-        <div className="flex flex-col flex-wrap items-center text-sm font-light lg:flex-row">
+      <CardHeader className='px-0'>
+        <div className="flex lg:flex-row flex-col flex-wrap items-center font-light text-sm">
           {enableProgressBar && (
             <>
               <div className="basis-8/12">
@@ -536,8 +536,8 @@ function Core({
         </div>
       </CardHeader>
       {!endQuiz && (
-        <CardContent>
-          <div className="flex items-center font-mono text-sm font-medium">
+        <CardContent className='px-0'>
+          <div className="flex items-center font-mono font-medium text-sm">
             {`${t('blog.tabs.content.knowledge-quiz.question')} ${currentQuestionIndex + 1} / ${
               questions.length
             }`}
@@ -547,8 +547,8 @@ function Core({
                 type="button"
                 onClick={toggleTimer}
                 className={
-                  `focus:outline-hidden ml-2 inline-flex items-center gap-x-2 rounded-lg border border-transparent px-2.5 py-1.5 font-mono text-sm font-medium disabled:pointer-events-none disabled:opacity-50 
-              ${isRunning ? 'text-red-700 hover:bg-red-100 hover:text-red-900 dark:text-red-300 dark:hover:bg-red-800 dark:hover:text-white' : 'text-green-700 hover:bg-green-100 hover:text-green-900 dark:text-green-300 dark:hover:bg-green-800 dark:hover:text-white'}`
+                  `focus:outline-hidden ml-2 inline-flex items-center gap-x-2 rounded-lg border border-transparent px-2.5 py-1.5 font-mono text-sm font-medium disabled:pointer-events-none hover:opacity-90 
+              ${isRunning ? 'text-red-700 bg-red-100 dark:text-red-950 dark:bg-red-300' : 'text-green-700 bg-green-100 dark:text-green-950 dark:bg-green-300'}`
                 }
               >
                 {isRunning ? t('blog.tabs.content.knowledge-quiz.pause-screen-pause') : t('blog.tabs.content.knowledge-quiz.pause-screen-resume')}
@@ -566,10 +566,10 @@ function Core({
                       } ${t('blog.tabs.content.knowledge-quiz.marks-of-question', { marks: activeQuestion.point })}
                       `,
                     )}
-                    className="text-2xl font-light"
+                    className="font-light text-2xl"
                   />
                   {activeQuestion && activeQuestion.questionPic && (
-                    <img className="mx-auto my-4 rounded-xl shadow-lg" src={activeQuestion.questionPic} alt="question" />
+                    <img className="shadow-lg mx-auto my-4 rounded-xl" src={activeQuestion.questionPic} alt="question" />
                   )}
                   <div className="my-4">
                     {activeQuestion
@@ -594,7 +594,7 @@ function Core({
                     <div className="flex justify-start">
                       <button
                         onClick={() => nextQuestion(currentQuestionIndex)}
-                        className="mb-2 rounded-lg bg-gray-700 px-5 py-2.5 text-sm font-medium text-white hover:opacity-90 focus:outline-none focus:ring-4 focus:ring-gray-700 dark:border-gray-300 dark:bg-gray-900 dark:text-white dark:focus:ring-gray-800"
+                        className="bg-gray-700 dark:bg-gray-800 hover:opacity-90 mb-2 px-5 py-2.5 dark:border-gray-300 rounded-lg focus:outline-hidden focus:ring-4 focus:ring-gray-700 dark:focus:ring-gray-800 font-medium text-white dark:text-white text-sm"
                         type="button"
                       >
                         {t('blog.tabs.content.knowledge-quiz.next-question')}
@@ -604,27 +604,27 @@ function Core({
                 </>
               )
             : (
-                <div className="mt-10 space-y-5">
+                <div className="space-y-5 mt-10">
                   <div
-                    className="rounded-lg border-t-2 border-cyan-500 bg-cyan-50 p-4 dark:bg-cyan-950"
+                    className="bg-yellow-50 dark:bg-yellow-950 p-4 border-yellow-500 border-t-2 rounded-lg"
                     role="alert"
                     tabIndex={-1}
                     aria-labelledby="test-paused"
                   >
                     <div className="flex">
                       <div className="shrink-0">
-                        <span className="inline-flex size-8 items-center justify-center rounded-full border-4 border-cyan-100 bg-cyan-200 text-cyan-800 dark:border-cyan-900 dark:bg-cyan-800 dark:text-cyan-400">
+                        <span className="inline-flex justify-center items-center bg-yellow-200 dark:bg-yellow-800 border-4 border-yellow-100 dark:border-yellow-900 rounded-full size-8 text-yellow-800 dark:text-yellow-400">
                           <IconInfoCircle className="size-4 shrink-0" />
                         </span>
                       </div>
                       <div className="ms-3">
                         <h3
                           id="test-paused"
-                          className="font-semibold text-cyan-950 dark:text-white"
+                          className="font-semibold text-yellow-950 dark:text-white"
                         >
                           {t('blog.tabs.content.knowledge-quiz.test-paused')}
                         </h3>
-                        <p className="text-sm text-cyan-900 dark:text-cyan-50">
+                        <p className="text-yellow-900 dark:text-yellow-50 text-sm">
                           {t('blog.tabs.content.knowledge-quiz.pause-screen-display')}
                         </p>
                       </div>
