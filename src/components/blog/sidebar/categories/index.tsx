@@ -6,7 +6,6 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card'
-import { Separator } from '@/components/ui/separator'
 import { getAllCategories, sortCategoriesByCount } from '@/lib/utils'
 import { useLocale, useTranslations } from 'next-intl'
 import React from 'react'
@@ -22,14 +21,13 @@ export default function Categories() {
 
   return (
     <Animation>
-      <Card className="border-1 border-gray-300 bg-white dark:border-gray-700 dark:bg-gray-900">
+      <Card>
         <CardHeader>
           <CardTitle>
             {t('blog.categories.label')}
           </CardTitle>
         </CardHeader>
-        <Separator />
-        <CardContent className="mt-4">
+        <CardContent>
           <ul className="flex flex-wrap gap-2">
             {sortedCategories.map(category => (
               <CategoryCloud key={category} count={categories[category]} category={category} />

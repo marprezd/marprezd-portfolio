@@ -6,7 +6,6 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card'
-import { Separator } from '@/components/ui/separator'
 import { getAllTags, sortTagsByCount } from '@/lib/utils'
 import { useLocale, useTranslations } from 'next-intl'
 import TagCloud from './tag-cloud'
@@ -21,14 +20,13 @@ export default function Tags() {
 
   return (
     <Animation>
-      <Card className="border-1 border-gray-300 bg-white dark:border-gray-700 dark:bg-gray-900">
+      <Card>
         <CardHeader>
           <CardTitle>
             {t('blog.tags.label')}
           </CardTitle>
         </CardHeader>
-        <Separator />
-        <CardContent className="mt-4">
+        <CardContent>
           <ul className="flex flex-wrap gap-2">
             {sortedTags.map(tag => (
               <TagCloud key={tag} count={tags[tag]} tag={tag} />

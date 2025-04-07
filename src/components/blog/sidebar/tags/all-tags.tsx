@@ -11,7 +11,6 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card'
-import { Separator } from '@/components/ui/separator'
 import { getAllTags, getPostsByTagSlug, slugify, sortPosts, sortTagsByCount } from '@/lib/utils'
 import { useTranslations } from 'next-intl'
 import dynamic from 'next/dynamic'
@@ -62,9 +61,9 @@ export default function AllTags({
   const t = useTranslations('app')
 
   return (
-    <section className="flex flex-col gap-4 py-10 lg:flex-row">
-      <div className="basis-full space-y-4 lg:basis-9/12">
-        <div className="space-y-10 ">
+    <section className="flex lg:flex-row flex-col gap-4 py-10">
+      <div className="space-y-4 basis-full lg:basis-9/12">
+        <div className="space-y-10">
           <div ref={ref}>
             {inView && (
               <PostGridComponent posts={displayPosts} />
@@ -87,14 +86,13 @@ export default function AllTags({
       </div>
       <aside className="basis-full lg:basis-3/12">
         <Animation>
-          <Card className="border-1 border-gray-300 bg-white dark:border-gray-700 dark:bg-gray-900">
+          <Card>
             <CardHeader>
               <CardTitle>
                 {t('blog.tags.label')}
               </CardTitle>
             </CardHeader>
-            <Separator />
-            <CardContent className="mt-4">
+            <CardContent>
               <ul className="flex flex-wrap gap-2">
                 {sortedTags?.map(t => (
                   <TagsCloud key={t} count={tags[t]} current={slugify(t) === tag} tag={t} />

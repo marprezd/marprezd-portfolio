@@ -16,7 +16,7 @@ export default function CategoryCloud({ category, count, current }: CategoryClou
   const locale = useParams()?.locale as Locale
 
   return (
-    <Link className="inline-flex items-center gap-x-2 rounded-lg border border-border bg-white px-3 py-1.5 text-sm font-medium text-gray-800 hover:opacity-80 dark:bg-gray-900 dark:text-white" href={`/${locale}/blog/categories/${slugify(category)}`}>
+    <Link className="inline-flex items-center gap-x-1.5 bg-neutral-100 dark:bg-neutral-500/20 px-3 py-1.5 border border-neutral-300 dark:border-neutral-500 rounded-full font-medium text-neutral-800 dark:text-neutral-300 text-xs" href={`/${locale}/blog/categories/${slugify(category)}`}>
       {capitalizeFirstLetter(category)}
       <span className={`inline-flex items-center rounded-full px-1.5 py-0.5 text-xs font-medium ${cn(current ? 'bg-primary text-primary-foreground' : 'bg-gray-500 text-white dark:bg-gray-300 dark:text-gray-950')}`}>
         {count ? `${count}` : 0}
