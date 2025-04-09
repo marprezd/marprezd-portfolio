@@ -11,7 +11,7 @@ export default function PostHeader({ children }: PostHeaderProps) {
     <Suspense fallback={<DefaultLoadingSkeleton />}>
       <header className={cn(
         'flex flex-col-reverse gap-8 w-full py-5 lg:py-10',
-        'lg:flex-row [&>*]:flex-1',
+        'lg:flex-row *:flex-1',
       )}
       >
         {children}

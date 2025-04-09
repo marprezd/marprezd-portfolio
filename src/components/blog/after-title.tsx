@@ -4,7 +4,6 @@ import { IconBallpen, IconBrandPocket, IconCalendar, IconClock, IconEye, IconFil
 import { useFormatter, useLocale, useTranslations } from 'next-intl'
 import Link from 'next/link'
 import React from 'react'
-import { Button } from '../ui/button'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from '../ui/dropdown-menu'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../ui/tooltip'
 import ReadingTime from './reading-time'
@@ -39,17 +38,17 @@ export default function AfterTitle({
   const locale = useLocale()
 
   return (
-    <div className="my-2 flex flex-col items-start gap-2 sm:flex-row md:items-center">
-      <Button size="sm" variant="ghost">
-        <IconBallpen />
+    <div className="flex sm:flex-row flex-col items-start md:items-center gap-2 my-2">
+      <div className='inline-flex items-center gap-x-1 bg-neutral-100 dark:bg-neutral-500/20 px-1.5 py-1 rounded-md text-neutral-800 dark:text-neutral-300 text-xs'>
+        <IconBallpen className='size-3 shrink-0' />
         Mario P
-      </Button>
+      </div>
       {date && (
         <TooltipProvider>
           <Tooltip>
-            <TooltipTrigger asChild>
-              <Button size="sm" variant="ghost">
-                <IconCalendar />
+            <TooltipTrigger>
+              <div className='inline-flex items-center gap-x-1 bg-neutral-100 dark:bg-neutral-500/20 px-1.5 py-1 rounded-md text-neutral-800 dark:text-neutral-300 text-xs'>
+                <IconCalendar className='size-3 shrink-0' />
                 <time dateTime={date}>
                   {format.dateTime(dateTime, {
                     year: 'numeric',
@@ -57,7 +56,7 @@ export default function AfterTitle({
                     day: 'numeric',
                   })}
                 </time>
-              </Button>
+              </div>
             </TooltipTrigger>
             <TooltipContent>
               {t('blog.added')}
@@ -70,9 +69,9 @@ export default function AfterTitle({
         ? (
             <TooltipProvider>
               <Tooltip>
-                <TooltipTrigger asChild>
-                  <Button size="sm" variant="ghost">
-                    <IconRefresh />
+                <TooltipTrigger>
+                  <div className='inline-flex items-center gap-x-1 bg-neutral-100 dark:bg-neutral-500/20 px-1.5 py-1 rounded-md text-neutral-800 dark:text-neutral-300 text-xs'>
+                    <IconRefresh className='size-3 shrink-0' />
                     <time dateTime={updated}>
                       {format.dateTime(updateDateTime, {
                         year: 'numeric',
@@ -80,7 +79,7 @@ export default function AfterTitle({
                         day: 'numeric',
                       })}
                     </time>
-                  </Button>
+                  </div>
                 </TooltipTrigger>
                 <TooltipContent>
                   {t('blog.updated')}
@@ -91,11 +90,11 @@ export default function AfterTitle({
           )
         : ''}
       <DropdownMenu>
-        <DropdownMenuTrigger asChild>
-          <Button size="sm" variant="ghost">
+        <DropdownMenuTrigger>
+          <div className='inline-flex items-center gap-x-1 bg-neutral-100 dark:bg-neutral-500/20 px-1.5 py-1 rounded-md text-neutral-800 dark:text-neutral-300 text-xs'>
             {t('globals.more-details')}
-            <IconSelector />
-          </Button>
+            <IconSelector className='size-3 shrink-0' />
+          </div>
         </DropdownMenuTrigger>
         <DropdownMenuContent>
           <DropdownMenuLabel>
@@ -115,21 +114,21 @@ export default function AfterTitle({
           </DropdownMenuLabel>
           <a href={`https://getpocket.com/save?${host}/${locale}/${slug}&${title}`}>
             <DropdownMenuItem>
-              <IconBrandPocket className="size-5" />
+              <IconBrandPocket className="text-current" />
               {t('blog.pocket')}
             </DropdownMenuItem>
           </a>
           <DropdownMenuSeparator />
           <DropdownMenuItem>
-            <IconClock />
+            <IconClock className="text-current" />
             <ReadingTime readingTime={readingTime} />
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <IconFileDescription />
+            <IconFileDescription className="text-current" />
             <TotalWords words={wordCount} />
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <IconEye />
+            <IconEye className="text-current" />
             <ShowViews view={view} />
           </DropdownMenuItem>
         </DropdownMenuContent>

@@ -2,7 +2,7 @@
 
 import type { Post } from '#site/content'
 import type { Locale } from '@/i18n/routing'
-import { IconArrowNarrowRight, IconClock } from '@tabler/icons-react'
+import { IconClock, IconPlus } from '@tabler/icons-react'
 import { useFormatter, useTranslations } from 'next-intl'
 import Link from 'next/link'
 import { useParams } from 'next/navigation'
@@ -11,6 +11,12 @@ import CldImage from '../cld-image'
 import { Button } from '../ui/button'
 import { Card, CardContent, CardFooter } from '../ui/card'
 import { Popover, PopoverContent, PopoverTrigger } from '../ui/popover'
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
 
 interface PostCardProps {
   post: Post
@@ -27,12 +33,12 @@ export default function PostCard({
 
   return (
     <Card>
-      <CardContent className="space-y-3.5 pt-4">
+      <CardContent className="space-y-3.5">
         <div className="flex items-center gap-x-4">
           {post.cover && (
-            <div className="w-16 flex-none">
+            <div className="flex-none w-16">
               <CldImage
-                className="size-16 rounded-xl"
+                className="rounded-xl size-16"
                 alt={post.title}
                 width={64}
                 height={64}
@@ -48,10 +54,10 @@ export default function PostCard({
             </div>
           )}
           <div className="grow">
-            <h3 className="line-clamp-2 text-xl font-bold">
+            <h3 className="font-bold text-xl line-clamp-2">
               {post.title}
             </h3>
-            <p className="text-xs uppercase text-muted-foreground">
+            <p className="text-muted-foreground text-xs uppercase">
               Mario Pérez |
               {' '}
               {post.lastModified && post.lastModified !== post.date
@@ -76,24 +82,25 @@ export default function PostCard({
             </p>
           </div>
         </div>
-        <p className="line-clamp-3 text-sm">
+        <p className="text-sm line-clamp-3">
           {post.excerpt}
         </p>
       </CardContent>
-      <CardFooter className="flex items-center justify-between space-x-2">
+      <CardFooter className="flex justify-between items-center space-x-2">
         <div className="inline-flex items-center gap-x-2">
           {post.metadata && (
             <Popover>
               <PopoverTrigger asChild>
                 <Button
                   size="icon"
-                  variant="ghost"
+                  variant="outline"
+                  className='hover:text-primary'
                 >
                   <IconClock />
                 </Button>
               </PopoverTrigger>
               <PopoverContent className="space-y-1">
-                <h3 className="text-sm font-bold">
+                <h3 className="font-bold text-sm">
                   {t('blog.reading-time.label')}
                 </h3>
                 <div className="text-xs">
@@ -107,13 +114,13 @@ export default function PostCard({
               <PopoverTrigger asChild>
                 <Button
                   size="sm"
-                  variant="ghost"
+                  variant="secondary"
                 >
                   {t('blog.tabs.content.series.cta-btn')}
                 </Button>
               </PopoverTrigger>
               <PopoverContent className="space-y-1">
-                <h3 className="text-sm font-bold">
+                <h3 className="font-bold text-sm">
                   {t('blog.tabs.content.series.summary')}
                 </h3>
                 <div className="text-xs">
@@ -124,15 +131,20 @@ export default function PostCard({
           )}
         </div>
         <div>
-          <Button size="sm" asChild>
-            <Link
-              className="inline-flex items-center gap-x-0.5"
-              href={`/${locale}/${post.slug}`}
-            >
+        <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button size="icon" className='rounded-full' asChild>
+                <Link href={`/${locale}/${post.slug}`}>
+                  <IconPlus />
+                </Link>
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>
               {t('globals.read-more')}
-              <IconArrowNarrowRight />
-            </Link>
-          </Button>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
         </div>
       </CardFooter>
     </Card>

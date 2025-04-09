@@ -16,17 +16,17 @@ export function PostSeries({ data }: PostSeriesProps) {
 
   return (
     <Animation>
-      <Card className="border-none shadow-none">
+      <Card className="bg-transparent shadow-none border-none">
         <CardHeader>
           <div className="flex items-center gap-x-5 sm:gap-x-8">
-            <div className="mt-2 flex size-8 shrink-0 items-center justify-center rounded-full bg-gray-200 dark:bg-gray-900">
-              <IconServer className="size-5 text-gray-900 dark:text-gray-200" />
+            <div className="flex justify-center items-center bg-tertiary mt-2 rounded-full size-14 text-tertiary-foreground shrink-0">
+              <IconServer className="size-6 shrink-0" />
             </div>
             <div className="grow">
               <p className="font-medium">
                 {t('blog.tabs.content.series.first-line')}
               </p>
-              <p className="text-sm font-light">
+              <p className="font-light text-sm">
                 {t('blog.tabs.content.series.second-line')}
               </p>
             </div>
@@ -44,8 +44,8 @@ export function PostSeries({ data }: PostSeriesProps) {
               ]
             </span>
           </p>
-          <div className="flex flex-col gap-2 lg:flex-row lg:items-center">
-            <div className="flex items-center gap-x-1.5 rounded-sm bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-800 dark:bg-gray-800/30 dark:text-gray-100">
+          <div className="flex lg:flex-row flex-col lg:items-center gap-2">
+            <div className="inline-flex items-center gap-x-1 bg-neutral-100 dark:bg-neutral-500/20 px-1.5 py-1 rounded-md text-neutral-800 dark:text-neutral-300 text-xs">
               {t('blog.tabs.content.series.episodes')}
               {' '}
               (
@@ -54,9 +54,9 @@ export function PostSeries({ data }: PostSeriesProps) {
               {data.posts.length}
               )
             </div>
-            <div className="flex items-center gap-x-1.5 rounded-sm bg-red-100 px-3 py-1.5 text-xs font-medium text-red-800 dark:bg-red-800/30 dark:text-red-100">
+            <div className="inline-flex items-center gap-x-1 bg-neutral-100 dark:bg-neutral-500/20 px-1.5 py-1 rounded-md text-neutral-800 dark:text-neutral-300 text-xs">
               {t('blog.tabs.content.series.read-articles')}
-              <IconCornerRightDown size={16} />
+              <IconCornerRightDown className='size-3 shrink-0' />
             </div>
           </div>
           <ul>
@@ -75,7 +75,7 @@ export function PostSeries({ data }: PostSeriesProps) {
                     )
                   : (
                       <Link
-                        className="transition-colors duration-200 ease-in-out hover:text-primary"
+                        className="hover:text-primary transition-colors duration-200 ease-in-out"
                         href={`/${p.language}/${p.slug}`}
                       >
                         {p.title}

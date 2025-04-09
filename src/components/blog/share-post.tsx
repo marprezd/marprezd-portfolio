@@ -15,23 +15,23 @@ export default function SharePost({ post }: PostShareProps) {
   const t = useTranslations('app')
   return (
     <Animation>
-      <Card className="border-none shadow-none">
+      <Card className="bg-transparent shadow-none border-none">
         <CardHeader>
           <div className="flex items-center gap-x-5 sm:gap-x-8">
-            <div className="mt-2 flex size-8 shrink-0 items-center justify-center rounded-full bg-gray-200 dark:bg-gray-900">
-              <IconShare2 className="size-5 text-gray-900 dark:text-gray-200" />
+            <div className="flex justify-center items-center bg-tertiary mt-2 rounded-full size-14 text-tertiary-foreground shrink-0">
+              <IconShare2 className="size-6 shrink-0" />
             </div>
             <div className="grow">
               <p className="font-medium">
                 {t('blog.tabs.content.share.first-line')}
               </p>
-              <p className="text-sm font-light">
+              <p className="font-light text-sm">
                 {t('blog.tabs.content.share.second-line')}
               </p>
             </div>
           </div>
         </CardHeader>
-        <CardContent className="text-sm text-gray-700 dark:text-gray-400">
+        <CardContent className="text-gray-700 dark:text-gray-400 text-sm">
           {t('blog.tabs.content.share.summary')}
           <Share
             description={post.excerpt}

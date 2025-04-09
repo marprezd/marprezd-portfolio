@@ -9,19 +9,19 @@ function PostAuthor() {
 
   return (
     <Animation>
-      <Card className="border-none shadow-none">
+      <Card className="bg-transparent shadow-none border-none">
         <CardHeader>
           <div className="flex items-center gap-x-5 sm:gap-x-8">
             <CldImage
-              className="size-8 shrink-0 rounded-full"
+              className="rounded-full size-14 shrink-0"
               alt="MP"
-              width={32}
-              height={32}
+              width={56}
+              height={56}
               sizes="100vw"
               src="profile_uezzbj.jpg"
               crop={{
-                width: 32,
-                height: 32,
+                width: 56,
+                height: 56,
                 type: 'fill',
               }}
               quality={75}
@@ -30,13 +30,13 @@ function PostAuthor() {
               <p className="font-medium">
                 {t('blog.tabs.content.author.first-line')}
               </p>
-              <p className="text-sm font-light">
+              <p className="font-light text-sm">
                 {t('blog.tabs.content.author.second-line')}
               </p>
             </div>
           </div>
         </CardHeader>
-        <CardContent className="text-sm text-gray-700 dark:text-gray-400">
+        <CardContent className="text-gray-700 dark:text-gray-400 text-sm">
           {t.rich('blog.tabs.content.author.summary', {
             p: chunks => <p>{chunks}</p>,
             span: chunks => <span className="font-semibold">{chunks}</span>,
