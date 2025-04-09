@@ -71,7 +71,7 @@ export default function QueryPagination({
       for (let i = 1; i <= totalPageCount; i++) {
         items.push(
           <PaginationItem key={i}>
-            <PaginationLink href={buildLink(i)} isActive={page === i}>
+            <PaginationLink className='hover:text-primary' href={buildLink(i)} isActive={page === i}>
               {i}
             </PaginationLink>
           </PaginationItem>,
@@ -130,9 +130,9 @@ export default function QueryPagination({
 
   return (
     <Animation>
-      <div className="flex w-full flex-col items-center gap-3 md:flex-row">
+      <div className="flex md:flex-row flex-col items-center gap-3 w-full">
         {pageSizeSelectOptions && (
-          <div className="flex flex-1 flex-col gap-4">
+          <div className="flex flex-col flex-1 gap-4">
             <SelectRowsPerPage
               options={pageSizeSelectOptions.pageSizeOptions}
               setPageSize={navToPageSize}
@@ -178,7 +178,7 @@ function SelectRowsPerPage({
   const t = useTranslations('app')
   return (
     <div className="flex items-center gap-4">
-      <span className="whitespace-nowrap text-sm">{t('blog.pagination.select.label')}</span>
+      <span className="text-sm whitespace-nowrap">{t('blog.pagination.select.label')}</span>
 
       <Select value={String(pageSize)} onValueChange={value => setPageSize(Number(value))}>
         <SelectTrigger>
